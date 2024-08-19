@@ -210,6 +210,10 @@ main {
     text-align: center;
     font-weight: bold;
     font-size: 30px;
+    background-color:#6a2e1b;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .titleune{
@@ -248,8 +252,46 @@ h1, h2, h3 {
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0px 0px 9px white;
+    box-shadow: 0px 0px 9px black;
 }
+
+.registration-section {
+    background-color: goldenrod;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-titlet {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+
+.description {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.register-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: goldenrod;
+}
+
 
 
 
@@ -291,32 +333,6 @@ h1, h2, h3 {
 
 }
 
-.search-box {
-    display: flex;
-    gap: 10px;
-}
-
-
-
-.search-box input {
-    flex: 1;
-    padding: 10px;
-    border: 2px solid #4CAF50; 
-    border-radius: 4px;
-}
-
-.search-box button {
-    background-color: #4CAF50; 
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.search-box button:hover {
-    background-color: #4CAF50;
-}
 
 .actualites-list, .rencontres-list {
     display: grid;

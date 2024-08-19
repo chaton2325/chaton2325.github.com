@@ -8,11 +8,18 @@ body {
     background-color: goldenrod;
 }
 
+hr {
+    border: none;  /* Enlève la bordure par défaut */
+    height: 5px;   /* Hauteur de la barre */
+    background-color: #000;  /* Couleur de la barre */
+    margin: 20px 0;  /* Marge verticale */
+}
+
 
 
 header {
     background-color: rgba(245, 245, 245, 0.2); 
-    box-shadow: 0px 0px 5px white;
+    box-shadow: 0px 0px 5px black;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: white;
@@ -26,6 +33,7 @@ header {
     z-index: 1000;
     top: 0;
     transition: background-color 0.3s ease; /* Smooth transition */
+
 }
 
 
@@ -202,11 +210,13 @@ main {
     text-align: center;
     margin: 20px;
     margin: 0px auto;
+    background-color: #28a745;
+
     
 }
 
 video {
-    max-width: 100%;
+    width: 1000px;
     height: auto;
     border: 2px solid #ccc;
     margin: 0px auto;
@@ -214,19 +224,21 @@ video {
 
 
 
+
 .divselect{
-    margin:0px auto;
-    margin-bottom: 30px;
+    margin:0px auto;;
 }
 
 .h1une{
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 60px;
     background-color:goldenrod;
     color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    text-shadow: 0px 0px 8px black;
+    
 }
 
 .titleune{
@@ -288,6 +300,8 @@ h1, h2, h3 {
     font-size: 16px;
     color: black;
     margin-bottom: 20px;
+    background-color: goldenrod;
+
 }
 
 .register-button {
@@ -318,7 +332,15 @@ h1, h2, h3 {
 .welcome-text {
     color: #000; /* Couleur du texte */
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.8;
+}
+
+.section-titleb{
+    font-size: 50px;
+    font-weight: bold;
+    color: #000; /* Couleur du titre */
+    margin-bottom: 20px;
+
 }
 
 .welcome-image img {
@@ -373,6 +395,28 @@ h1, h2, h3 {
     background-color: #6a2e1b;
 }
 
+.product-section {
+    padding: 20px 0;
+}
+.product-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.product-description {
+    font-size: 1rem;
+    color: #6c757d;
+}
+.cta-button {
+    background-color: green;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
 
 .donation-buttons {
     display: flex;
@@ -550,6 +594,10 @@ h1, h2, h3 {
         margin-bottom: 10px;
     }
 
+    .h1une{
+        font-size: 25px;
+    }
+
     .responsive-card {
         width: 18rem;
     }
@@ -560,20 +608,46 @@ h1, h2, h3 {
 
     }
 
+    video {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #ccc;
+        margin: 0px auto;
+    }
+
     .divselect{
         margin:0px auto;
-        margin-bottom: 30px;
+
     }
 
     #language-select {
         font-size: 16px;
         margin-left: 1px;
+        margin-bottom: 10px;
     }
 
     .welcome-image img {
         width: 0px;
         height: 0px;
     
+    }
+
+    .welcome-text{
+        background-image: url('../images/welcome.png');
+        background-size: 200%;
+
+        
+
+    }
+
+    .description {
+        background-color: rgba(218, 178, 78, 0.5)
+        ;
+    
+    }
+
+    .product-title {
+        font-size: 2rem;
     }
 
     

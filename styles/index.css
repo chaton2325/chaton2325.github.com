@@ -201,13 +201,18 @@ main {
 .video-section {
     text-align: center;
     margin: 20px;
+    margin: 0px auto;
+    
 }
 
 video {
     max-width: 100%;
     height: auto;
     border: 2px solid #ccc;
+    margin: 0px auto;
 }
+
+
 
 .divselect{
     margin:0px auto;

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBYA - Page d'accueil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='images/logos/ebya-removebg.png') }}" alt="Logo EBYA" class="logo" style="width: 50px;">
+                EBYA
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Associations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="ekang-home.html"><img src="{{ url_for('static', filename='images/logos/ekang-removebg.png') }}" alt="Logo 1" class="dropdown-logo"> Nkul Ekang Y'AMERICA1</a>
+                            <a class="dropdown-item" href="#assoc2"><img src="{{ url_for('static', filename='images/logos/elat-removebg.png') }}" alt="Logo 2" class="dropdown-logo"> Elat Beti USA</a>
+                            <a class="dropdown-item" href="#assoc3"><img src="{{ url_for('static', filename='images/logos/columbus-removebg.png') }}" alt="Logo 3" class="dropdown-logo"> Nkul Beti Columbus</a>
+                            <a class="dropdown-item" href="#assoc5"><img src="{{ url_for('static', filename='images/logos/cesca-removebg.png') }}" alt="Logo 5" class="dropdown-logo"> CESCA-USA</a>
+                            <a class="dropdown-item" href="#assoc6"><img src="{{ url_for('static', filename='images/logos/oyili-removebg.png') }}" alt="Logo 6" class="dropdown-logo"> Oyili Beti USA</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Decouvrir EBYA
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="ebya-publications.html">Publications</a>
+                            <a class="dropdown-item" href="missions.html">Missions/Valeurs</a>
+                            <a class="dropdown-item" href="#equipe">👥 Équipe de direction</a>
+                            <a class="dropdown-item" href="#presentation">Commissions</a>
+                            <a class="dropdown-item" href="#inscription">Activités</a>
+                            <a class="dropdown-item" href="#commission">Membres</a>
+                            <a class="dropdown-item" href="#plan">Bénévoles et sympatisants</a>
+                            <a class="dropdown-item" href="partenaires.html">Partenaires</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="guide" class="info-section mt-5">
+            <h2>Recherche rapide</h2>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recherche..." aria-label="Recherche" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Rechercher</button>
+                </div>
+            </div>
+        </section>
+        <section id="accueil" class="title text-center">
+            <h1>Bienvenue sur le site de EBYA</h1>
+            <p>Fédération des associations Ekang Bese en Amérique.</p>
+        </section>
+
+        <section id="a-la-une" class="info-section mt-5">
+            <h2 class="h1une">Publications</h2>
+            <div class="row">
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0w2kc5r6JNittU36T12eaaTWVuvfNuHstztUnZ6XQk4TgLUQPn9ST1MF5kruXvwrcl%26id%3D61558766649742&show_text=true&width=500" width="500" height="800" style="border:none;overflow:hidden;margin:0px auto" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </section>
+
+
+        
+
+        <section id="donation" class="info-section mt-5">
+            <div class="text-center">
+                <h2>Faites un Don</h2>
+                <p>Votre soutien aide à faire une réelle différence dans notre communauté. Merci pour votre générosité.</p>
+                <a href="#" class="btn btn-success">Faire un don</a>
+                <a href="#" class="btn btn-info">En savoir plus</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 EBYA. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank" class="btn btn-outline-dark btn-sm">Facebook</a>
+            <a href="https://instagram.com" target="_blank" class="btn btn-outline-dark btn-sm">Instagram</a>
+            <a href="https://youtube.com" target="_blank" class="btn btn-outline-dark btn-sm">YouTube</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

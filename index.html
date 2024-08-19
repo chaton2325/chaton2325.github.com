@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBYA - Page d'accueil</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="#">
+                <img src="images/logos/ebya-removebg.png" alt="Logo EBYA" class="logo" style="width: 50px;">
+                EBYA
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="associations.html"> Nos associations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Découvrir EBYA
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="ebya-publications.html">Publications</a>
+                            <a class="dropdown-item" href="missions.html">Missions/Valeurs</a>
+                            <a class="dropdown-item" href="orgchart.html">Orgchart</a>
+                            <a class="dropdown-item" href="#presentation">Commissions</a>
+                            <a class="dropdown-item" href="#inscription">Activités</a>
+                            <a class="dropdown-item" href="#commission">Membres</a>
+                            <a class="dropdown-item" href="#plan">Bénévoles et sympathisants</a>
+                            <a class="dropdown-item" href="partenaires.html">Partenaires</a>
+                            <a class="dropdown-item" href="#plan">Galérie</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#accueil">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="navlink1" href="#accueil">Nous contacter ☎</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main class="container-fluid mt-5">
+
+        <section id="accueil" class="title text-center">
+            <h1>EKANG BESE Y AMERICA</h1>
+            <p>Fédération des associations Ekang Bese en Amérique.</p>
+        </section>
+
+        <div class="divselect">
+            <select id="language-select" onchange="changeLanguage()">
+                <option value="fr">🇫🇷 Français</option>
+                <option value="en">🇬🇧 English</option>
+            </select>
+        </div>
+
+        <section id="bienvenue" class="info-section mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Texte de bienvenue -->
+                    <div class="col-md-6">
+                        <div class="welcome-text">
+                            <h2 class="section-title">Bienvenue</h2>
+                            <p class="description">
+                                L'Association des Camerounais aux États-Unis est une organisation dédiée à la promotion de l'unité et de la solidarité au sein de la diaspora camerounaise. Elle vise à renforcer les liens entre les Camerounais vivant aux États-Unis tout en préservant et en promouvant la culture et les traditions du Cameroun. L'association joue un rôle clé dans l'accompagnement des nouveaux arrivants, en facilitant leur intégration et en offrant un réseau de soutien. Elle organise régulièrement des événements culturels, éducatifs et sociaux pour rassembler la communauté, tout en œuvrant pour le développement de projets en faveur du Cameroun.
+                            </p>
+                            <p class="description">
+                                L'association s'engage également à offrir des ressources et des opportunités pour la diaspora camerounaise, notamment à travers des ateliers de formation, des programmes de mentorat, et des sessions d'information sur les questions juridiques, économiques et sociales. Nous croyons fermement que la réussite individuelle et collective de nos membres contribue au rayonnement du Cameroun à l'étranger.
+                            </p>
+
+                        </div>
+                        
+                    </div>
+        
+                    <!-- Image -->
+                    <div class="col-md-6">
+                        <div class="welcome-image">
+                            <img src="images/welcome.png" alt="Image de Bienvenue" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="a-la-une" class="info-sectionune mt-5">
+            <h2 class="h1une">Publication a la une</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/Une/ebya.jpg" alt="Image 1" class="img-fluid">
+                </div>
+            </div>
+            <div class="a-la-une-text mt-3">
+                <h3 class="titleune">Ceka 2024</h3>
+                <p>Evenement du CEKA 2024 Evenement du CEKA 2024 Evenement du CEKA 2024...</p>
+            </div>
+        </section>
+
+        <section id="actualites" class="info-section1 mt-5">
+            <h2 class="text-center mb-4">Actualités des Associations</h2>
+            <div id="actualitesCarousel" class="carousel slide" data-ride="carousel" data-interval="2300">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card mx-auto responsive-card">
+                            <img src="images/logos/ekang-removebg.png" class="card-img-top" alt="Nkul Ekang Y'AMERICA">
+                            <div class="card-body">
+                                <h5 class="card-title">Nkul Ekang Y'AMERICA</h5>
+                                <p class="card-text">Découvrez les dernières nouvelles de l'association Ekang...</p>
+                                <a href="link-to-more-details-1" class="btn btn-primary">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto responsive-card">
+                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0w2kc5r6JNittU36T12eaaTWVuvfNuHstztUnZ6XQk4TgLUQPn9ST1MF5kruXvwrcl%26id%3D61558766649742&show_text=true&width=500" width="500" height="430" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            <div class="card-body">
+                                <h5 class="card-title">Elat Beti USA</h5>
+                                <p class="card-text">Les dernières actualités de l'association Elat Beti USA...</p>
+                                <a href="link-to-more-details-2" class="btn btn-primary">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto responsive-card">
+                            <img src="images/logos/columbus-removebg.png" class="card-img-top" alt="Nkul Beti Columbus">
+                            <div class="card-body">
+                                <h5 class="card-title">Nkul Beti Columbus</h5>
+                                <p class="card-text">Découvrez les dernières nouvelles de l'association Beti Columbus...</p>
+                                <a href="link-to-more-details-3" class="btn btn-primary">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto responsive-card">
+                            <img src="images/logos/cesca-removebg.png" class="card-img-top" alt="Nkul Cesca">
+                            <div class="card-body">
+                                <h5 class="card-title">Nkul Cesca</h5>
+                                <p class="card-text">Découvrez les dernières nouvelles de l'association Cesca...</p>
+                                <a href="link-to-more-details-3" class="btn btn-primary">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto responsive-card">
+                            <img src="images/logos/oyili-removebg.png" class="card-img-top" alt="Nkul Oyili Beti">
+                            <div class="card-body">
+                                <h5 class="card-title">Nkul Oyili Beti</h5>
+                                <p class="card-text">Découvrez les dernières nouvelles de l'association Oyili Beti...</p>
+                                <a href="link-to-more-details-3" class="btn btn-primary">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ajoutez plus d'éléments carousel-item ici si nécessaire -->
+                </div>
+                <a class="carousel-control-prev" href="#actualitesCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Précédent</span>
+                </a>
+                <a class="carousel-control-next" href="#actualitesCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Suivant</span>
+                </a>
+            </div>
+            
+        </section>
+        
+        
+
+        <section id="donation" class="info-section mt-5">
+            <div class="text-center">
+                <h2>Faites un Don</h2>
+                <p>Votre soutien aide à faire une réelle différence dans notre communauté. Merci pour votre générosité.</p>
+                <a href="checkout.html" class="btn btn-success">Faire un don</a>
+                <a href="#" class="btn btn-info">En savoir plus</a>
+            </div>
+        </section>
+    </main>
+
+<!-- HTML -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Section d'abonnement -->
+            <div class="col-md-3">
+                <h4>Abonnez-vous à notre lettre d'informations</h4>
+                <form>
+                    <input type="email" placeholder="Email*" class="form-control mb-2">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="policyCheck">
+                        <label class="form-check-label" for="policyCheck">
+                            J'accepte la politique de confidentialité et les conditions d'utilisation.
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-green mt-2">ABONNEZ-VOUS</button>
+                </form>
+                <div class="social-icons mt-3">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Liens rapides -->
+            <div class="col-md-3">
+                <h4>Liens rapides</h4>
+                <ul class="quick-links">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="#">À Propos de nous</a></li>
+                    <li><a href="#">Événements</a></li>
+                    <li><a href="#">S'engager</a></li>
+                    <li><a href="#">Nouvelles</a></li>
+                </ul>
+            </div>
+
+            <!-- Communauté -->
+            <div class="col-md-3">
+                <h4>Communauté EBYA</h4>
+                <p>Nous nous efforçons d'encourager la collaboration et la solidarité entre les membres de notre communauté.</p>
+                <img src="images/logos/ebya.jpg" alt="EBYA Logo" class="footer-logo">
+            </div>
+
+            <!-- S'engager -->
+            <div class="col-md-3">
+                <h4>S'engager</h4>
+                <p>Rejoignez notre communauté dès aujourd'hui et découvrez les nombreuses opportunités que nous offrons pour faire une différence significative.</p>
+                <a href="#" class="btn btn-red">CONTACTEZ-NOUS</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Règles de confidentialité et conditions d'utilisation. - Copyright © 2023. Tout droit réservé à BABAMNA</p>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="2e3cf2f0-b3ff-499e-b2ab-a11311879d35";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script>
+        // Change header color on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            const navLinks = document.querySelectorAll('.nav-link');
+    
+            if (window.scrollY > 10) {
+                header.style.backgroundColor = '#fff'; // White background color
+                header.style.transition = 'background-color 0.3s';
+                navLinks.forEach(link => link.style.color = '#000'); // Black text color
+            } else {
+                header.style.backgroundColor = 'rgba(245, 245, 245, 0.2)'; // Transparent background
+                navLinks.forEach(link => link.style.color = '#fff'); // White text color
+            }
+        });
+    </script>
+</body>
+
+</html>

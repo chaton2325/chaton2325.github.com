@@ -26,6 +26,7 @@ header {
 
 
 
+
 header:hover {
     background-color: rgba(245, 245, 245, 0.8); 
 }
@@ -157,12 +158,13 @@ main {
     font-size: 80px;  
     text-shadow: 0px 0px 4px black;   
     color : white;
-    margin-top: 50px;
+    margin-top: 7px;
     width: 100%;
     padding: 65px;
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
     background-image: url('../images/foret.jpg');
+
 }
 
 #language-select {
@@ -218,7 +220,7 @@ h1, h2, h3 {
 .card {
     border: none;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
     max-width: 100%;
 }
@@ -239,6 +241,7 @@ h1, h2, h3 {
 /* Corps des cartes */
 .card-body {
     padding: 15px;
+   border-top: 2px solid green;
 }
 
 /* Titres des cartes */
@@ -246,14 +249,14 @@ h1, h2, h3 {
     font-size: 20px;
     font-weight: 600;
     color: green;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 /* Texte des cartes */
 .card-text {
     font-size: 14px;
     color: #6c757d;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 /* Boutons des cartes */
@@ -514,9 +517,9 @@ h1, h2, h3 {
     }
 
     .title h1{
-        margin-top: 84px;
+        margin-top: 1px;
         font-size: 30px;  
-        padding: 10px;
+        padding: 50px;
 
     }
 

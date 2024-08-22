@@ -24,6 +24,14 @@ header {
     transition: top 1s ease; /* Smooth transition */  
 }
 
+hr {
+    border: none;  /* Enlève la bordure par défaut */
+    height: 10px;   /* Hauteur de la barre */
+    background-color: #000;  /* Couleur de la barre */
+    margin: 20px 0;  /* Marge verticale */
+}
+
+
 
 
 header:hover {
@@ -232,7 +240,7 @@ h1, h2, h3 {
     font-size: 60px;
     font-weight: bold;
     text-shadow: 0px 0px 15px white;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: green;
     border: 1px solid black;
     border-radius: 8px;
     color: black;
@@ -253,6 +261,76 @@ h1, h2, h3 {
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
+}
+
+
+.containermots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+
+
+.top-section {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.top-sectionp{
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+.top-section img {
+    width: 340px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.top-sectionp img {
+    width: 340px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.AN{
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.vidmot video , .vidmot p{
+    display: block;
+    width: 100%;
+}
+
+.bottom-section {
+    text-align: left;
+    width: 100%;
+}
+
+.bottom-section img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.bottom-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.bottom-section p {
+    color: #555;
+    line-height: 1.6;
 }
 
 .vip-section {
@@ -573,6 +651,32 @@ h1, h2, h3 {
     .convention-navigator h2 {
         font-size: 32px;
     }
+
+    .top-section img {
+        width: 140px;
+        height: auto;
+        margin-right: 20px;
+    }
+    
+    .top-sectionp img {
+        width: 150px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    .top-section {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .top-sectionp {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+
     
 
 

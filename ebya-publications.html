@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBYA - Page d'accueil</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+    <title>EBYA-Publications</title>
+    <link rel="stylesheet" href="styles/ebya-publications.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="divselect">
+        <select id="language-select" onchange="changeLanguage()">
+            <option value="fr">🇫🇷 Français</option>
+            <option value="en">🇬🇧 English</option>
+        </select>
+    </div>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <a class="navbar-brand" href="#">
-                <img src="{{ url_for('static', filename='images/logos/ebya-removebg.png') }}" alt="Logo EBYA" class="logo" style="width: 50px;">
+                <img src="images/logos/ebya-removebg.png" alt="Logo EBYA" class="logo" style="width: 50px;">
                 EBYA
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,86 +26,172 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#accueil">Accueil</a>
+                        <a class="nav-link text-dark" href="/">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href=""> Nos associations</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Associations
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="ekang-home.html"><img src="{{ url_for('static', filename='images/logos/ekang-removebg.png') }}" alt="Logo 1" class="dropdown-logo"> Nkul Ekang Y'AMERICA1</a>
-                            <a class="dropdown-item" href="#assoc2"><img src="{{ url_for('static', filename='images/logos/elat-removebg.png') }}" alt="Logo 2" class="dropdown-logo"> Elat Beti USA</a>
-                            <a class="dropdown-item" href="#assoc3"><img src="{{ url_for('static', filename='images/logos/columbus-removebg.png') }}" alt="Logo 3" class="dropdown-logo"> Nkul Beti Columbus</a>
-                            <a class="dropdown-item" href="#assoc5"><img src="{{ url_for('static', filename='images/logos/cesca-removebg.png') }}" alt="Logo 5" class="dropdown-logo"> CESCA-USA</a>
-                            <a class="dropdown-item" href="#assoc6"><img src="{{ url_for('static', filename='images/logos/oyili-removebg.png') }}" alt="Logo 6" class="dropdown-logo"> Oyili Beti USA</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Decouvrir EBYA
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Découvrir EBYA
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                             <a class="dropdown-item" href="ebya-publications.html">Publications</a>
-                            <a class="dropdown-item" href="missions.html">Missions/Valeurs</a>
-                            <a class="dropdown-item" href="#equipe">👥 Équipe de direction</a>
+                            <a class="dropdown-item" href="#publications">Missions/Valeurs</a>
+                            <a class="dropdown-item" href="orgchart.html">Orgchart</a>
                             <a class="dropdown-item" href="#presentation">Commissions</a>
                             <a class="dropdown-item" href="#inscription">Activités</a>
                             <a class="dropdown-item" href="#commission">Membres</a>
-                            <a class="dropdown-item" href="#plan">Bénévoles et sympatisants</a>
+                            <a class="dropdown-item" href="#plan">Bénévoles et sympathisants</a>
                             <a class="dropdown-item" href="partenaires.html">Partenaires</a>
+                            <a class="dropdown-item" href="#plan">Galérie</a>
                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#accueil">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="navlink1" href="#accueil">Nous contacter ☎</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+    
 
-    <main class="container">
-        <section id="guide" class="info-section mt-5">
-            <h2>Recherche rapide</h2>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Recherche..." aria-label="Recherche" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Rechercher</button>
+    <main class="container-fluid info-section1 mt-5">
+
+        <section id="accueil" class="title text-center">
+            <h1>Publications EBYA</h1>
+        </section>
+
+        <section class="join-facebook">
+            <div class="container">
+                <h2 class="section-title">Rejoignez-nous sur Facebook</h2>
+                <p class="section-description">Suivez notre page pour rester informé des dernières nouvelles, événements, et activités. Cliquez sur le bouton ci-dessous pour nous rejoindre !</p>
+                <a href="https://www.facebook.com/profile.php?id=61558766649742" class="btn btn-facebook" target="_blank">Nous Rejoindre sur Facebook</a>
+            </div>
+        </section>
+        
+        
+        <section class="facebook-posts">
+            <div class="container">
+                <h2 class="section-title">Nos Publications Facebook</h2>
+                <div class="facebook-posts-column">
+                    <div class="facebook-post">
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61558766649742%2Fvideos%2F1503546947216907%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </div>
+                    <hr>
+                    <div class="facebook-post">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0ViDKeWc1Dn7RKDiZXxcWwdo6RcKyn6QTwMHKsVQjA6BwMbFz7v6MYEWe14CzmYQrl%26id%3D61558766649742&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <hr>
+                    <div class="facebook-post">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0w5P9Qee1Hdtm3j4BR13vmvQqgUgKeLD7YGpRfYrRNzuZXedEqYsbqiSUaNuhwibsl%26id%3D61558766649742&show_text=true&width=500" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <hr>
+                    <!-- Continuez à ajouter des publications selon vos besoins -->
                 </div>
             </div>
         </section>
-        <section id="accueil" class="title text-center">
-            <h1>Bienvenue sur le site de EBYA</h1>
-            <p>Fédération des associations Ekang Bese en Amérique.</p>
-        </section>
-
-        <section id="a-la-une" class="info-section mt-5">
-            <h2 class="h1une">Publications</h2>
-            <div class="row">
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0w2kc5r6JNittU36T12eaaTWVuvfNuHstztUnZ6XQk4TgLUQPn9ST1MF5kruXvwrcl%26id%3D61558766649742&show_text=true&width=500" width="500" height="800" style="border:none;overflow:hidden;margin:0px auto" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </div>
-        </section>
-
-
+        
+        
+        
+        
+        
+        
         
 
         <section id="donation" class="info-section mt-5">
             <div class="text-center">
                 <h2>Faites un Don</h2>
                 <p>Votre soutien aide à faire une réelle différence dans notre communauté. Merci pour votre générosité.</p>
-                <a href="#" class="btn btn-success">Faire un don</a>
+                <a href="checkout.html" class="btn btn-success">Faire un don</a>
                 <a href="#" class="btn btn-info">En savoir plus</a>
             </div>
         </section>
     </main>
 
-    <footer class="bg-light text-center py-4">
-        <p>&copy; 2024 EBYA. Tous droits réservés.</p>
-        <div class="social-links">
-            <a href="https://facebook.com" target="_blank" class="btn btn-outline-dark btn-sm">Facebook</a>
-            <a href="https://instagram.com" target="_blank" class="btn btn-outline-dark btn-sm">Instagram</a>
-            <a href="https://youtube.com" target="_blank" class="btn btn-outline-dark btn-sm">YouTube</a>
+<!-- HTML -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Section d'abonnement -->
+            <div class="col-md-3">
+                <h4>Abonnez-vous à notre lettre d'informations</h4>
+                <form>
+                    <input type="email" placeholder="Email*" class="form-control mb-2">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="policyCheck">
+                        <label class="form-check-label" for="policyCheck">
+                            J'accepte la politique de confidentialité et les conditions d'utilisation.
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-green mt-2">ABONNEZ-VOUS</button>
+                </form>
+                <div class="social-icons mt-3">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Liens rapides -->
+            <div class="col-md-3">
+                <h4>Liens rapides</h4>
+                <ul class="quick-links">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="#">À Propos de nous</a></li>
+                    <li><a href="#">Événements</a></li>
+                    <li><a href="#">S'engager</a></li>
+                    <li><a href="#">Nouvelles</a></li>
+                </ul>
+            </div>
+
+            <!-- Communauté -->
+            <div class="col-md-3">
+                <h4>Communauté EBYA</h4>
+                <p>Nous nous efforçons d'encourager la collaboration et la solidarité entre les membres de notre communauté.</p>
+                <img src="images/logos/ebya.jpg" alt="EBYA Logo" class="footer-logo">
+            </div>
+
+            <!-- S'engager -->
+            <div class="col-md-3">
+                <h4>S'engager</h4>
+                <p>Rejoignez notre communauté dès aujourd'hui et découvrez les nombreuses opportunités que nous offrons pour faire une différence significative.</p>
+                <a href="#" class="btn btn-red">CONTACTEZ-NOUS</a>
+            </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à  EBYA</p>
+        </div>
+    </div>
+</footer>
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="2e3cf2f0-b3ff-499e-b2ab-a11311879d35";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script>
+        // Change header properties on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            const navLinks = document.querySelectorAll('.nav-link');
+        
+            if (window.scrollY > 25) {
+                header.style.top = '0'; // Fix the header at the top
+                header.style.transition = 'top 1s';
+                navLinks.forEach(link => link.style.color = '#000'); // Black text color
+            } else {
+                header.style.top = 'auto'; // Reset top to auto
+                navLinks.forEach(link => link.style.color = '#fff'); // White text color
+            }
+        });
+    </script>
+    
 </body>
+
 </html>

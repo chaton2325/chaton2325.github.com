@@ -299,7 +299,7 @@ h1, h2, h3 {
     padding: 20px;
     margin: 20px 0;
     border-radius: 2px;
-    box-shadow: 0px 2px 5px black;
+    box-shadow: 0px 2px 2px black;
     opacity: 0;
     transform: translateY(160px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -314,6 +314,8 @@ h1, h2, h3 {
     text-align: center;
     font-family: Arial, sans-serif;
     margin: 20px;
+
+
 }
 
 h1 {
@@ -328,9 +330,10 @@ h1 {
     margin-bottom: 20px;
 }
 
+
 .convention-image {
     position: relative;
-    display: inline-block;
+    display: flex;
     margin-bottom: 20px;
 }
 
@@ -353,6 +356,26 @@ h1 {
     transform: rotate(45deg);
     transform-origin: top right;
 }
+
+.flyer-text {
+    background-color: #f8f9fa; /* Une couleur de fond claire pour contraster avec le texte */
+    padding: 20px; /* Espacement interne pour aérer le contenu */
+    text-align: center; /* Centrer le texte */
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre pour ajouter de la profondeur */
+}
+
+
+.flyer-h1 {
+    font-family: 'Arial', sans-serif; /* Police lisible */
+    color: #333; /* Couleur du texte */
+    font-size: 24px; /* Taille du texte pour la présentation */
+    line-height: 1.5; /* Espacement entre les lignes */
+    margin: 0; /* Supprime les marges par défaut */
+    align-items: center;
+    justify-content: center;
+}
+
 
 .info {
     margin-bottom: 20px;
@@ -792,6 +815,15 @@ h1 {
 
     .hide-on-mobile {
         display: none;
+    }
+
+    .convention-image {
+        display: inline-block;
+    }
+
+    .maps iframe {
+        width: 200px; /* Largeur pour les écrans de petite taille (mobiles) */
+        height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
     }
 
     

@@ -113,12 +113,15 @@
                 <!--p>Evenement du CEKA 2024 a Washinton DC.</p-->
             </div>
             <div class="convention-section">
+                <hr>
                 <h1>Présentation du CEKA 2024</h1>
                 <p class="date-range">Du 05/12/2024 au 08/12/2024</p>
                 <div class="convention-image">
                     <img src="images/Une/flyer.jpg" alt="Ceka 2024">
+                    <img src="images/Une/flyer.jpg" alt="Ceka 2024" class="hide-on-mobile" >
                     <span class="tag">CEKA 2024</span>
                 </div>
+                <hr>
                 <div class="info">
                     <p>Consultez la page dédiée pour plus d'informations</p>
                     <p>Vous pourriez payé différents packages selon votre budget</p>
@@ -240,6 +243,8 @@
                 <a href="#" class="btn btn-info">En savoir plus</a>
             </div>
         </section>
+
+        
     </main>
 
 <!-- HTML -->
@@ -318,6 +323,60 @@
                 header.style.backgroundColor = 'rgba(245, 245, 245, 0.2)'; // Transparent background
                 navLinks.forEach(link => link.style.color = '#fff'); // White text color
             }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.info-section');
+        
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+        
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Trigger the check on load
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.info-sectionune');
+        
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+        
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Trigger the check on load
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.product-section');
+        
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+        
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Trigger the check on load
         });
     </script>
 </body>

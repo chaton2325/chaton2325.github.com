@@ -1,12 +1,20 @@
+@keyframes backgroundSlide {
+    0% { background-image: url('../images/fond.jpg'); }
+    33% { background-image: url('../images/fond1.jpg'); }
+    66% { background-image: url('../images/fond2.jpg'); }
+    100% { background-image: url('../images/fond3.jpg'); }
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../images/fond.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: goldenrod;
+    animation: backgroundSlide 15s infinite;
 }
+
 
 hr {
     border: none;  /* Enlève la bordure par défaut */
@@ -18,7 +26,7 @@ hr {
 
 
 header {
-    background-color: rgba(245, 245, 245, 0.2); 
+    background-color: rgba(245, 245, 245, 0.9); 
     box-shadow: 0px 0px 5px black;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -213,7 +221,7 @@ main {
     text-align: center;
     margin: 20px;
     margin: 0px auto;
-    background-color: green;
+    background-color:  rgb(240, 201, 130);
 
     
 }
@@ -236,11 +244,11 @@ video {
     text-align: center;
     font-weight: bold;
     font-size: 60px;
-    background-color: rgb(240, 201, 130);
     color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     text-shadow: 0px 0px 8px black;
+    background-color: green;
     
 }
 
@@ -265,7 +273,18 @@ h1, h2, h3 {
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
+    opacity: 0;
+    transform: translateY(160px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+.info-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
 
 .info-section1 {
     background-color: green;
@@ -280,7 +299,15 @@ h1, h2, h3 {
     padding: 20px;
     margin: 20px 0;
     border-radius: 2px;
-    box-shadow: 0px 0px 9px black;
+    box-shadow: 0px 2px 5px black;
+    opacity: 0;
+    transform: translateY(160px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.info-sectionune.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .convention-section {
@@ -308,9 +335,10 @@ h1 {
 }
 
 .convention-image img {
-    width: 100%;
+    width: 40%;
     max-width: 600px;
     border-radius: 8px;
+    height: auto;
 }
 
 .convention-image .tag {
@@ -400,6 +428,7 @@ h1 {
 }
 
 
+
 .info-section1 h2{
     color: white;
     font-weight: bold;
@@ -417,6 +446,8 @@ h1 {
     font-size: 18px;
     line-height: 1.8;
 }
+
+
 
 .section-titleb{
     font-size: 50px;
@@ -471,7 +502,16 @@ h1 {
 
 .product-section {
     padding: 20px 0;
+    opacity: 0;
+    transform: translateY(160px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+.product-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .product-title {
     font-size: 3rem;
     font-weight: bold;
@@ -604,6 +644,16 @@ h1 {
 }
 
 
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
@@ -612,6 +662,12 @@ h1 {
 
 
 @media (max-width: 768px) {
+    body {
+        background-size: 450%;
+        background-repeat: no-repeat;
+
+    }
+
     .logo-container{
         align-items: center;
         justify-content: center;
@@ -678,9 +734,16 @@ h1 {
 
     .title h1{
         margin-top: 84px;
-        font-size: 30px;  
+        font-size: 50px;  
 
     }
+
+    .title p{
+        margin-top: 60px;
+        font-size: 20px;  
+
+    }
+
 
     video {
         max-width: 100%;
@@ -695,9 +758,9 @@ h1 {
     }
 
     #language-select {
-        font-size: 16px;
+        font-size: 30px;
         margin-left: 1px;
-        margin-bottom: 10px;
+        margin-bottom: 450px;
     }
 
     .welcome-image img {
@@ -721,6 +784,14 @@ h1 {
 
     .product-title {
         font-size: 2rem;
+    }
+
+    .convention-image img {
+        width: 100%;
+    }
+
+    .hide-on-mobile {
+        display: none;
     }
 
     

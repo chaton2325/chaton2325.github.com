@@ -1,21 +1,193 @@
+
+
+
+
+
+
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="fr">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PayPal JS SDK Subscription Integration</title>
-  </head>
-  <body>
-    <div id="paypal-button-container"></div>
-    <p id="result-message"></p>
-    <!-- Replace the "test" client-id value with your client-id -->
-    <script src="https://www.paypal.com/sdk/js?client-id=AQRsA0FlcEl4P2Q8eU-WHQ1WHT8rPvIWjjaoavJw2OfMXoAdDPf63ixqnqD037L8VMpMalsma2I5KZLa&components=buttons&vault=true&intent=subscription&enable-funding=paylater,card" data-sdk-integration-source="integrationbuilder_sc"></script>
-    <script src="{{ url_for('static', filename='scripts/app.js') }}"></script>
-  </body>
+    <title>Paiement-Formule</title>
+    <link rel="stylesheet" href="styles/checkout.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="divselect">
+        <select id="language-select" onchange="changeLanguage()">
+            <option value="fr">🇫🇷 Français</option>
+            <option value="en">🇬🇧 English</option>
+        </select>
+    </div>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="#">
+                <img src="images/logos/ebya-removebg.png" alt="Logo EBYA" class="logo" style="width: 50px;">
+                EBYA
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="/">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href=""> Nos associations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Découvrir EBYA
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="ebya-publications.html">Publications</a>
+                            <a class="dropdown-item" href="#publications">Missions/Valeurs</a>
+                            <a class="dropdown-item" href="orgchart.html">Orgchart</a>
+                            <a class="dropdown-item" href="#presentation">Commissions</a>
+                            <a class="dropdown-item" href="#inscription">Activités</a>
+                            <a class="dropdown-item" href="#commission">Membres</a>
+                            <a class="dropdown-item" href="#plan">Bénévoles et sympathisants</a>
+                            <a class="dropdown-item" href="partenaires.html">Partenaires</a>
+                            <a class="dropdown-item" href="#plan">Galérie</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#accueil">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="navlink1" href="#accueil">Nous contacter ☎</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main class="container-fluid info-section1 mt-5">
+
+        <section id="accueil" class="title text-center">
+            <h1>Paiement</h1>
+        </section>
+
+        <div class="packages">
+          <img src="images/packages.jpg" alt="Packages">
+        </div>
+        <hr>
+        
+        <h1>
+          Payez par carte bancaire ou par paypal
+        </h1>
+
+<script src="https://www.paypal.com/sdk/js?client-id=BAACJpoe7iBbiim2HxwUFlmCXJaSI_PNamDkt4O4QsBxvz9Zz-X-D-zfGwd8JiiZ_4_JP77rNTGpBPd7pA&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+<div id="paypal-container-2UK4Y55YPUDQJ"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "2UK4Y55YPUDQJ",
+  }).render("#paypal-container-2UK4Y55YPUDQJ")
+</script>
+
+
+
+          
+        
+        
+        
+        
+        
+
+        <section id="donation" class="info-section mt-5">
+            <div class="text-center">
+                <h2>Faites un Don</h2>
+                <p>Votre soutien aide à faire une réelle différence dans notre communauté. Merci pour votre générosité.</p>
+                <a href="checkout.html" class="btn btn-success">Faire un don</a>
+                <a href="#" class="btn btn-info">En savoir plus</a>
+            </div>
+        </section>
+    </main>
+
+<!-- HTML -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Section d'abonnement -->
+            <div class="col-md-3">
+                <h4>Abonnez-vous à notre lettre d'informations</h4>
+                <form>
+                    <input type="email" placeholder="Email*" class="form-control mb-2">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="policyCheck">
+                        <label class="form-check-label" for="policyCheck">
+                            J'accepte la politique de confidentialité et les conditions d'utilisation.
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-green mt-2">ABONNEZ-VOUS</button>
+                </form>
+                <div class="social-icons mt-3">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Liens rapides -->
+            <div class="col-md-3">
+                <h4>Liens rapides</h4>
+                <ul class="quick-links">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="#">À Propos de nous</a></li>
+                    <li><a href="#">Événements</a></li>
+                    <li><a href="#">S'engager</a></li>
+                    <li><a href="#">Nouvelles</a></li>
+                </ul>
+            </div>
+
+            <!-- Communauté -->
+            <div class="col-md-3">
+                <h4>Communauté EBYA</h4>
+                <p>Nous nous efforçons d'encourager la collaboration et la solidarité entre les membres de notre communauté.</p>
+                <img src="images/logos/ebya.jpg" alt="EBYA Logo" class="footer-logo">
+            </div>
+
+            <!-- S'engager -->
+            <div class="col-md-3">
+                <h4>S'engager</h4>
+                <p>Rejoignez notre communauté dès aujourd'hui et découvrez les nombreuses opportunités que nous offrons pour faire une différence significative.</p>
+                <a href="#" class="btn btn-red">CONTACTEZ-NOUS</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à  EBYA</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="2e3cf2f0-b3ff-499e-b2ab-a11311879d35";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script>
+        // Change header properties on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            const navLinks = document.querySelectorAll('.nav-link');
+        
+            if (window.scrollY > 25) {
+                header.style.top = '0'; // Fix the header at the top
+                header.style.transition = 'top 1s';
+                navLinks.forEach(link => link.style.color = '#000'); // Black text color
+            } else {
+                header.style.top = 'auto'; // Reset top to auto
+                navLinks.forEach(link => link.style.color = '#fff'); // White text color
+            }
+        });
+    </script>
+    
+</body>
+
 </html>
-
-
-
-
-
-

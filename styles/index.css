@@ -148,6 +148,8 @@ nav ul li a{
     text-decoration: underline ;
 }
 
+
+
 #navlink1{
     color : white;
     padding: 10px;
@@ -155,7 +157,7 @@ nav ul li a{
     -webkit-transition: box-shadow 0.5s , color 0.5s , background-color 0.5s;
     font-weight: bold;
     text-decoration: underline ;
-    background-color: green;
+    background-color: rgb(240, 201, 130);
 }
 
 
@@ -221,7 +223,7 @@ main {
     text-align: center;
     margin: 20px;
     margin: 0px auto;
-    background-color:  rgb(240, 201, 130);
+
 
     
 }
@@ -248,7 +250,7 @@ video {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     text-shadow: 0px 0px 8px black;
-    background-color: green;
+    background-color: rgb(240, 201, 130);
     
 }
 
@@ -421,8 +423,9 @@ h1 {
 
 .section-titlet {
     font-size: 24px;
-    color: white;
+    color: black;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 
@@ -479,6 +482,7 @@ h1 {
     margin-bottom: 20px;
 
 }
+
 
 .welcome-image img {
     border-radius: 8px; /* Coins arrondis pour l'image */

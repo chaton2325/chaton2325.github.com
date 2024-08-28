@@ -127,7 +127,7 @@ nav ul li a{
     -webkit-transition: box-shadow 0.5s , color 0.5s , background-color 0.5s;
     font-weight: bold;
     text-decoration: underline ;
-    background-color: green;
+    background-color: rgb(240, 201, 130);
 }
 
 
@@ -275,7 +275,7 @@ h1, h2, h3 {
 }
 
 .join-facebook {
-    background-color: green; /* Couleur typique de Facebook */
+    background-color: wheat; /* Couleur typique de Facebook */
     color: #fff;
     padding: 60px 20px;
     text-align: center;
@@ -297,7 +297,7 @@ h1, h2, h3 {
 .section-description {
     font-size: 1.2em;
     margin-bottom: 30px;
-    color: #dfe3ee;
+    color: black;
     font-weight: bold;
 }
 

@@ -38,6 +38,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" href=""> Nos associations</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="ceka2024.html"> CEKA 2024</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Découvrir EBYA
@@ -69,7 +72,7 @@
     <main class="container-fluid info-section1 mt-5">
 
         <section id="accueil" class="title text-center">
-            <h1>Paiement</h1>
+            <h1>PAIEMENT</h1>
         </section>
 
         <div class="packages">
@@ -78,16 +81,22 @@
         <hr>
         
         <h1>
-          Payez par carte bancaire ou par paypal
+          Ci dessous les moyens de paiements
         </h1>
 
-<script src="https://www.paypal.com/sdk/js?client-id=BAACJpoe7iBbiim2HxwUFlmCXJaSI_PNamDkt4O4QsBxvz9Zz-X-D-zfGwd8JiiZ_4_JP77rNTGpBPd7pA&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
-<div id="paypal-container-2UK4Y55YPUDQJ"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "2UK4Y55YPUDQJ",
-  }).render("#paypal-container-2UK4Y55YPUDQJ")
-</script>
+
+      
+      <div class="payement">
+        <script async
+        src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+        <stripe-buy-button
+        buy-button-id="buy_btn_1Psn0PHhnwqW7OAy7NrzeRYt"
+        publishable-key="pk_live_51PsVRdHhnwqW7OAyXhdrYCf8RbvazMjP2NPWKknuf8LAcbBGvaXXe2l36mRdVZqVcDwvjZ2KcUpE4Ec2Ky05EIsJ00rJH3vsJH"
+      >
+      </stripe-buy-button>
+      </div>
+
 
 
 

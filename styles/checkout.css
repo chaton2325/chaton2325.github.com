@@ -40,6 +40,41 @@ hr {
     box-shadow: 0px 0px 8px goldenrod;
     text-align: center;
 }
+.contact-sectionw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.whatsapp-button {
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.whatsapp-button:hover {
+    background-color: #20b858;
+}
+
 
 
 
@@ -48,26 +83,59 @@ hr {
 
 
 .packages {
-    border: 2px solid #4CAF50; /* Bordure verte pour un effet plus moderne */
-    border-radius: 10px; /* Coins arrondis pour un look plus doux */
-    padding: 20px; /* Ajout de padding pour un peu d'espace intérieur */
+    display: flex; /* Utilisation de flexbox pour aligner l'image et le texte */
+    align-items: center; /* Alignement vertical des éléments */
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
     margin-bottom: 20px;
-    width: 100%; /* Légèrement plus large pour plus d'espace visuel */
-    margin: 20px auto; /* Centrage horizontal avec un espace autour */
-    background-color: #f9f9f9; /* Couleur de fond légère pour contraster avec la bordure */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
-    text-align: center; /* Centrer le contenu textuel */
-    background-color: rgb(240, 208, 148);
+    width: 80%; /* Limite la largeur de la div */
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .packages img {
-    width: 50%; /* Ajustement de la largeur pour mieux s'adapter à la div */
+    width: 55%; /* Ajuste la largeur de l'image */
     height: auto;
     display: block;
-    margin: 0px auto; /* Centrage de l'image */
-    border-radius: 8px; /* Coins légèrement arrondis pour l'image */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'image */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.package-details {
+    flex: 1; /* Le texte prend le reste de l'espace disponible */
+    text-align: left; /* Alignement du texte à gauche */
+}
+
+.package-details h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.package-details p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
+
 
 
 
@@ -518,25 +586,22 @@ h1, h2, h3 {
     }
     
     .packages {
-        border: 2px solid #4CAF50; /* Bordure verte pour un effet plus moderne */
-        border-radius: 10px; /* Coins arrondis pour un look plus doux */
-        padding: 20px; /* Ajout de padding pour un peu d'espace intérieur */
-        margin-bottom: 20px;
-        width: 100%; /* Légèrement plus large pour plus d'espace visuel */
-        margin: 20px auto; /* Centrage horizontal avec un espace autour */
-        background-color: #f9f9f9; /* Couleur de fond légère pour contraster avec la bordure */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
-        text-align: center; /* Centrer le contenu textuel */
-        background-color: rgb(240, 208, 148);
+        flex-direction: column-reverse; /* L'image et le texte sont empilés */
+        text-align: center; /* Centre le texte pour un meilleur aspect visuel */
+        width: 100%;
     }
-    
+
     .packages img {
-        width: 100%; /* Ajustement de la largeur pour mieux s'adapter à la div */
-        height: auto;
-        display: block;
-        margin: 0px auto; /* Centrage de l'image */
-        border-radius: 8px; /* Coins légèrement arrondis pour l'image */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'image */
+        width: 100%; /* Image plus grande pour remplir l'espace sur mobile */
+        margin: 0 auto 20px; /* Centre l'image et ajoute un espace en bas */
+    }
+
+    .package-details {
+        text-align: center; /* Centre le texte pour un meilleur aspect visuel */
+    }
+
+    .download-button {
+        margin-top: 10px; /* Espace au-dessus du bouton pour une meilleure séparation */
     }
 
     

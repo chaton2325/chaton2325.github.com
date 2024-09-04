@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
-    <link rel="stylesheet" href="styles/contacts.css">
+    <title>Donation</title>
+    <link rel="stylesheet" href="styles/donation.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -54,7 +54,7 @@
                         <a class="nav-link text-dark" href="donation.html">Donate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" id="navlink1" href="#accueil">Nous contacter ☎</a>
+                        <a class="nav-link text-dark" id="navlink1" href="contacts.html">Nous contacter ☎</a>
                     </li>
                 </ul>
             </div>
@@ -64,53 +64,31 @@
 
     <main class="container-fluid info-section1 mt-5">
 
-        <section id="accueil" class="title text-center">
-            <h1>CONTACTS</h1>
-        </section>
-        
-        <section class="contact-section">
-            <div class="container">
-              <h2>Nous Contacter</h2>
-              <p>Pour toute question ou information, n'hésitez pas à nous contacter via les moyens suivants :</p>
-          
-              <div class="contact-info">
-                <div class="contact-item">
-                  <h3>Téléphone</h3>
-                  <p>+1 646 966 8746</p>
-                  <p>+1 (614) 323-4161</p>
-                </div>
-          
-                <div class="contact-item">
-                  <h3>Email</h3>
-                  <p><a href="mailto:contact@votresite.com">Ebya2024@gmail.com</a></p>
-                </div>
-          
-                <div class="contact-item">
-                  <h3>Facebook</h3>
-                  <p><a href="https://www.facebook.com/profile.php?id=61558766649742" target="_blank">Suivez-nous sur Facebook</a></p>
-                </div>
-              </div>
-          
-              <div class="chatbot-info">
-                <p>Vous pouvez écrire dans le <strong>chatbot</strong> en bas à droite pour une réponse rapide.</p>
-              </div>
-            </div>
-          </section>
-          
-        
-        
-        
         
         
 
-        <section id="donation" class="info-section mt-5">
-            <div class="text-center">
-                <h2>Faites un Don</h2>
-                <p>Votre soutien aide à faire une réelle différence dans notre communauté. Merci pour votre générosité.</p>
-                <a href="checkout.html" class="btn btn-success">Faire un don</a>
-                <a href="#" class="btn btn-info">En savoir plus</a>
-            </div>
+        <section id="accueil" class="title text-center">
+            <h1>FAIRE UN DON</h1>
         </section>
+
+
+        <p class="donation-purpose">
+            Votre donation contribue directement à soutenir nos initiatives visant à améliorer la qualité de vie des communautés défavorisées. Grâce à votre générosité, nous pouvons financer des projets éducatifs, offrir des soins de santé essentiels, et créer des opportunités pour un avenir meilleur.
+        </p>
+
+        <div class="donation-section">
+            <script async
+            src="https://js.stripe.com/v3/buy-button.js">
+          </script>
+          
+          <stripe-buy-button
+            buy-button-id="buy_btn_1PvNAZHhnwqW7OAyEpaFmeXJ"
+            publishable-key="pk_live_51PsVRdHhnwqW7OAyXhdrYCf8RbvazMjP2NPWKknuf8LAcbBGvaXXe2l36mRdVZqVcDwvjZ2KcUpE4Ec2Ky05EIsJ00rJH3vsJH"
+          >
+          </stripe-buy-button>
+        </div>
+        
+        
     </main>
 
 <!-- HTML -->

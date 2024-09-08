@@ -24,6 +24,13 @@ header {
     transition: top 1s ease; /* Smooth transition */  
 }
 
+hr {
+    border: none;  /* Enlève la bordure par défaut */
+    height: 10px;   /* Hauteur de la barre */
+    background-color: #000;  /* Couleur de la barre */
+    margin: 20px 0;  /* Marge verticale */
+}
+
 
 
 header:hover {
@@ -214,11 +221,16 @@ h1, h2, h3 {
 }
 
 .note-container {
-    background-color: #2E7D32; /* Green color */
     color: white;
     padding: 20px;
     width: 30%;
     text-align: center;
+    background-image: url("../images/logos/ebya-removebg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 45px; /* Décalage de 20px depuis le haut */
+    background-color: rgb(233, 180, 46);
+
 }
 
 .note-header h2 {
@@ -249,7 +261,7 @@ h1, h2, h3 {
 .presentation-content h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #2E7D32; /* Green color for the title */
+    color: green; /* Green color for the title */
 }
 
 .presentation-content p {
@@ -261,11 +273,11 @@ h1, h2, h3 {
 .contact-info {
     font-size: 16px;
     margin-top: 20px;
-    color: #2E7D32; /* Green color for email */
+    color: green; /* Green color for email */
 }
 
 .contact-info a {
-    color: #388E3C; /* Slightly different green for contrast */
+    color: green; /* Slightly different green for contrast */
     text-decoration: none;
     font-weight: bold;
 }
@@ -278,7 +290,7 @@ h1, h2, h3 {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #2E7D32; /* Green color */
+    background-color: green; /* Green color */
     color: white;
     text-align: center;
     border-radius: 5px;
@@ -288,15 +300,52 @@ h1, h2, h3 {
 }
 
 .contact-button:hover {
-    background-color: #388E3C; /* Slightly lighter green on hover */
+    background-color: green; /* Slightly lighter green on hover */
 }
 
 
 
 
 
+.container2 {
+    padding: 50px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  .container2 p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  strong {
+    color: green;
+  }
+  
+  #association-counter-container {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
 
-
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #association-counter {
+    font-size: 2.5rem;
+  }
   
 
 .info-section {

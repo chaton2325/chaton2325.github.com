@@ -98,7 +98,21 @@
                 
                 <a href="contacts.html" class="contact-button">Nous Contacter</a>
             </div>
+
+
         </div>
+
+        <hr>
+
+        <section id="presentation2">
+            <div class="container2">
+              <p>La Fédération EBYA a été officiellement créée le <strong>4 décembre 2023</strong> lors du 1er congrès des Ekang qui s'est tenu à Houston, au Texas. Ce moment marquant a réuni des membres des associations Ekang du monde entier, avec pour objectif de promouvoir l'unité et la coopération entre les différentes communautés Ekang.</p>
+              <p>EBYA, aujourd'hui, compte 9 associations-membres actives. Ces associations collaborent pour la réalisation de projets communs, visant le développement durable et le renforcement des liens entre leurs membres.</p>
+              <p>Pour devenir membre de la Fédération, l'affiliation se fait à travers l'adhésion à une association reconnue et inscrite. Ensemble, les associations forment le socle de notre organisation, unissant les Ekang dans un esprit de solidarité et de progrès.</p><br>
+              <p><span id="association-counter-container"><span id="association-counter">0</span></span> <strong>associations</strong></p>
+            </div>
+            
+          </section>
 
 
         <section id="donation" class="info-section mt-5">
@@ -109,6 +123,8 @@
                 <!--a href="#" class="btn btn-info">En savoir plus</a-->
             </div>
         </section>
+
+        
         
         
         
@@ -171,7 +187,33 @@
 
 
 
+    <script>
+        document.addEventListener('scroll', function() {
+            const counterElement = document.getElementById('association-counter');
+            const sectionPosition = document.querySelector('.container2').offsetTop;
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const v = document.getElementById("association-counter").textContent;
 
+            if (parseInt(v, 10) === 9) {
+                return; // Si la valeur est déjà 9, on bloque le compteur
+            }
+            
+          
+            if (scrollPosition >= sectionPosition) {
+              let counter = 0;
+              const target = 9;
+              const interval = setInterval(() => {
+                counterElement.textContent = counter;
+                counter++;
+                if (counter > target) {
+                  clearInterval(interval);
+                }
+              }, 100);
+            }
+          });
+          
+          
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

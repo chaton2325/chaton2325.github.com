@@ -83,8 +83,7 @@
             <div class="containermotsm">
                 
                 <div class="top-sectionm">
-                    <img src="images/Mekinda.jpg" alt="Image de présentation">
-
+                    <img src="images/Mekinda.jpg" alt="President EBYA">
                     <div class="vidmotm">
                         <video controls>
                             <source src="videos/speech mekinda.mp4" type="video/mp4">
@@ -98,7 +97,6 @@
             <hr>
 
             <div class="containermots">
-                
                 <div class="top-section">
                     <img src="images/Alfred Nomo.jpg" alt="Image de présentation">
 
@@ -116,7 +114,7 @@
 
 
             <div class="top-sectionp">
-                <img src="images/ebya.jpg" alt="President Ebya">
+                <img src="images/ebya.jpg" alt="Logo Ebya">
                 <p>
                     <strong>Bienvenue à CEKA 2024 !,</strong><br><br>
 
@@ -306,6 +304,135 @@
                 navLinks.forEach(link => link.style.color = '#fff'); // White text color
             }
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.containermotsm');
+        
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+        
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Trigger the check on load
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.containermots');
+        
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+        
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Trigger the check on load
+        });
+        
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.top-sectionp');
+        
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+        
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Trigger the check on load
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.convention-navigator');
+        
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+        
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Trigger the check on load
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.convention-navigator h2');
+        
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+        
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Trigger the check on load
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.vip-section');
+        
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+        
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Trigger the check on load
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.vip-options');
+        
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+        
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Trigger the check on load
+        });
+
+
     </script>
     
 </body>

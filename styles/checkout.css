@@ -106,7 +106,7 @@ hr {
 
 .package-details {
     flex: 1; /* Le texte prend le reste de l'espace disponible */
-    text-align: left; /* Alignement du texte à gauche */
+    text-align: center; /* Alignement du texte à gauche */
 }
 
 .package-details h2 {

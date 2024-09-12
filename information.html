@@ -233,6 +233,60 @@
                 navLinks.forEach(link => link.style.color = '#fff'); // White text color
             }
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.presentation-content');
+        
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+        
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Trigger the check on load
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.container2');
+        
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+        
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Trigger the check on load
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('#association-counter-container');
+        
+            function checkVisibility() {
+                elements.forEach(element => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
+            }
+        
+            window.addEventListener('scroll', checkVisibility);
+            checkVisibility(); // Trigger the check on load
+        });
     </script>
     
 </body>

@@ -31,9 +31,6 @@ hr {
     margin: 20px 0;  /* Marge verticale */
 }
 
-
-
-
 header:hover {
     background-color: rgba(245, 245, 245, 0.8); 
 }
@@ -247,6 +244,8 @@ h1, h2, h3 {
     color: white;
 }
 
+
+
 /*.banner p {
     font-size: 18px;
     background-color: rgba(255, 255, 255, 0.3);
@@ -274,6 +273,13 @@ h1, h2, h3 {
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     margin-top: 60px;
+    transform: translateY(160px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.containermots.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .containermotsm {
@@ -286,6 +292,13 @@ h1, h2, h3 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     margin-top: 60px;
     max-height: 490px;
+    transform: translateY(160px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.containermotsm.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -307,7 +320,17 @@ h1, h2, h3 {
     display: flex;
     width: 100%;
     margin-bottom: 40px;
+    transform: translateY(160px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+.top-sectionp.visible{
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+
 
 
 .top-sectionm img {
@@ -375,6 +398,14 @@ h1, h2, h3 {
     margin-top: 50px;
     background-color: green;
     border-radius: 5px;
+    transform: translateY(160px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.vip-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+
 }
 
 .vip-section h2 {
@@ -388,7 +419,16 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    transform: translateY(230px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+.vip-options.visible {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
 
 .option {
     text-align: center;
@@ -438,6 +478,12 @@ h1, h2, h3 {
     box-shadow: 0px 0px 8px black;
     border-radius: 2px;
     background-color: wheat;
+    transform: translateY(160px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.convention-navigator.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .convention-navigator h2 {
@@ -449,6 +495,14 @@ h1, h2, h3 {
     background-color: green;
     border-radius: 10px;
     text-shadow: 0px 0px 8px white;
+    transform: translateY(185px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.convention-navigator h2.visible {
+    opacity: 1;
+    transform: translateY(0);
+
 }
 
 .event-grid {

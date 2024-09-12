@@ -256,6 +256,13 @@ h1, h2, h3 {
 .presentation-content {
     padding: 20px;
     width: 70%;
+    transform: translateY(160px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.presentation-content.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .presentation-content h2 {
@@ -315,7 +322,14 @@ h1, h2, h3 {
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     margin-top: 30px;
+    transform: translateY(160px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   }
+
+.container2.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
   
   .container2 p {
     font-size: 1rem;
@@ -339,8 +353,14 @@ h1, h2, h3 {
     align-items: center;
     font-size: 2rem;
     font-weight: bold;
-
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(190px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  #association-counter-container.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
   
   #association-counter {

@@ -18,12 +18,16 @@
             <link rel="shortcut icon" href="images/logos/ebya-removebg.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Selecteur de langue -->
     <div class="divselect">
         <select id="language-select" onchange="changeLanguage()">
             <option value="fr">🇫🇷 Français</option>
             <option value="en">🇬🇧 English</option>
+            <option value="es">🇪🇸 Español</option>
         </select>
     </div>
+    
+    <!-- Header -->
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <a class="navbar-brand" href="#">
@@ -36,89 +40,82 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="/">Accueil</a>
+                        <a class="nav-link text-dark" href="/" id="nav-home">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="associations.html"> Nos associations</a>
+                        <a class="nav-link text-dark" href="associations.html" id="nav-associations">Nos associations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="ceka2024.html"> CEKA 2024</a>
+                        <a class="nav-link text-dark" href="ceka2024.html" id="nav-events">CEKA 2024</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Découvrir EBYA
+                            <span id="nav-discover">Découvrir EBYA</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <a class="dropdown-item" href="ebya-publications.html">Publications</a>
-                            <a class="dropdown-item" href="missions.html">Missions/Valeurs</a>
-                            <a class="dropdown-item" href="orgchart.html">Orgchart</a>
-                            <a class="dropdown-item" href="#presentation">Commissions</a>
-                            <a class="dropdown-item" href="#inscription">Activités</a>
-                            <a class="dropdown-item" href="#commission">Membres</a>
-                            <a class="dropdown-item" href="partenaires.html">Partenaires</a>
-                            <a class="dropdown-item" href="#plan">Galérie</a>
-                            <a class="dropdown-item" href="information.html">A propos de nous</a>
+                            <a class="dropdown-item" href="ebya-publications.html" id="nav-publications">Publications</a>
+                            <a class="dropdown-item" href="missions.html" id="nav-missions">Missions/Valeurs</a>
+                            <a class="dropdown-item" href="orgchart.html" id="nav-orgchart">Orgchart</a>
+                            <a class="dropdown-item" href="#presentation" id="nav-commissions">Commissions</a>
+                            <a class="dropdown-item" href="#inscription" id="nav-activities">Activités</a>
+                            <a class="dropdown-item" href="#commission" id="nav-members">Membres</a>
+                            <a class="dropdown-item" href="partenaires.html" id="nav-partners">Partenaires</a>
+                            <a class="dropdown-item" href="#plan" id="nav-gallery">Galerie</a>
+                            <a class="dropdown-item" href="information.html" id="nav-about">A propos de nous</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="donation.html">Donate</a>
+                        <a class="nav-link text-dark" href="donation.html" id="nav-donate">Donate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" id="navlink1" href="#accueil">Nous contacter ☎</a>
+                        <a class="nav-link text-dark" id="navlink1" href="contacts.html">Nous contacter ☎</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     
-
+    <!-- Main content -->
     <main class="container-fluid info-section1 mt-5">
-
         <section id="accueil" class="title text-center">
-            <h1>CONTACTS</h1>
+            <h1 id="contact-title">CONTACTS</h1>
         </section>
         
         <section class="contact-section">
             <div class="container">
-              <h2>Nous Contacter</h2>
-              <p>Pour toute question ou information, n'hésitez pas à nous contacter via les moyens suivants :</p>
+              <h2 id="contact-us-title">Nous Contacter</h2>
+              <p id="contact-info">Pour toute question ou information, n'hésitez pas à nous contacter via les moyens suivants :</p>
           
               <div class="contact-info">
                 <div class="contact-item">
-                  <h3>Téléphone</h3>
+                  <h3 id="phone-title">Téléphone</h3>
                   <p>+1 646 966 8746</p>
                   <p>+1 (614) 323-4161</p>
                 </div>
           
                 <div class="contact-item">
-                  <h3>Email</h3>
+                  <h3 id="email-title">Email</h3>
                   <p><a href="mailto:contact@votresite.com">Ebya2024@gmail.com</a></p>
                 </div>
           
                 <div class="contact-item">
-                  <h3>Facebook</h3>
-                  <p><a href="https://www.facebook.com/profile.php?id=61558766649742" target="_blank">Suivez-nous sur Facebook</a></p>
+                  <h3 id="facebook-title">Facebook</h3>
+                  <p><a href="https://www.facebook.com/profile.php?id=61558766649742" target="_blank" id="facebook-link">Suivez-nous sur Facebook</a></p>
                 </div>
               </div>
           
               <div class="chatbot-info">
-                <p>Vous pouvez écrire dans le <strong>chatbot</strong> en bas à droite pour une réponse rapide.</p>
+                <p id="chatbot-text">Vous pouvez écrire dans le <strong>chatbot</strong> en bas à droite pour une réponse rapide.</p>
               </div>
             </div>
-          </section>
-          
-        
-        
-        
-        
-        
+        </section>
 
         <section id="donation" class="info-section mt-5">
             <div class="text-center">
-                <h2>Faites un Don</h2>
-                <p>Votre soutien aide à faire une réelle différence dans notre communauté. Merci pour votre générosité.</p>
-                <a href="checkout.html" class="btn btn-success">Faire un don</a>
-                <a href="#" class="btn btn-info">En savoir plus</a>
+                <h2 id="donation-title">Faites un Don</h2>
+                <p id="donation-info">Votre soutien aide à faire une réelle différence dans notre communauté. Merci pour votre générosité.</p>
+                <a href="checkout.html" class="btn btn-success" id="donate-btn">Faire un don</a>
+                <a href="#" class="btn btn-info" id="learn-more-btn">En savoir plus</a>
             </div>
         </section>
     </main>
@@ -129,12 +126,12 @@
         <div class="row">
             <!-- Section d'abonnement -->
             <div class="col-md-3">
-                <h4>Abonnez-vous à notre lettre d'informations</h4>
+                <h4 id="f1">Abonnez-vous à notre lettre d'informations</h4>
                 <form>
                     <input type="email" placeholder="Email*" class="form-control mb-2">
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="policyCheck">
-                        <label class="form-check-label" for="policyCheck">
+                        <label class="form-check-label" for="policyCheck" id="f2">
                             J'accepte la politique de confidentialité et les conditions d'utilisation.
                         </label>
                     </div>
@@ -149,7 +146,7 @@
 
             <!-- Liens rapides -->
             <div class="col-md-3">
-                <h4>Liens rapides</h4>
+                <h4 id="f3">Liens rapides</h4>
                 <ul class="quick-links">
                     <li><a href="/">Accueil</a></li>
                     <li><a href="information.html">À Propos de nous</a></li>
@@ -172,13 +169,11 @@
                 <a href="#" class="btn btn-red">CONTACTEZ-NOUS</a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à  EBYA</p>
+        <div class="footer-bottom ">
+            <p id="footer-text">Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à  EBYA</p>
         </div>
     </div>
 </footer>
-
-
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -201,7 +196,167 @@
             }
         });
     </script>
+
+
+    <!-- Script de traduction -->
+    <script>
+        const translations = {
+            fr: {
+                navHome: "Accueil",
+                navAssociations: "Nos associations",
+                navEvents: "CEKA 2024",
+                navDiscover: "Découvrir EBYA",
+                navPublications: "Publications",
+                navMissions: "Missions/Valeurs",
+                navOrgchart: "Orgchart",
+                navCommissions: "Commissions",
+                navActivities: "Activités",
+                navMembers: "Membres",
+                navPartners: "Partenaires",
+                navGallery: "Galerie",
+                navAbout: "A propos de nous",
+                navDonate: "Faire un don",
+                navlink1: "Nous contacter ☎",
+                contactTitle: "CONTACTS",
+                contactUsTitle: "Nous Contacter",
+                contactInfo: "Pour toute question ou information, n'hésitez pas à nous contacter via les moyens suivants :",
+                phoneTitle: "Téléphone",
+                emailTitle: "Email",
+                facebookTitle: "Facebook",
+                facebookLink: "Suivez-nous sur Facebook",
+                chatbotText: "Vous pouvez écrire dans le <strong>chatbot</strong> en bas à droite pour une réponse rapide.",
+                donationTitle: "Faites un Don",
+                donationInfo: "Votre soutien aide à faire une réelle différence dans notre communauté. Merci pour votre générosité.",
+                donateBtn: "Faire un don",
+                learnMoreBtn: "En savoir plus",
+                footerText: "Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à  EBYA",
+                f1: "Abonnez-vous à notre lettre d'informations",
+                f2: "J'accepte la politique de confidentialité et les conditions d'utilisation.",
+                f3: "Liens rapides",
+                footerText: "Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à EBYA"
+
+            },
+            en: {
+                navHome: "Home",
+                navAssociations: "Our associations",
+                navEvents: "CEKA 2024",
+                navDiscover: "Discover EBYA",
+                navPublications: "Publications",
+                navMissions: "Missions/Values",
+                navOrgchart: "Orgchart",
+                navCommissions: "Commissions",
+                navActivities: "Activities",
+                navMembers: "Members",
+                navPartners: "Partners",
+                navGallery: "Gallery",
+                navAbout: "About us",
+                navDonate: "Donate",
+                navlink1: "Contact us ☎",
+                contactTitle: "CONTACTS",
+                contactUsTitle: "Contact Us",
+                contactInfo: "For any questions or information, feel free to contact us via the following means:",
+                phoneTitle: "Phone",
+                emailTitle: "Email",
+                facebookTitle: "Facebook",
+                facebookLink: "Follow us on Facebook",
+                chatbotText: "You can write in the <strong>chatbot</strong> at the bottom right for a quick response.",
+                donationTitle: "Make a Donation",
+                donationInfo: "Your support helps make a real difference in our community. Thank you for your generosity.",
+                donateBtn: "Donate",
+                learnMoreBtn: "Learn more",
+                footerText: "Privacy Policy and Terms of Use. - Copyright © 2024. All rights reserved to EBYA",
+                f1: "Subscribe to our newsletter",
+                f2: "I accept the privacy policy and terms of use.",
+                f3: "Quick links",
+                footerText: "Privacy Policy and Terms of Use. - Copyright © 2024. All rights reserved to EBYA"
+            },
+            es: {
+                navHome: "Inicio",
+                navAssociations: "Nuestras asociaciones",
+                navEvents: "CEKA 2024",
+                navDiscover: "Descubre EBYA",
+                navPublications: "Publicaciones",
+                navMissions: "Misiones/Valores",
+                navOrgchart: "Organigrama",
+                navCommissions: "Comisiones",
+                navActivities: "Actividades",
+                navMembers: "Miembros",
+                navPartners: "Socios",
+                navGallery: "Galería",
+                navAbout: "Sobre nosotros",
+                navDonate: "Donar",
+                navlink1: "Contáctanos ☎",
+                contactTitle: "CONTACTOS",
+                contactUsTitle: "Contáctanos",
+                contactInfo: "Para cualquier pregunta o información, no dude en contactarnos a través de los siguientes medios:",
+                phoneTitle: "Teléfono",
+                emailTitle: "Correo electrónico",
+                facebookTitle: "Facebook",
+                facebookLink: "Síguenos en Facebook",
+                chatbotText: "Puede escribir en el <strong>chatbot</strong> en la parte inferior derecha para obtener una respuesta rápida.",
+                donationTitle: "Hacer una Donación",
+                donationInfo: "Su apoyo ayuda a marcar una verdadera diferencia en nuestra comunidad. Gracias por su generosidad.",
+                donateBtn: "Donar",
+                learnMoreBtn: "Aprender más",
+                footerText: "Política de privacidad y condiciones de uso. - Copyright © 2024. Todos los derechos reservados a EBYA" , 
+                f1: "Suscríbete a nuestro boletín",
+                f2 : "Acepto la política de privacidad y condiciones de uso." ,
+                f3: "Enlaces rápidos" ,
+                footerText: "Política de privacidad y condiciones de uso. - Copyright © 2024. Todos los derechos reservados a EBYA"
+            }
+        };
+
+        function changeLanguage() {
+            const selectedLanguage = document.getElementById("language-select").value;
+            localStorage.setItem('selectedLanguage', selectedLanguage); // Enregistrer la langue
+            const elementsToTranslate = {
+                navHome: "nav-home",
+                navAssociations: "nav-associations",
+                navEvents: "nav-events",
+                navDiscover: "nav-discover",
+                navPublications: "nav-publications",
+                navMissions: "nav-missions",
+                navOrgchart: "nav-orgchart",
+                navCommissions: "nav-commissions",
+                navActivities: "nav-activities",
+                navMembers: "nav-members",
+                navPartners: "nav-partners",
+                navGallery: "nav-gallery",
+                navAbout: "nav-about",
+                navDonate: "nav-donate",
+                navlink1: "navlink1",
+                contactTitle: "contact-title",
+                contactUsTitle: "contact-us-title",
+                contactInfo: "contact-info",
+                phoneTitle: "phone-title",
+                emailTitle: "email-title",
+                facebookTitle: "facebook-title",
+                facebookLink: "facebook-link",
+                chatbotText: "chatbot-text",
+                donationTitle: "donation-title",
+                donationInfo: "donation-info",
+                donateBtn: "donate-btn",
+                learnMoreBtn: "learn-more-btn",
+                footerText: "footer-text" , 
+                f1: "f1",
+                f2: "f2",
+                f3:"f3",
+                footerText: "footer-text"
+            };
+            for (const [key, elementId] of Object.entries(elementsToTranslate)) {
+                document.getElementById(elementId).innerHTML = translations[selectedLanguage][key];
+            }
+        }
+
+        window.onload = function() {
+            const savedLanguage = localStorage.getItem('selectedLanguage') || 'fr'; // Langue par défaut
+            document.getElementById('language-select').value = savedLanguage;
+            changeLanguage(); // Appliquer la langue enregistrée
+        };
+        
+    </script>
     
 </body>
+
 
 </html>

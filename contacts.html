@@ -57,8 +57,6 @@
                             <a class="dropdown-item" href="missions.html" id="nav-missions">Missions/Valeurs</a>
                             <a class="dropdown-item" href="orgchart.html" id="nav-orgchart">Orgchart</a>
                             <a class="dropdown-item" href="#presentation" id="nav-commissions">Commissions</a>
-                            <a class="dropdown-item" href="#inscription" id="nav-activities">Activités</a>
-                            <a class="dropdown-item" href="#commission" id="nav-members">Membres</a>
                             <a class="dropdown-item" href="partenaires.html" id="nav-partners">Partenaires</a>
                             <a class="dropdown-item" href="#plan" id="nav-gallery">Galerie</a>
                             <a class="dropdown-item" href="information.html" id="nav-about">A propos de nous</a>
@@ -148,31 +146,34 @@
             <div class="col-md-3">
                 <h4 id="f3">Liens rapides</h4>
                 <ul class="quick-links">
-                    <li><a href="/">Accueil</a></li>
-                    <li><a href="information.html">À Propos de nous</a></li>
-                    <li><a href="ceka2024.html">Événements</a></li>
-                    <li><a href="donation.html">Faire un don</a></li>
+                    <li><a id="accueilLink" href="/">Accueil</a></li>
+                    <li><a id="aboutLink" href="information.html">À Propos de nous</a></li>
+                    <li><a id="eventsLink" href="ceka2024.html">Événements</a></li>
+                    <li><a id="donationLink" href="donation.html">Faire un don</a></li>
                 </ul>
             </div>
 
             <!-- Communauté -->
             <div class="col-md-3">
-                <h4>Communauté EBYA</h4>
-                <p>Nous nous efforçons d'encourager la collaboration et la solidarité entre les membres de notre communauté.</p>
+                <h4 id="communaute">Communauté EBYA</h4>
+                <p id="communauteText">Nous nous efforçons d'encourager la collaboration et la solidarité entre les membres de notre communauté.</p>
                 <img src="images/logos/ebya.jpg" alt="EBYA Logo" class="footer-logo">
             </div>
 
             <!-- S'engager -->
             <div class="col-md-3">
-                <h4>S'engager</h4>
-                <p>Rejoignez notre communauté dès aujourd'hui et découvrez les nombreuses opportunités que nous offrons pour faire une différence significative.</p>
-                <a href="#" class="btn btn-red">CONTACTEZ-NOUS</a>
+                <h4 id="sEngager">S'engager</h4>
+                <p id="sEngagerText">Rejoignez notre communauté dès aujourd'hui et découvrez les nombreuses opportunités que nous offrons pour faire une différence significative.</p>
+                <a id="contactLink" href="contacts.html" class="btn btn-red">CONTACTEZ-NOUS</a>
             </div>
         </div>
         <div class="footer-bottom ">
             <p id="footer-text">Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à  EBYA</p>
         </div>
     </div>
+        
+
+            
 </footer>
 
 
@@ -210,8 +211,6 @@
                 navMissions: "Missions/Valeurs",
                 navOrgchart: "Orgchart",
                 navCommissions: "Commissions",
-                navActivities: "Activités",
-                navMembers: "Membres",
                 navPartners: "Partenaires",
                 navGallery: "Galerie",
                 navAbout: "A propos de nous",
@@ -229,12 +228,20 @@
                 donationInfo: "Votre soutien aide à faire une réelle différence dans notre communauté. Merci pour votre générosité.",
                 donateBtn: "Faire un don",
                 learnMoreBtn: "En savoir plus",
-                footerText: "Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à  EBYA",
+                footerText: "Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à EBYA",
                 f1: "Abonnez-vous à notre lettre d'informations",
                 f2: "J'accepte la politique de confidentialité et les conditions d'utilisation.",
                 f3: "Liens rapides",
-                footerText: "Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à EBYA"
-
+                footerText: "Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à EBYA",
+                accueilLink:"Accueil",
+                aboutLink:"À Propos de nous",
+                eventsLink:"Événements",
+                donationLink:"Faire un don",
+                communaute:"Communauté EBYA",
+                communauteText:"Nous nous efforçons d'encourager la collaboration et la solidarité entre les membres de notre communauté." ,
+                sEngager:"S'engager",
+                sEngagerText:"Rejoignez notre communauté dès aujourd'hui et découvrez les nombreuses opportunités que nous offrons pour faire une différence significative.",
+                contactLink: "CONTACTEZ-NOUS"
             },
             en: {
                 navHome: "Home",
@@ -245,8 +252,6 @@
                 navMissions: "Missions/Values",
                 navOrgchart: "Orgchart",
                 navCommissions: "Commissions",
-                navActivities: "Activities",
-                navMembers: "Members",
                 navPartners: "Partners",
                 navGallery: "Gallery",
                 navAbout: "About us",
@@ -268,7 +273,16 @@
                 f1: "Subscribe to our newsletter",
                 f2: "I accept the privacy policy and terms of use.",
                 f3: "Quick links",
-                footerText: "Privacy Policy and Terms of Use. - Copyright © 2024. All rights reserved to EBYA"
+                footerText: "Privacy Policy and Terms of Use. - Copyright © 2024. All rights reserved to EBYA",
+                accueilLink:"Home",
+                aboutLink:"About Us",
+                eventsLink:"Events",
+                donationLink:"Make a donation",
+                communaute:"EBYA community" , 
+                communauteText :"We strive to encourage collaboration and solidarity among members of our community.",
+                sEngager:"Get involved" ,
+                sEngagerText:"Join our community today and discover the many opportunities we offer to make a meaningful difference.",
+                contactLink: "CONTACT US"
             },
             es: {
                 navHome: "Inicio",
@@ -279,8 +293,6 @@
                 navMissions: "Misiones/Valores",
                 navOrgchart: "Organigrama",
                 navCommissions: "Comisiones",
-                navActivities: "Actividades",
-                navMembers: "Miembros",
                 navPartners: "Socios",
                 navGallery: "Galería",
                 navAbout: "Sobre nosotros",
@@ -302,10 +314,19 @@
                 f1: "Suscríbete a nuestro boletín",
                 f2 : "Acepto la política de privacidad y condiciones de uso." ,
                 f3: "Enlaces rápidos" ,
-                footerText: "Política de privacidad y condiciones de uso. - Copyright © 2024. Todos los derechos reservados a EBYA"
+                footerText: "Política de privacidad y condiciones de uso. - Copyright © 2024. Todos los derechos reservados a EBYA",
+                accueilLink:"Inicio",
+                aboutLink:"Sobre nosotros",
+                eventsLink:"Eventos",
+                donationLink:"Haz una donación",
+                communaute:"Comunidad EBYA",
+                communauteText:"Nos esforzamos por fomentar la colaboración y la solidaridad entre los miembros de nuestra comunidad.",
+                sEngager:"Complicarse" , 
+                sEngagerText:"Únase a nuestra comunidad hoy y descubra las muchas oportunidades que ofrecemos para marcar una diferencia significativa.",
+                contactLink:"CONTÁCTENOS"
             }
         };
-
+    
         function changeLanguage() {
             const selectedLanguage = document.getElementById("language-select").value;
             localStorage.setItem('selectedLanguage', selectedLanguage); // Enregistrer la langue
@@ -318,8 +339,6 @@
                 navMissions: "nav-missions",
                 navOrgchart: "nav-orgchart",
                 navCommissions: "nav-commissions",
-                navActivities: "nav-activities",
-                navMembers: "nav-members",
                 navPartners: "nav-partners",
                 navGallery: "nav-gallery",
                 navAbout: "nav-about",
@@ -340,8 +359,17 @@
                 footerText: "footer-text" , 
                 f1: "f1",
                 f2: "f2",
-                f3:"f3",
-                footerText: "footer-text"
+                f3: "f3",
+                footerText: "footer-text",
+                accueilLink:"accueilLink",
+                aboutLink:"aboutLink",
+                eventsLink:"eventsLink",
+                donationLink:"donationLink",
+                communaute:"communaute",
+                communauteText:"communauteText",
+                sEngager:"sEngager" , 
+                sEngagerText:"sEngagerText" ,
+                contactLink : "contactLink"
             };
             for (const [key, elementId] of Object.entries(elementsToTranslate)) {
                 document.getElementById(elementId).innerHTML = translations[selectedLanguage][key];

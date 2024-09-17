@@ -68,31 +68,31 @@
     <main class="container-fluid info-section1 mt-5">
 
         <section id="accueil" class="title text-center">
-            <h1>MISSIONS / VALEURS</h1>
+            <h1 id="t1">MISSIONS / VALEURS</h1>
         </section>
         
         <section id="actualites" class="info-section1 mt-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="section-title">Missions</h2>
-                        <p class="section-content">
+                        <h2 class="section-title" id="t2">Missions</h2>
+                        <p class="section-content" id="t3">
                             Fédérer le peuple Ekang d'Amérique du Nord afin de bâtir une chaîne de solidarité pour le plein épanouissement social et économique de chaque Ekang y vivant.
                         </p>
-                        <p class="section-content">
+                        <p class="section-content" id="t4">
                             Promouvoir la culture Ekang en Amérique du Nord afin de nous permettre de rester connectés à nos sources, mais aussi de faire découvrir notre diversité culturelle aux communautés y résidant.
                         </p>
-                        <p class="section-content">
+                        <p class="section-content" id="t5">
                             Positionner la communauté Ekang comme une communauté de référence à travers des actions et réalisations à fort impact social.
                         </p>
                     </div>
                     <div class="col-md-12 mt-4">
-                        <h2 class="section-title">Les Valeurs</h2>
+                        <h2 class="section-title" id="ti">Les Valeurs</h2>
                         <ul class="section-list">
-                            <li>L'unité</li>
-                            <li>La solidarité</li>
-                            <li>L'exemplarité</li>
-                            <li>La tolérance</li>
+                            <li id="t6">L'unité</li>
+                            <li id="t7">La solidarité</li>
+                            <li id="t8">L'exemplarité</li>
+                            <li id="t9">La tolérance</li>
                         </ul>
                     </div>
                 </div>
@@ -112,6 +112,7 @@
                 <a href="#" class="btn btn-info" id="learn-more-btn">En savoir plus</a>
             </div>
         </section>
+
     </main>
 
 <!-- HTML -->
@@ -207,7 +208,18 @@
             communauteText:"Nous nous efforçons d'encourager la collaboration et la solidarité entre les membres de notre communauté." ,
             sEngager:"S'engager",
             sEngagerText:"Rejoignez notre communauté dès aujourd'hui et découvrez les nombreuses opportunités que nous offrons pour faire une différence significative.",
-            contactLink: "CONTACTEZ-NOUS"
+            contactLink: "CONTACTEZ-NOUS" , 
+            t1 :"MISSIONS / VALEURS" ,
+            t2 :"Missions" ,
+            t3 :"Fédérer le peuple Ekang d'Amérique du Nord afin de bâtir une chaîne de solidarité pour le plein épanouissement social et économique de chaque Ekang y vivant." ,
+            t4 :"Promouvoir la culture Ekang en Amérique du Nord afin de nous permettre de rester connectés à nos sources, mais aussi de faire découvrir notre diversité culturelle aux communautés y résidant." ,
+            t5 :"Positionner la communauté Ekang comme une communauté de référence à travers des actions et réalisations à fort impact social." ,
+            ti :"Les Valeurs" ,
+            t6 :"L'unité" ,
+            t7 :"La solidarité" ,
+            t8 :"L'exemplarité" ,
+            t9 : "La tolérance"
+            
         },
         en: {
             navHome: "Home",
@@ -240,7 +252,17 @@
             communauteText :"We strive to encourage collaboration and solidarity among members of our community.",
             sEngager:"Get involved" ,
             sEngagerText:"Join our community today and discover the many opportunities we offer to make a meaningful difference.",
-            contactLink: "CONTACT US"
+            contactLink: "CONTACT US"  , 
+            t1 :"MISSIONS / VALUES" ,
+            t2 :"Missions" ,
+            t3 :"Unite the Ekang people of North America in order to build a chain of solidarity for the full social and economic development of each Ekang living there." ,
+            t4 :"Promote Ekang culture in North America to allow us to stay connected to our sources, but also to introduce our cultural diversity to the communities residing there." ,
+            t5 :"Position the Ekang community as a community of reference through actions and achievements with strong social impact." ,
+            ti :"Les Valeurs" ,
+            t6 :"The unity" ,
+            t7 :"Solidarity" ,
+            t8 :"Exemplarity" ,
+            t9 : "Tolerance"
         },
         es: {
             navHome: "Inicio",
@@ -273,7 +295,17 @@
             communauteText:"Nos esforzamos por fomentar la colaboración y la solidaridad entre los miembros de nuestra comunidad.",
             sEngager:"Complicarse" , 
             sEngagerText:"Únase a nuestra comunidad hoy y descubra las muchas oportunidades que ofrecemos para marcar una diferencia significativa.",
-            contactLink:"CONTÁCTENOS"
+            contactLink:"CONTÁCTENOS" , 
+            t1: "MISIONES / VALORES",
+            t2: "Misiones",
+            t3: "Unir al pueblo Ekang de América del Norte para construir una cadena de solidaridad para el pleno desarrollo social y económico de cada Ekang que vive allí." ,
+            t4: "Promover la cultura Ekang en América del Norte para permitirnos permanecer conectados con nuestras fuentes, pero también para presentar nuestra diversidad cultural a las comunidades que residen allí." ,
+            t5: "Posicionar a la comunidad Ekang como comunidad de referencia a través de acciones y logros con fuerte impacto social." ,
+            ti: "Valores",
+            t6: "La unidad",
+            t7: "Solidaridad",
+            t8: "Ejemplaridad",
+            t9: "Tolerancia"
         }
     };
 
@@ -311,7 +343,17 @@
             communauteText:"communauteText",
             sEngager:"sEngager" , 
             sEngagerText:"sEngagerText" ,
-            contactLink : "contactLink"
+            contactLink : "contactLink" , 
+            t1 :"t1" ,
+            t2 :"t2" ,
+            t3 :"t3" ,
+            t4 :"t4" ,
+            t5 :"t5" ,
+            ti : "ti" , 
+            t6 :"t6" ,
+            t7 :"t7" ,
+            t8 :"t8" ,
+            t9 :"t9" ,
         };
         for (const [key, elementId] of Object.entries(elementsToTranslate)) {
             document.getElementById(elementId).innerHTML = translations[selectedLanguage][key];

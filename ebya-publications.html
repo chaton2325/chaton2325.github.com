@@ -68,21 +68,21 @@
     <main class="container-fluid info-section1 mt-5">
 
         <section id="accueil" class="title text-center">
-            <h1>PUBLICATIONS EBYA</h1>
+            <h1 id="t1">PUBLICATIONS EBYA</h1>
         </section>
 
         <section class="join-facebook">
             <div class="container">
-                <h2 class="section-title">Rejoignez-nous sur Facebook</h2>
-                <p class="section-description">Suivez notre page pour rester informé des dernières nouvelles, événements, et activités. Cliquez sur le bouton ci-dessous pour nous rejoindre !</p>
-                <a href="https://www.facebook.com/profile.php?id=61558766649742" class="btn btn-facebook" target="_blank">Nous Rejoindre sur Facebook</a>
+                <h2 class="section-title" id="t2">Rejoignez-nous sur Facebook</h2>
+                <p class="section-description" id="t3">Suivez notre page pour rester informé des dernières nouvelles, événements, et activités. Cliquez sur le bouton ci-dessous pour nous rejoindre !</p>
+                <a href="https://www.facebook.com/profile.php?id=61558766649742" class="btn btn-facebook" target="_blank" id="t4">Nous Rejoindre sur Facebook</a>
             </div>
         </section>
         
         
         <section class="facebook-posts">
             <div class="container">
-                <h2 class="section-title">Nos Publications Facebook</h2>
+                <h2 class="section-title" id="t5">Nos Publications Facebook</h2>
                 <div class="facebook-posts-column">
                     <div class="facebook-post">
                         <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61558766649742%2Fvideos%2F1503546947216907%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
@@ -100,14 +100,7 @@
                 </div>
             </div>
         </section>
-        
-        
-        
-        
-        
-        
-        
-
+    
         <section id="donation" class="info-section mt-5">
             <div class="text-center">
                 <h2 id="donation-title">Faites un Don</h2>
@@ -211,7 +204,13 @@
             communauteText:"Nous nous efforçons d'encourager la collaboration et la solidarité entre les membres de notre communauté." ,
             sEngager:"S'engager",
             sEngagerText:"Rejoignez notre communauté dès aujourd'hui et découvrez les nombreuses opportunités que nous offrons pour faire une différence significative.",
-            contactLink: "CONTACTEZ-NOUS"
+            contactLink: "CONTACTEZ-NOUS" , 
+            t1 : "PUBLICATIONS EBYA" , 
+            t2 : "Rejoignez-nous sur Facebook" ,
+            t3 : "Suivez notre page pour rester informé des dernières nouvelles, événements, et activités. Cliquez sur le bouton ci-dessous pour nous rejoindre !" ,
+            t4 : "Nous Rejoindre sur Facebook" ,
+            t5 : "Nos Publications Facebook" ,
+
         },
         en: {
             navHome: "Home",
@@ -244,7 +243,12 @@
             communauteText :"We strive to encourage collaboration and solidarity among members of our community.",
             sEngager:"Get involved" ,
             sEngagerText:"Join our community today and discover the many opportunities we offer to make a meaningful difference.",
-            contactLink: "CONTACT US"
+            contactLink: "CONTACT US" , 
+            t1 : "EBYA PUBLICATIONS" , 
+            t2 : "Join us on Facebook" ,
+            t3 : "Follow our page to stay informed about the latest news, events, and activities. Click the button below to join us!" ,
+            t4 : "Join us on Facebook" ,
+            t5 : "Our Facebook Posts" ,
         },
         es: {
             navHome: "Inicio",
@@ -277,7 +281,12 @@
             communauteText:"Nos esforzamos por fomentar la colaboración y la solidaridad entre los miembros de nuestra comunidad.",
             sEngager:"Complicarse" , 
             sEngagerText:"Únase a nuestra comunidad hoy y descubra las muchas oportunidades que ofrecemos para marcar una diferencia significativa.",
-            contactLink:"CONTÁCTENOS"
+            contactLink:"CONTÁCTENOS" , 
+            t1 : "PUBLICACIONES EBYA" , 
+            t2 : "Únase a nosotros en Facebook" ,
+            t3 : "Sigue nuestra página para mantenerte informado sobre las últimas noticias, eventos y actividades. ¡Haga clic en el botón a continuación para unirse a nosotros!" ,
+            t4 : "Únase a nosotros en Facebook" ,
+            t5 : "Nuestras publicaciones en Facebook" ,
         }
     };
 
@@ -315,7 +324,12 @@
             communauteText:"communauteText",
             sEngager:"sEngager" , 
             sEngagerText:"sEngagerText" ,
-            contactLink : "contactLink"
+            contactLink : "contactLink" , 
+            t1 : "t1" , 
+            t2 : "t2" ,
+            t3 : "t3" ,
+            t4 : "t4" ,
+            t5 : "t5" ,
         };
         for (const [key, elementId] of Object.entries(elementsToTranslate)) {
             document.getElementById(elementId).innerHTML = translations[selectedLanguage][key];

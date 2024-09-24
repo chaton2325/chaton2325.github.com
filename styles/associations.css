@@ -24,6 +24,13 @@ header {
     transition: top 1s ease; /* Smooth transition */  
 }
 
+hr {
+    border: none;  /* Enlève la bordure par défaut */
+    height: 5px;   /* Hauteur de la barre */
+    background-color: #000;  /* Couleur de la barre */
+    margin: 20px 0;  /* Marge verticale */
+}
+
 
 
 
@@ -194,6 +201,14 @@ main {
 h1, h2, h3 {
     color:#6a2e1b ; 
     text-align: center;
+}
+
+.h1t{
+    color:#6a2e1b ; 
+    text-align: left;
+    font-size: 70px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .info-section {
@@ -543,6 +558,12 @@ h1, h2, h3 {
 
     .col-md-4 {
         margin-bottom: 20px;
+    }
+
+    .h1t{
+        font-size: 40px;
+        text-align: center;
+
     }
 
     

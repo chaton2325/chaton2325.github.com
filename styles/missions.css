@@ -468,18 +468,15 @@ h1, h2, h3 {
         
     }
 
-    .title{
-        margin-bottom: 10px;
-    }
 
     .responsive-card {
         width: 18rem;
     }
 
     .title h1{
-        margin-top: 84px;
+        margin-top: 1px;
         font-size: 30px;  
-        padding: 10px;
+        padding: 50px;
 
     }
 

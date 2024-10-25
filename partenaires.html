@@ -108,13 +108,13 @@
                         <div class="partner-card">
                             <img src="images/logos/cosnet-removebg.png" alt="ADL Printing Logo" class="partner-logo">
                             <h3 class="partner-name">Cosnet</h3>
-                            <p class="partner-description" id="t6">
+                            <p class="partner-description" id="cos1">
                                Aide communautaire<br>
                             </p>
                             <p class="partner-details">
-                                <strong id="t7">Téléphone :</strong> +1 (302)-724-4266 <br>
-                                <strong id="t8">Email :</strong> <a href="mailto:info@mycosnet.org">info@mycosnet.org</a><br>
-                                <strong id="t9">Site web :</strong> <a href="https://mycosnet.org/" target="_blank">https://mycosnet.org/</a><br>    
+                                <strong id="cos2">Téléphone :</strong> +1 (302)-724-4266 <br>
+                                <strong id="cos3">Email :</strong> <a href="mailto:info@mycosnet.org">info@mycosnet.org</a><br>
+                                <strong id="cos4">Site web :</strong> <a href="https://mycosnet.org/" target="_blank">https://mycosnet.org/</a><br>    
                             </p>
                             <div class="container-fluid">
                                 <img src="images/cosnet-flyer.jpg" alt="flyer-cosnet" class="img-fluid">
@@ -263,6 +263,10 @@
             t7 : "Téléphone" , 
             t8 : "Email" , 
             t9 : "Site web :" , 
+            cos1: "Aide communautaire" ,
+            cos2: "Téléphone :" ,
+            cos3: "Email :" ,
+            cos4: "Site web :" ,
 
         },
         en: {
@@ -306,7 +310,12 @@
             t6: "Ready to wear and accessories", 
             t7: "Telephone", 
             t8: "Email", 
-            t9: "Website:"
+            t9: "Website:" ,
+            cos1: "Community Support" ,
+            cos2: "Phone:" ,
+            cos3: "Email:" ,
+            cos4: "Website:" ,
+
         },
         es: {
             navHome: "Inicio",
@@ -350,6 +359,11 @@
             t7: "Teléfono", 
             t8: "correo electrónico", 
             t9: "Sitio web:",
+            cos1: "Apoyo Comunitario" ,
+            cos2: "Teléfono:" ,
+            cos3: "Correo electrónico:" ,
+            cos4: "Sitio web:" ,
+
         }
     };
 
@@ -398,6 +412,11 @@
             t7: "t7", 
             t8: "t8", 
             t9: "t9",
+            cos1: "cos1" ,
+            cos2: "cos2" ,
+            cos3: "cos3" ,
+            cos4: "cos4" ,
+
         };
         for (const [key, elementId] of Object.entries(elementsToTranslate)) {
             document.getElementById(elementId).innerHTML = translations[selectedLanguage][key];

@@ -247,6 +247,21 @@ h1, h2, h3 {
     text-decoration: underline;
 }
 
+.playappdiv {
+    display: flex; /* Met en ligne les enfants directs */
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Aligne les éléments verticalement */
+    gap: 10px; /* Espacement entre les éléments */
+}
+
+.playappdiv a img {
+    width: 130px; /* Contrôle la taille des images */
+    height: auto; /* Préserve les proportions */
+}
+
+
+
+
 
 
 

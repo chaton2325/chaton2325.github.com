@@ -247,8 +247,106 @@ main {
     
 }
 
+
+/* Texte clignotant */
+.blink-text h2 {
+    font-size: 3rem;
+    color: #ff4500;
+    font-weight: bold;
+    animation: blink-animation 1.5s infinite;
+}
+/* Style spécifique pour le texte "Épuisé" */
+.texte-epuise {
+    font-size: 2.3rem; /* Augmenter la taille du texte */
+    
+}
+
+
+/* Animation de clignotement */
+@keyframes blink-animation {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Section des billets */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour le billet Standard */
+.billet-standard {
+    background-color: #f0f8ff;
+}
+
+.billet-standard .card-header {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style pour le billet VIP */
+.billet-vip {
+    background: white;
+    color: black;
+}
+
+.billet-vip .btn {
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+/* Liste personnalisée */
+.card ul li {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.card ul li:before {
+    content: '⭐';
+    margin-right: 10px;
+    color: gold;
+}
+
+/* Boutons */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Garantir que toutes les cartes aient la même taille */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px; /* Ajustez cette valeur si nécessaire */
+    max-height: 400px;
+}
+
+/* Style spécifique pour le bouton WhatsApp */
+.btn-success {
+    background-color: #25d366;
+    border-color: #25d366;
+}
+
+.btn-success:hover {
+    background-color: #1da851;
+    border-color: #1da851;
+}
+
+
 video {
-    width: 1000px;
+    width: 80%;
     height: auto;
     border: 2px solid #ccc;
     margin: 0px auto;
@@ -336,6 +434,7 @@ h1, h2, h3 {
     text-align: center;
     font-family: Arial, sans-serif;
     margin: 20px;
+    width: 100%;
 }
 
 h1 {
@@ -355,6 +454,7 @@ h1 {
     position: relative;
     display: flex;
     margin-bottom: 20px;
+
 }
 
 .convention-image img {
@@ -386,6 +486,9 @@ h1 {
 }
 
 
+
+
+
 .flyer-h1 {
     font-family: 'Arial', sans-serif; /* Police lisible */
     color: #333; /* Couleur du texte */
@@ -395,6 +498,12 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
+.maps iframe {
+    max-width: 100%; /* Largeur pour les écrans de petite taille (mobiles) */
+    height: 350px; /* Ajuste automatiquement la hauteur en fonction de la largeur */
+}
+
 
 
 .info {

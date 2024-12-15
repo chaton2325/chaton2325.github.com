@@ -88,6 +88,71 @@
                 </div>
             </div-->
             <div class="container mt-5">
+                <h2 class="text-center" id="t12024">Album CEKA 2024</h2>
+                <a href="album-ceka2024.html" style="background-color : green; color: white; font-weight:bold;padding:10px ; font-size:20px;border-radius:8px">Consulté l'album entier</a>
+                <div id="albumCarousel" class="carousel slide" data-ride="carousel" class="carousel slide"  data-interval="1500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Ceka2024gallery/1 (23).jpg" alt="Image 1" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Ceka2024gallery/1 (38).jpg" alt="Image 2" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Ceka2024gallery/1 (18).jpg" alt="Image 3" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Ceka2024gallery/1 (40).jpg" alt="Image 4" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Ceka2024gallery/1 (27).jpg" alt="Image 5" class="d-block w-100">
+                        </div>
+                        <!--div class="carousel-item">
+                            <img src="images/6.jpg" alt="Image 6" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/7.jpg" alt="Image 7" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/8.jpg" alt="Image 8" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/9.jpg" alt="Image 9" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/10.jpg" alt="Image 10" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/11.jpg" alt="Image 11" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/12.jpg" alt="Image 12" class="d-block w-100">
+                        </div-->
+
+                        <!-- Ajoutez d'autres éléments de carrousel si nécessaire -->
+                    </div>
+                    <a class="carousel-control-prev" href="#albumCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Précédent</span>
+                    </a>
+                    <a class="carousel-control-next" href="#albumCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Suivant</span>
+                    </a>
+                </div>
+            </div>
+
+            
+        </section>
+        <section class="galerie">
+            <!--div class="galerie-container">
+                <img src="images/packages.jpg" alt="Description de l'image" class="galerie-image">
+                <div class="galerie-text">
+                    <h2>package ceka 2023</h2>
+                    <p>Voici une description de votre image. Utilisez cette section pour ajouter des détails intéressants ou des informations personnalisées.</p>
+                </div>
+            </div-->
+            <div class="container mt-5">
                 <h2 class="text-center" id="t1">Album CEKA 2023</h2>
                 <a href="album-ceka2023.html" style="background-color : green; color: white; font-weight:bold;paddind:10px ; font-size:20px;border-radius:8px">Consulté l'album entier</a>
                 <div id="albumCarousel" class="carousel slide" data-ride="carousel" class="carousel slide"  data-interval="1500">
@@ -141,6 +206,8 @@
                     </a>
                 </div>
             </div>
+
+            
         </section>
         
 
@@ -270,7 +337,8 @@
                 f1: "Abonnez-vous à notre lettre d'informations",
                 f2: "J'accepte la politique de confidentialité et les conditions d'utilisation.",
                 f3: "Liens rapides", 
-                t1 : "Album CEKA 2023"
+                t1 : "Album CEKA 2023",
+                t12024 : "Album CEKA 2024"
             },
             en: {
                 navHome: "Home",
@@ -304,7 +372,8 @@
                 f1: "Subscribe to our newsletter",
                 f2: "I accept the privacy policy and terms of use.",
                 f3: "Quick links",
-                t1 : "Album of CEKA 2023"
+                t1 : "Album of CEKA 2023",
+                t12024 : "Album of CEKA 2024"
             },
             es: {
                 navHome: "Inicio",
@@ -338,7 +407,8 @@
                 f1: "Suscríbete a nuestro boletín",
                 f2 : "Acepto la política de privacidad y condiciones de uso." ,
                 f3: "Enlaces rápidos" ,
-                t1 : "Álbum CEKA 2023"
+                t1 : "Álbum CEKA 2023" , 
+                t12024 :  "Álbum CEKA 20234"
             }
         };
     
@@ -377,7 +447,8 @@
                 f1: "f1",
                 f2: "f2",
                 f3: "f3",
-                t1 :"t1"
+                t1 :"t1" , 
+                t12024 : "t12024"
             };
             for (const [key, elementId] of Object.entries(elementsToTranslate)) {
                 document.getElementById(elementId).innerHTML = translations[selectedLanguage][key];

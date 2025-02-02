@@ -1,965 +1,188 @@
-@keyframes backgroundSlide {
-    0% { background-image: url('../images/fond.jpg'); }
-    33% { background-image: url('../images/fond1.jpg'); }
-    66% { background-image: url('../images/fond2.jpg'); }
-    100% { background-image: url('../images/fond3.jpg'); }
-}
-
+/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: goldenrod;
-    animation: backgroundSlide 15s infinite;
+    background-color: #F5F5F5;
+    color: #4A342E;
+}
+/* Navbar */
+.navbar {
+    background-color: #FFFFFF; /* Couleur de fond blanche */
+    padding: 10px 20px; /* Ajuste l'espace autour de la navbar */
 }
 
-
-hr {
-    border: none;  /* Enlève la bordure par défaut */
-    height: 5px;   /* Hauteur de la barre */
-    background-color: #000;  /* Couleur de la barre */
-    margin: 20px 0;  /* Marge verticale */
-}
-
-
-
-header {
-    background-color: rgba(245, 245, 245, 0.9); 
-    box-shadow: 0px 0px 5px black;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    color: white;
+/* Logo Navbar */
+.navbar-brand {
     display: flex;
-    align-items: center;
-    padding: 1px 2px;
-    justify-content: center;
-    -webkit-transition: background-color 2s;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    transition: background-color 0.3s ease; /* Smooth transition */
-
+    align-items: center; /* Aligne le logo et le texte verticalement */
+    margin-right: 10px;
 }
 
-
-
-header:hover {
-    background-color: rgba(245, 245, 245, 0.8); 
+.navbar-brand img {
+    width: 50px;  /* Augmente la taille du logo */
+    height: 50px; /* Assure la proportion du logo */
+    margin-right: 10px; /* Espace entre le logo et le texte */
 }
 
-
-.header-scrolled {
-    background-color: white; /* Couleur du header après le scroll */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Style des liens après le scroll */
-.navbar-scrolled .nav-link {
-    color: black !important; /* Couleur des textes après le scroll */
-}
-
-/* Style de la marque/logo après le scroll */
-.navbar-scrolled .navbar-brand {
-    color: black !important;
-}
-
-
-.site-name{
-    font-size: 15px;
-    color: green;
+/* Texte de la navbar */
+.navbar-brand span {
+    font-size: 1.5rem; /* Ajuste la taille du texte du logo */
     font-weight: bold;
-    text-align: center;
 }
 
 
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;   
+
+/* Liens de la Navbar */
+.navbar-nav .nav-link {
+    color: #000 !important; /* Texte noir */
+    font-weight: 500; /* Légèrement plus gras pour mieux se voir */
+    text-transform: uppercase; /* Majuscules */
+    margin-right: 20px;
+    position: relative;
+    padding-bottom: 5px; /* Un peu d'espace sous les liens */
 }
 
-.custom-color {
-    background-color: white; /* Couleur de fond */
-}
-
-.dropdown-content a {
-    padding: 6px 8px;
+/* Animation hover */
+.navbar-nav .nav-link:hover {
+    color: #2c3e50 !important; /* Couleur sombre au survol */
     text-decoration: none;
-    display: block;
-    font-size: 15px;
 }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-logo {
-    width: 35px;  /* Ajustez la taille selon vos besoins */
-    height: 35px; /* Ajustez la taille selon vos besoins */
-    margin-right: 10px; /* Espace entre l'image et le texte */
-}
-
-
-
-.une-div{
+/* Animation de soulignement */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    height:auto;
-    border: 1px solid black;
+    height: 2px;
+    background-color: #2c3e50;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
 }
 
-.une-div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* pour que l'image couvre toute la div sans déformation */
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 800px;
+    background: url('../images/fond1.jpg') no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
     top: 0;
     left: 0;
-
-}
-
-.btn0 {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: black;
-    background-color: green;
-    font-weight: bold;
-    border-radius: 50px;
-    text-decoration: none;
-    box-shadow: 0 5px 3px black;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-
-
-.btn0:hover {
-    background-color: goldenrod;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
-
-    
-}
-
-nav ul li a{
-    color : white;
-    padding: 10px;
-    border-radius: 5px;
-    -webkit-transition: box-shadow 0.5s , color 0.5s , background-color 0.5s;
-    font-weight: bold;
-    text-decoration: underline ;
-}
-
-
-
-#navlink1{
-    color : white;
-    padding: 10px;
-    border-radius: 5px;
-    -webkit-transition: box-shadow 0.5s , color 0.5s , background-color 0.5s;
-    font-weight: bold;
-    text-decoration: underline ;
-    background-color: rgb(240, 201, 130);
-}
-
-
-nav ul li{
-    margin: 10px
-}
-
-
-
-
-#navlink1:hover{
-    background-color: yellow;
-    color : black;
-    box-shadow: 0px 0px 15px white;
-    font-weight: bold;
-}
-
-nav ul li a:hover{
-    color : black;
-    font-weight: bold;
-    text-shadow: 0px 0px 3px goldenrod
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    padding: 0px;
-}
-
-.title h1{
-    text-align: center;
-    font-weight: bold;
-    font-size: 80px;  
-    text-shadow: 0px 0px 4px black;   
-    color : white;
-    margin-top: 100px;
-}
-
-.title p{
-    text-align: center;  
-    font-weight: bold;
-    font-size: 20px;
-    text-shadow: 0px 0px 4px black; 
-    color: white;
-    
-}
-
-#language-select {
-    padding: 5px;
-    font-size: 25px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    background-color: #f8f8f8;
-    margin-left: 500px;
-    margin-bottom: 300px;
-}
-
-.video-section {
-    text-align: center;
-    margin: 20px;
-    margin: 0px auto;
-
-
-    
-}
-
-
-/* Texte clignotant */
-.blink-text h2 {
-    font-size: 3rem;
-    color: #ff4500;
-    font-weight: bold;
-    animation: blink-animation 1.5s infinite;
-}
-/* Style spécifique pour le texte "Épuisé" */
-.texte-epuise {
-    font-size: 2.3rem; /* Augmenter la taille du texte */
-    
-}
-
-
-/* Animation de clignotement */
-@keyframes blink-animation {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
-}
-
-/* Section des billets */
-.card {
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Style pour le billet Standard */
-.billet-standard {
-    background-color: #f0f8ff;
-}
-
-.billet-standard .card-header {
-    background-color: #007bff;
-    color: #fff;
-}
-
-/* Style pour le billet VIP */
-.billet-vip {
-    background: white;
-    color: black;
-}
-
-.billet-vip .btn {
-    border-radius: 25px;
-    font-size: 18px;
-}
-
-/* Liste personnalisée */
-.card ul li {
-    font-size: 16px;
-    padding: 5px 0;
-}
-
-.card ul li:before {
-    content: '⭐';
-    margin-right: 10px;
-    color: gold;
-}
-
-/* Boutons */
-.btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-/* Garantir que toutes les cartes aient la même taille */
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 350px; /* Ajustez cette valeur si nécessaire */
-    max-height: 400px;
-}
-
-/* Style spécifique pour le bouton WhatsApp */
-.btn-success {
-    background-color: #25d366;
-    border-color: #25d366;
-}
-
-.btn-success:hover {
-    background-color: #1da851;
-    border-color: #1da851;
-}
-
-
-video {
-    width: 80%;
-    height: auto;
-    border: 2px solid #ccc;
-    margin: 0px auto;
-}
-
-
-
-
-.divselect{
-    margin:0px auto;;
-}
-
-.h1une{
-    text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-    color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    text-shadow: 0px 0px 8px black;
-    background-color: rgb(240, 201, 130);
-    
-}
-
-.titleune{
-    text-align: left;
-}
-
-
-.title{
-    margin-bottom: 30px;
-}
-
-
-
-h1, h2, h3 {
-    color:#6a2e1b ; 
-    text-align: center;
-}
-
-.info-section {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    opacity: 0;
-    transform: translateY(160px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.info-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-
-
-.info-section1 {
-    background-color: green;
-    padding: 20px;
-    border-radius: 8px;
-    
-}
-
-
-
-.info-sectionune {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 2px;
-    box-shadow: 0px 2px 2px black;
-    opacity: 0;
-    transform: translateY(160px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.info-sectionune.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.convention-section {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    margin: 20px;
     width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fond noir transparent */
 }
 
-h1 {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.date-range {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-
-.convention-image {
-    position: relative;
-    display: flex;
-    margin-bottom: 20px;
-
-}
-
-.convention-image img {
-    width: 40%;
-    max-width: 600px;
-    border-radius: 8px;
-    height: auto;
-}
-
-.convention-image .tag {
+.hero-text {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    padding: 5px 10px;
-    font-size: 0.9em;
-    font-weight: bold;
-    transform: rotate(45deg);
-    transform-origin: top right;
-}
-
-.flyer-text {
-    background-color: #f8f9fa; /* Une couleur de fond claire pour contraster avec le texte */
-    padding: 20px; /* Espacement interne pour aérer le contenu */
-    text-align: center; /* Centrer le texte */
-    border-radius: 10px; /* Bords arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre pour ajouter de la profondeur */
-}
-
-
-
-
-
-.flyer-h1 {
-    font-family: 'Arial', sans-serif; /* Police lisible */
-    color: #333; /* Couleur du texte */
-    font-size: 24px; /* Taille du texte pour la présentation */
-    line-height: 1.5; /* Espacement entre les lignes */
-    margin: 0; /* Supprime les marges par défaut */
-    align-items: center;
-    justify-content: center;
-}
-
-.maps iframe {
-    max-width: 100%; /* Largeur pour les écrans de petite taille (mobiles) */
-    height: 350px; /* Ajuste automatiquement la hauteur en fonction de la largeur */
-}
-
-
-
-.info {
-    margin-bottom: 20px;
-}
-
-.info p:first-child {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.info p:last-child {
-    font-size: 1em;
-    color: #777;
-}
-
-.cta-button {
-    background-color: #FF6F00;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #E65100;
-}
-
-.download-button {
-    margin-top: 10px;
-}
-
-
-.registration-section {
-    background-color: rgb(240, 201, 130);
-    padding: 20px;
-    border-radius: 8px;
     text-align: center;
-    margin-top: 30px;
 }
 
-.section-titlet {
-    font-size: 24px;
-    color: black;
-    margin-bottom: 15px;
+.hero h1 {
+    font-size: 4rem;
     font-weight: bold;
 }
 
-
-
-.description {
-    font-size: 16px;
-    color: black;
-    margin-bottom: 20px;
-
+.hero p {
+    font-size: 1.8rem;
 }
 
-.register-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: rgb(0, 107, 0);
-    font-weight: bold;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+/* Sélecteur de langue */
+.language-selector .btn {
+    font-size: 1rem;
 }
 
-.register-button:hover {
-    background-color: goldenrod;
+/* Section À propos */
+#about {
+    padding: 50px 0;
+    background: #FFFFFF;
 }
 
-
-
-.info-section1 h2{
-    color: white;
-    font-weight: bold;
+/* Section Vidéo */
+#video-section {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Fond clair */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: bold;
-    color: #000; /* Couleur du titre */
+    color: #333;
     margin-bottom: 20px;
 }
 
-.welcome-text {
-    color: #000; /* Couleur du texte */
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-
-
-.section-titleb{
-    font-size: 50px;
-    font-weight: bold;
-    color: #000; /* Couleur du titre */
-    margin-bottom: 20px;
-
-}
-
-
-.welcome-image img {
-    border-radius: 8px; /* Coins arrondis pour l'image */
-
-}
-
-.welcome-image {
-    text-align: center; /* Centrer l'image dans sa colonne */
-}
-
-
-.info-sectionune img {
-    margin: 0px auto;
-}
-
-.col-md-6{
-    margin: 0px auto
-}
-
-.info-section h2 {
-    background-color: white;
-    font-weight: bold;
-    
-
-}
-
-
-.actualites-list, .rencontres-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-bottom: 50px;
-    
-}
-
-.carousel-item img{
-    background-color: rgb(240, 201, 130);
-}
-
-  
-
-
-
-
-.product-section {
-    padding: 20px 0;
-    opacity: 0;
-    transform: translateY(160px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.product-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.product-title {
-    font-size: 3rem;
-    font-weight: bold;
-}
-.product-description {
+.section-description {
     font-size: 1rem;
-    color: #6c757d;
-}
-.cta-button {
-    background-color: green;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 20px;
-    display: inline-block;
+    color: #666;
+    line-height: 1.5;
 }
 
-.donation-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.video-wrapper {
+    border: 4px solid #72b626;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.donation-btn {
-    background-color: red;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.donation-btn:hover {
-    background-color: #45a049;
-}
-
-.donation-container{
-    margin-bottom: 10px;
-}
-
-.donation-container p {
+/* Boutons de traduction */
+.language-selector {
     text-align: center;
-    justify-content: center;
-    font-weight: bold;
+    margin-top: 30px;
 }
 
-.responsive-card {
-    width: 25rem;
+.language-selector button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
 }
 
-/* CSS */
-.footer {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 40px 0;
+
+
+
+/* Footer */
+footer {
+    background-color: #0A2854 !important; /* Bleu foncé pour différencier du logo */
+    padding: 20px 0;
 }
 
-.footer h4 {
+footer img {
+    display: block;
+    margin: 0 auto;
+}
+
+footer nav a {
     font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.footer p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-.footer .form-control {
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    border: 1px solid #444;
-    color: #fff;
-}
-
-.footer .form-check-label {
-    font-size: 0.8rem;
-}
-
-.footer .btn-green {
-    background-color: #28a745;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.footer .btn-red {
-    background-color: #dc3545;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.footer .social-icons a {
-    color: #fff;
-    font-size: 1.5rem;
-    margin-right: 15px;
-}
-
-.footer .quick-links li {
-    list-style: none;
-    margin-bottom: 10px;
-}
-
-.footer .quick-links li a {
-    color: #fff;
     text-decoration: none;
+    transition: 0.3s;
 }
 
-.footer .quick-links li a:hover {
+footer nav a:hover {
     text-decoration: underline;
 }
 
-.footer-logo {
-    width: 100px;
-    margin-top: 15px;
-}
-
-.footer-bottom {
-    margin-top: 30px;
-    border-top: 1px solid #444;
-    padding-top: 20px;
-    text-align: center;
-    font-size: 0.8rem;
-}
-
-
-.fade-in-up {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in-up.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-
-
-
-
-
-
-
+/* Réactivité */
 @media (max-width: 768px) {
-    body {
-        background-size: 450%;
-        background-repeat: no-repeat;
-
+    .section-title {
+        font-size: 1.5rem;
     }
 
-    .logo-container{
-        align-items: center;
-        justify-content: center;
-        margin: 0px auto;
-        
+    .section-description {
+        font-size: 0.9rem;
     }
-
-    .actualites-list, .rencontres-list {
-        grid-template-columns: 1fr;
-    }
-
-    header {
-        background-color:white;
-    }
-
-    header:hover {
-        background-color:white;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 0px;
-        gap:15px;
-        margin-left: 0px;
-        margin-right: 0px;
-
-
-    }
-
-    nav ul li a{
-        border-radius: 5px;
-        text-align: center;
-        padding: 5px;
-        font-weight: bold;
-
-        
-    }
-
-    nav ul li{
-        text-align: center;
-        
-        
-    }
-
-    .logo-container{
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        
-    }
-
-    .title{
-        margin-bottom: 10px;
-    }
-
-    .h1une{
-        font-size: 25px;
-    }
-
-    .responsive-card {
-        width: 18rem;
-    }
-
-    .title h1{
-        margin-top: 84px;
-        font-size: 50px;  
-
-    }
-
-    .title p{
-        margin-top: 60px;
-        font-size: 20px;  
-
-    }
-
-
-    video {
-        max-width: 100%;
-        height: auto;
-        border: 2px solid #ccc;
-        margin: 0px auto;
-    }
-
-    .divselect{
-        margin:0px auto;
-
-    }
-
-    #language-select {
-        font-size: 30px;
-        margin-left: 1px;
-        margin-bottom: 450px;
-    }
-
-    .welcome-image img {
-        width: 0px;
-        height: 0px;
-    
-    }
-
-    .welcome-text{
-        background-image: url('../images/reunification.png');
-        background-size: 110%;
-
-        
-
-    }
-
-    .description {
-        background-color: rgba(245, 245, 245, 0.4);
-    
-    }
-
-    .product-title {
-        font-size: 2rem;
-    }
-
-    .convention-image img {
-        width: 100%;
-    }
-
-    .hide-on-mobile {
-        display: none;
-    }
-
-    .convention-image {
-        display: inline-block;
-    }
-
-    .maps iframe {
-        width: 200px; /* Largeur pour les écrans de petite taille (mobiles) */
-        height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
-    }
-
-    
-
-
 }

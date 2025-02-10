@@ -77,7 +77,7 @@ body {
 .hero {
     position: relative;
     height: 800px;
-    background: url('../images/fond1.jpg') no-repeat center center/cover;
+    background: url('../images/CEKA.jpg') no-repeat center center/cover;
 }
 
 .overlay {
@@ -118,43 +118,139 @@ body {
     background: #FFFFFF;
 }
 
-/* Section Vidéo */
-#video-section {
-    padding: 50px 0;
-    background-color: #f8f9fa; /* Fond clair */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Section Events */
+.events-section {
+    background-color: #111; /* Fond noir */
+    color: white;
+    text-align: center;
+}
+
+/* Section CEKA */
+.ceka-section {
+    background-color: #111; /* Fond noir */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: #333;
+    color: #0f9d58; /* Vert */
+    text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-.section-description {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
+.section-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8); /* Texte blanc légèrement transparent */
 }
 
-.video-wrapper {
-    border: 4px solid #72b626;
+
+/* Cartes Événements */
+.event-card {
+    background: #fff;
+    color: #111;
+    padding: 30px;
     border-radius: 10px;
-    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-/* Boutons de traduction */
-.language-selector {
-    text-align: center;
-    margin-top: 30px;
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(15, 157, 88, 0.5); /* Vert */
 }
 
-.language-selector button {
-    margin: 5px;
-    padding: 10px 20px;
+/* Icônes */
+.event-icon {
+    font-size: 50px;
+    color: #0f9d58; /* Vert */
+    margin-bottom: 15px;
+}
+
+/* Titres */
+.event-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Descriptions */
+.event-description {
     font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+/* Liens */
+.event-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0f9d58; /* Vert */
+    transition: color 0.3s ease-in-out;
+}
+
+.event-link:hover {
+    color: #0b7d43; /* Vert foncé */
+}
+
+/* Section Activities */
+.ceka-activities {
+    background-color: white; /* Fond blanc */
+    color: #111; /* Texte noir */
+    padding: 60px 0;
+}
+
+/* Titre de la section */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0f9d58; /* Vert */
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+/* Cartes des activités */
+.activity-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(15, 157, 88, 0.3); /* Vert clair */
+}
+
+/* Icônes */
+.activity-icon {
+    font-size: 50px;
+    color: #0f9d58; /* Vert */
+    margin-bottom: 15px;
+}
+
+/* Titres des activités */
+.activity-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Descriptions */
+.activity-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+/* Espacement entre les colonnes */
+.mb-4 {
+    margin-bottom: 30px;
 }
 
 

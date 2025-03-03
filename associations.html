@@ -2,575 +2,295 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Associations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ekang Bese Y'Amerka</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- AOS (Animation On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Styles personnalisés -->
     <link rel="stylesheet" href="styles/associations.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Optionnel: pour WhatsApp -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    
+    <!-- Lien vers le favicon -->
+    <link rel="icon" href="images/logos/ebya-removebg.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logos/ebya-removebg.ico" type="image/x-icon">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
 
 
-            <!-- Lien vers le favicon -->
-            <link rel="icon" href="images/logos/ebya-removebg.ico" type="image/x-icon">
-            <link rel="shortcut icon" href="images/logos/ebya-removebg.ico" type="image/x-icon">
+    <meta property="og:image" content="https://chaton2325.github.io/images/logos/ebya-removebg.png">
 </head>
 <body>
-    <div class="divselect">
-        <select id="language-select" onchange="changeLanguage()">
-            <option value="fr">🇫🇷 Français</option>
-            <option value="en">🇬🇧 English</option>
-            <option value="es">🇪🇸 Español</option>
-        </select>
-        <!--h1 style="font-size: 20px; float : right ; color : white">Ebya2024@gmail.com</h1-->
-    </div>
-    <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <a class="navbar-brand" href="#">
-                <img src="images/logos/ebya-removebg.png" alt="Logo EBYA" class="logo" style="width: 50px;">
-                EBYA
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="/" id="nav-home">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="associations.html" id="nav-associations">Nos associations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ceka2024.html" id="nav-events">CEKA 2024</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span id="nav-discover">Découvrir EBYA</span>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <a class="dropdown-item" href="ebya-publications.html" id="nav-publications">Publications</a>
-                            <a class="dropdown-item" href="missions.html" id="nav-missions">Missions/Valeurs</a>
-                            <a class="dropdown-item" href="orgchart.html" id="nav-orgchart">Orgchart</a>
-                            <a class="dropdown-item" href="commisions.html" id="nav-commissions">Commissions</a>
-                            <a class="dropdown-item" href="partenaires.html" id="nav-partners">Partenaires</a>
-                            <a class="dropdown-item" href="galerie.html" id="nav-gallery">Galerie</a>
-                            <a class="dropdown-item" href="information.html" id="nav-about">A propos de nous</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="donation.html" id="nav-donate">Donate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" id="navlink1" href="contacts.html">Nous contacter ☎</a>
-                    </li>
-                </ul>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="images/logos/ebya-removebg.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+              EBYA
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Nda_Ekang.html">NDA Ekang Y'Amerka</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="Ceka.html" id="navbarDropdown" role="button">
+                          CEKA
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">CEKA 2023</a></li>
+                          <li><a class="dropdown-item" href="#">CEKA 2024</a></li>
+                          <li><a class="dropdown-item" href="#">CEKA 2025</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="News.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Store</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="donate.html">Donate</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button">
+                      About <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="">Our Associations</a></li>
+                      <li><a class="dropdown-item" href="#">About</a></li>
+                      <li><a class="dropdown-item" href="sponsors.html">Sponsors</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+  
+    
+
+    <!-- Image avec texte superposé -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-text text-center">
+            <h1 class="display-2 fw-bold">Ekang Bese Y'Amerka</h1>
+            <p class="fs-4">Our associations</p>
+
+            <!-- Sélecteur de langue sur l'image -->
+            <!-- Traduction des titres et descriptions -->
+            <div class="language-selector">
+                <button class="btn btn-outline-success" onclick="changeLanguage('fr')">Français</button>
+                <button class="btn btn-outline-success" onclick="changeLanguage('en')">English</button>
+                <button class="btn btn-outline-success" onclick="changeLanguage('es')">Español</button>
             </div>
-        </nav>
+        </div>
     </header>
+
+    <!-- Section "Nos 9 associations" -->
+<section class="container my-5">
+    <div class="section-title">
+        <h2>Our 9 associations</h2>
+    </div>
+    <div class="section-description">
+        <p>
+            Discover our 9 partner associations who work every day for varied and impactful causes. Each of them contributes to making our world a better place. Click on the cards to learn more about their actions and support them.
+        </p>
+    </div>
+</section>
+
+
+    <!-- Section de recherche -->
+    <section class="container my-5">
+        <div class="search-bar">
+            <input type="text" id="searchInput" class="form-control" placeholder="Type here to search an association...">
+        </div>
+    </section>
+
+
     
 
-    <main class="container-fluid info-section1 mt-5">
 
-        <section id="accueil" class="title text-center">
-            <h1 id="t1">NOS ASSOCIATIONS</h1>
-        </section>
-        <div style="margin : 0px auto; max-width : 180px ; height : auto ; ">
-            <img src="images/logos/ebya.jpg" alt="logo ebya" style="max-width : 180px ; height : auto;border-radius : 100% " class="img-fluid">
-        </div>
-        <hr>
-        
-        <section id="ensemble-associations" class="text-center my-5">
-            <div class="container">
-                <h2 class="mb-4" id="t2">Un ensemble uni et soudé d'associations</h2>
-                <p id="presentation1" style="text-align: center;">
-                    Nos associations sont bien plus qu'un simple regroupement d'organisations. Elles forment une communauté soudée
-                    par des valeurs communes de solidarité, d'entraide et de partage. Ensemble, nous travaillons sans relâche pour
-                    construire un avenir meilleur, en unissant nos forces et nos ressources pour atteindre des objectifs communs.
-                    Chaque membre de notre réseau contribue à renforcer cette unité, permettant à nos actions d'avoir un impact
-                    significatif et durable. Rejoignez-nous dans notre mission pour faire la différence.
-                </p>
-            </div>
-        </section>
 
-        
-        <section id="join-us" class="text-center my-5">
-
-            <div class="container">
-                <a href="#inscription" class="btn btn-success btn-lg" id="joinbtn">Nous rejoindre</a>
-            </div>
-            <hr>
-        </section><br><br>
-        
-        <h1 class="h1t" id="h1t">Associations de la communauté EBYA</h1>
-
-        <section id="actualites" class="info-section1 mt-5">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mx-auto responsive-card">
-                        <img src="images/logos/ekang-removebg.png" class="card-img-top" alt="Nkul Ekang Y'AMERICA">
-                        <div class="card-body">
-                            <h5 class="card-title">Nkul Ekang Y'AMERICA</h5>
-                            <p class="card-text0"><span role="img" aria-label="location">📍</span> New York</p>
-                            <p class="card-text" id="a1">Découvrez les dernières nouvelles de l'association Ekang.</p>
-                            <a href="https://www.facebook.com/profile.php?id=100092459191795&mibextid=ZbWKwL" target="_blank" class="btn btn-primary rounded-circle bg-primary">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div>
-                    </div>
+    <!-- Section des associations -->
+<section class="container my-5">
+    <div class="row" id="associationList">
+        <!-- Association 1 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+            <div class="card">
+                <img src="images/logos/ekang-removebg.png" class="card-img-top" alt="Logo Association 1">
+                <div class="card-body">
+                    <h5 class="card-title">Nkul-Eknag Y'Amerka</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Website</a>
+                    <a href="#" class="btn btn " style="background-color: blue;color:white">Facebook</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mx-auto responsive-card">
-                        <img src="images/logos/elat-removebg.png" class="card-img-top" alt="Elat Beti USA">
-                        <div class="card-body">
-                            <h5 class="card-title">Elat Beti USA</h5>
-                            <p class="card-text0"><span role="img" aria-label="location">📍</span> Houston, Texas</p>
-                            <p class="card-text" id="a2">Les dernières actualités de l'association Elat Beti USA.</p>
-                            <a href="https://www.facebook.com/share/p/nAWmu1LKfayM4fmc/?mibextid=K35XfP" target="_blank" class="btn btn-primary rounded-circle bg-primary">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mx-auto responsive-card">
-                        <img src="images/logos/columbus-removebg.png" class="card-img-top" alt="Nkul Beti Columbus">
-                        <div class="card-body">
-                            <h5 class="card-title">Nkul Beti Columbus</h5>
-                            <p class="card-text0"><span role="img" aria-label="location">📍</span> Ohio</p>
-                            <p class="card-text" id="a3">Découvrez les dernières nouvelles de l'association Beti Columbus.</p>
-                            <a href="https://www.facebook.com/profile.php?id=100086412495541&mibextid=ZbWKwL" target="_blank" class="btn btn-primary rounded-circle bg-primary">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card mx-auto responsive-card">
-                        <img src="images/logos/cesca-removebg.png" class="card-img-top" alt="Nkul Cesca">
-                        <div class="card-body">
-                            <h5 class="card-title">Cesca USA</h5>
-                            <p class="card-text0"><span role="img" aria-label="location">📍</span> Maryland</p>
-                            <p class="card-text" id="a4">Découvrez les dernières nouvelles de l'association Cesca USA.</p>
-                            <a href="https://www.facebook.com/profile.php?id=100077536509377&mibextid=ZbWKwL" target="_blank" class="btn btn-primary rounded-circle bg-primary">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mx-auto responsive-card">
-                        <img src="images/logos/oyili-removebg.png" class="card-img-top" alt="Nkul Oyili Beti">
-                        <div class="card-body">
-                            <h5 class="card-title">Oyili Beti</h5>
-                            <p class="card-text0"><span role="img" aria-label="location">📍</span> Washington, DC, Maryland</p>
-                            <p class="card-text" id="a5">Découvrez les dernières nouvelles de l'association Oyili Beti.</p>
-                            <a href="https://www.facebook.com/AssociationOyiliBetiUSA?mibextid=ZbWKwL" target="_blank" class="btn btn-primary rounded-circle bg-primary">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mx-auto responsive-card">
-                        <img src="images/logos/chicago-removebg.png" class="card-img-top" alt="Nkul Oyili Beti">
-                        <div class="card-body">
-                            <h5 class="card-title">Nkul Beti Chicago</h5>
-                            <p class="card-text0"><span role="img" aria-label="location">📍</span> Chicago</p>
-                            <p class="card-text" id="a6">Découvrez les dernières nouvelles de l'association Nkul Beti Chicago.</p>
-                            <a href="https://www.facebook.com/share/6uRUvaXfUkjNiAVf/?mibextid=LQQJ4d" target="_blank" class="btn btn-primary rounded-circle bg-primary">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card mx-auto responsive-card">
-                        <img src="images/logos/minnesota-removebg.png" class="card-img-top" alt="Nkul Oyili Beti">
-                        <div class="card-body">
-                            <h5 class="card-title">Nkul Beti Minnesota</h5>
-                            <p class="card-text0"><span role="img" aria-label="location">📍</span> Minnesota</p>
-                            <p class="card-text" id="a7">Découvrez les dernières nouvelles de l'association Nkul Beti Minnesota.</p>
-                            <a href="https://www.facebook.com/profile.php?id=100094541381343&mibextid=ZbWKwL" target="_blank" class="btn btn-primary rounded-circle bg-primary">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mx-auto responsive-card">
-                        <img src="images/logos/Sunuca-removebg.png" class="card-img-top" alt="Nkul Oyili Beti">
-                        <div class="card-body">
-                            <h5 class="card-title">Sunuca</h5>
-                            <p class="card-text0"><span role="img" aria-label="location">📍</span> Canada</p>
-                            <p class="card-text" id="a8">Découvrez les dernières nouvelles de l'association Sunuca.</p>
-                            <a href="https://www.facebook.com/profile.php?id=61564874666219&mibextid=ZbWKwL" target="_blank" class="btn btn-primary rounded-circle bg-primary">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mx-auto responsive-card">
-                        <img src="images/logos/oyili-atalanta-removebg.png" class="card-img-top" alt="Nkul Oyili Beti">
-                        <div class="card-body">
-                            <h5 class="card-title">Oyili Beti Atlanta</h5>
-                            <p class="card-text0"><span role="img" aria-label="location">📍</span> Atlanta</p>
-                            <p class="card-text" id="a9">Découvrez les dernières nouvelles de l'association Oyili Beti Atlanta.</p>
-                            <a href="coming-soon.html" target="_blank" class="btn btn-primary rounded-circle bg-primary">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        
-        
-        
-        
-
-        <section id="donation" class="info-section mt-5">
-            <div class="text-center">
-                <h2 id="donation-title">Faites un Don</h2>
-                <p id="donation-info">Votre soutien aide à faire une réelle différence dans notre communauté. Merci pour votre générosité.</p>
-                <a href="donation.html" class="btn btn-success" id="donate-btn">Faire un don</a>
-            </div>
-        </section>
-    </main>
-
-<!-- HTML -->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <!-- Section d'abonnement -->
-            <div class="col-md-3">
-                <h4 id="f1">Abonnez-vous à notre lettre d'informations</h4>
-                <form>
-                    <input type="email" placeholder="Email*" class="form-control mb-2">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="policyCheck">
-                        <label class="form-check-label" for="policyCheck" id="f2">
-                            J'accepte la politique de confidentialité et les conditions d'utilisation.
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-green mt-2">ABONNEZ-VOUS</button>
-                </form>
-                <div class="social-icons mt-3">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-
-            <!-- Liens rapides -->
-            <div class="col-md-3">
-                <h4 id="f3">Liens rapides</h4>
-                <ul class="quick-links">
-                    <li><a id="accueilLink" href="/">Accueil</a></li>
-                    <li><a id="aboutLink" href="information.html">À Propos de nous</a></li>
-                    <li><a id="eventsLink" href="ceka2024.html">Événements</a></li>
-                    <li><a id="donationLink" href="donation.html">Faire un don</a></li>
-                </ul>
-            </div>
-
-            <!-- Communauté -->
-            <div class="col-md-3">
-                <h4 id="communaute">Communauté EBYA</h4>
-                <p id="communauteText">Nous nous efforçons d'encourager la collaboration et la solidarité entre les membres de notre communauté.</p>
-                <img src="images/logos/ebya.jpg" alt="EBYA Logo" class="footer-logo">
-            </div>
-
-            <!-- S'engager -->
-            <div class="col-md-3">
-                <h4 id="sEngager">S'engager</h4>
-                <p id="sEngagerText">Rejoignez notre communauté dès aujourd'hui et découvrez les nombreuses opportunités que nous offrons pour faire une différence significative.</p>
-                <a id="contactLink" href="contacts.html" class="btn btn-red">CONTACTEZ-NOUS</a>
             </div>
         </div>
-        <div class="footer-bottom ">
-            <p id="footer-text">Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à  EBYA</p>
+        <!-- Association 2 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+                <img src="images/logos/cesca-removebg.png "  class="card-img-top" alt="Logo Association 2">
+                <div class="card-body">
+                    <h5 class="card-title">Cesca usa</h5>
+                    <p class="card-text">.</p>
+                    <a href="#" class="btn btn-primary">Website</a>
+                    <a href="#" class="btn btn-" style="background-color: blue;color:white">Facebook</a>
+                </div>
+            </div>
         </div>
-    </div>            
-</footer>
+        <!-- Association 3 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+                <img src="images/logos/chicago-removebg.png" class="card-img-top" alt="Logo Association 3">
+                <div class="card-body">
+                    <h5 class="card-title">Nkul Beti chicago</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Website</a>
+                    <a href="#" class="btn btn" style="background-color: blue;color:white">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <!-- Répétez pour les associations 4 à 9 -->
+        <!-- Association 4 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+            <div class="card">
+                <img src="images/logos/columbus-removebg.png" class="card-img-top" alt="Logo Association 4">
+                <div class="card-body">
+                    <h5 class="card-title">Nkul Beti columbus</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Website</a>
+                    <a href="#" class="btn btn" style="background-color: blue;color:white">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <!-- Association 5 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+                <img src="images/logos/elat-removebg.png" class="card-img-top" alt="Logo Association 5">
+                <div class="card-body">
+                    <h5 class="card-title">Elat Beti usa</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Website</a>
+                    <a href="#" class="btn btn" style="background-color: blue;color:white">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <!-- Association 6 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+                <img src="images/logos/minnesota-removebg.png" class="card-img-top" alt="Logo Association 6">
+                <div class="card-body">
+                    <h5 class="card-title">Nkul Beti Minesota</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Website</a>
+                    <a href="#" class="btn btn " style="background-color: blue;color:white">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <!-- Association 7 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+            <div class="card">
+                <img src="images/logos/oyili-atalanta-removebg.png" class="card-img-top" alt="Logo Association 7">
+                <div class="card-body">
+                    <h5 class="card-title">Oyili Atalanta</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Website</a>
+                    <a href="#" class="btn btn" style="background-color: blue;color:white">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <!-- Association 8 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+                <img src="images/logos/oyili-removebg.png" class="card-img-top" alt="Logo Association 8">
+                <div class="card-body">
+                    <h5 class="card-title">Oyili</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Website</a>
+                    <a href="#" class="btn btn" style="background-color: blue;color:white">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <!-- Association 9 -->
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+                <img src="images/logos/Sunuca-removebg.png" class="card-img-top" alt="Logo Association 9">
+                <div class="card-body">
+                    <h5 class="card-title">Sunuca</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Website</a>
+                    <a href="#" class="btn btn" style="background-color: blue;color:white">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<script>
-    const translations = {
-        fr: {
-            navHome: "Accueil",
-            navAssociations: "Nos associations",
-            navEvents: "CEKA 2024",
-            navDiscover: "Découvrir EBYA",
-            navPublications: "Publications",
-            navMissions: "Missions/Valeurs",
-            navOrgchart: "Orgchart",
-            navCommissions: "Commissions",
-            navPartners: "Partenaires",
-            navGallery: "Galerie",
-            navAbout: "A propos de nous",
-            navDonate: "Faire un don",
-            navlink1: "Nous contacter ☎",
-            donationTitle: "Faites un Don",
-            donationInfo: "Votre soutien aide à faire une réelle différence dans notre communauté. Merci pour votre générosité.",
-            donateBtn: "Faire un don",
-            footerText: "Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à EBYA",
-            f1: "Abonnez-vous à notre lettre d'informations",
-            f2: "J'accepte la politique de confidentialité et les conditions d'utilisation.",
-            f3: "Liens rapides",
-            footerText: "Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à EBYA",
-            accueilLink:"Accueil",
-            aboutLink:"À Propos de nous",
-            eventsLink:"Événements",
-            donationLink:"Faire un don",
-            communaute:"Communauté EBYA",
-            communauteText:"Nous nous efforçons d'encourager la collaboration et la solidarité entre les membres de notre communauté." ,
-            sEngager:"S'engager",
-            sEngagerText:"Rejoignez notre communauté dès aujourd'hui et découvrez les nombreuses opportunités que nous offrons pour faire une différence significative.",
-            contactLink: "CONTACTEZ-NOUS" , 
-            t1 : "NOS ASSOCIATIONS" , 
-            t2 : "Un ensemble uni et soudé d'associations" , 
-            presentation1 : "Nos associations sont bien plus qu'un simple regroupement d'organisations. Elles forment une communauté soudéepar des valeurs communes de solidarité, d'entraide et de partage. Ensemble, nous travaillons sans relâche pourconstruire un avenir meilleur, en unissant nos forces et nos ressources pour atteindre des objectifs communs.Chaque membre de notre réseau contribue à renforcer cette unité, permettant à nos actions d'avoir un impactsignificatif et durable. Rejoignez-nous dans notre mission pour faire la différence." ,
-            joinbtn : "Nous rejoindre" , 
-            a1 : "Découvrez les dernières nouvelles de l'association Nkul Ekang..." ,
-            a2 : "Découvrez les dernières nouvelles de l'association Elat Beti USA..." ,
-            a3 : "Découvrez les dernières nouvelles de l'association Nkul Beti Columbus..." ,
-            a4 : "Découvrez les dernières nouvelles de l'association Cesca..." ,
-            a5 : "Découvrez les dernières nouvelles de l'association Oyili Beti..." ,
-            a6 : "Découvrez les dernières nouvelles de l'association Nkul Beti Chicago..." ,
-            a7 : "Découvrez les dernières nouvelles de l'association Nkul Beti Minnesota..." , 
-            a8 : "Découvrez les dernières nouvelles de l'association Sunuca..." , 
-            lp : "Lire plus" ,
-            lp1 : "Lire plus" ,
-            lp2 : "Lire plus" ,
-            lp3 : "Lire plus" ,
-            lp4 : "Lire plus" ,
-            lp5 : "Lire plus" ,
-            lp6 : "Lire plus" ,
-            lp7 : "Lire plus" ,
-            h1t : "Associations de la communauté EBYA" , 
-        },
-        en: {
-            navHome: "Home",
-            navAssociations: "Our associations",
-            navEvents: "CEKA 2024",
-            navDiscover: "Discover EBYA",
-            navPublications: "Publications",
-            navMissions: "Missions/Values",
-            navOrgchart: "Orgchart",
-            navCommissions: "Commissions",
-            navPartners: "Partners",
-            navGallery: "Gallery",
-            navAbout: "About us",
-            navDonate: "Donate",
-            navlink1: "Contact us ☎",
-            donationTitle: "Make a Donation",
-            donationInfo: "Your support helps make a real difference in our community. Thank you for your generosity.",
-            donateBtn: "Donate",
-            footerText: "Privacy Policy and Terms of Use. - Copyright © 2024. All rights reserved to EBYA",
-            f1: "Subscribe to our newsletter",
-            f2: "I accept the privacy policy and terms of use.",
-            f3: "Quick links",
-            footerText: "Privacy Policy and Terms of Use. - Copyright © 2024. All rights reserved to EBYA",
-            accueilLink:"Home",
-            aboutLink:"About Us",
-            eventsLink:"Events",
-            donationLink:"Make a donation",
-            communaute:"EBYA community" , 
-            communauteText :"We strive to encourage collaboration and solidarity among members of our community.",
-            sEngager:"Get involved" ,
-            sEngagerText:"Join our community today and discover the many opportunities we offer to make a meaningful difference.",
-            contactLink: "CONTACT US" , 
-            t1 : "OUR ASSOCIATIONS" , 
-            t2 : "A united and united set of associations" , 
-            presentation1 : "Our associations are much more than a simple grouping of organizations. They form a community united by common values ​​of solidarity, mutual aid and sharing. Together, we work tirelessly to build a better future, uniting our strengths and resources to achieve common goals. Each member of our network contributes to strengthening this unity, allowing our actions to have a significant and lasting impact. Join us in our mission to make a difference." , 
-            joinbtn :"Join us" , 
-            a1 : "Discover the latest news from the association Nkul Ekang..." ,
-            a2 : "Discover the latest news from the association Elat Beti USA..." ,
-            a3 : "Discover the latest news from the association Nkul Beti Columbus..." ,
-            a4 : "Discover the latest news from the association Cesca..." ,
-            a5 : "Discover the latest news from the association Oyili Beti..." ,
-            a6 : "Discover the latest news from the association Nkul Beti Chicago..." ,
-            a7 : "Discover the latest news from the association Nkul Beti Minnesota..." , 
-            a8 : "Discover the latest news from the association Sunuca..." , 
-            lp :"Read more" , 
-            lp1 : "Read more" ,
-            lp2 : "Read more" ,
-            lp3 : "Read more" ,
-            lp4 : "Read more" ,
-            lp5 : "Read more" ,
-            lp6 : "Read more" ,
-            lp7 : "Read more" ,
-            h1t : "EBYA community associations"
-        },
-        es: {
-            navHome: "Inicio",
-            navAssociations: "Nuestras asociaciones",
-            navEvents: "CEKA 2024",
-            navDiscover: "Descubre EBYA",
-            navPublications: "Publicaciones",
-            navMissions: "Misiones/Valores",
-            navOrgchart: "Organigrama",
-            navCommissions: "Comisiones",
-            navPartners: "Socios",
-            navGallery: "Galería",
-            navAbout: "Sobre nosotros",
-            navDonate: "Donar",
-            navlink1: "Contáctanos ☎",
-            donationTitle: "Hacer una Donación",
-            donationInfo: "Su apoyo ayuda a marcar una verdadera diferencia en nuestra comunidad. Gracias por su generosidad.",
-            donateBtn: "Donar",
-            footerText: "Política de privacidad y condiciones de uso. - Copyright © 2024. Todos los derechos reservados a EBYA" , 
-            f1: "Suscríbete a nuestro boletín",
-            f2 : "Acepto la política de privacidad y condiciones de uso." ,
-            f3: "Enlaces rápidos" ,
-            footerText: "Política de privacidad y condiciones de uso. - Copyright © 2024. Todos los derechos reservados a EBYA",
-            accueilLink:"Inicio",
-            aboutLink:"Sobre nosotros",
-            eventsLink:"Eventos",
-            donationLink:"Haz una donación",
-            communaute:"Comunidad EBYA",
-            communauteText:"Nos esforzamos por fomentar la colaboración y la solidaridad entre los miembros de nuestra comunidad.",
-            sEngager:"Complicarse" , 
-            sEngagerText:"Únase a nuestra comunidad hoy y descubra las muchas oportunidades que ofrecemos para marcar una diferencia significativa.",
-            contactLink:"CONTÁCTENOS" , 
-            t1 : "NUESTRAS ASOCIACIONES" , 
-            t2 : "Un conjunto unido y unido de asociaciones" , 
-            presentation1 : "Nuestras asociaciones son mucho más que una simple agrupación de organizaciones. Forman una comunidad unida por valores comunes de solidaridad, ayuda mutua y compartir. Juntos, trabajamos incansablemente para construir un futuro mejor, uniendo nuestras fortalezas y recursos para lograr objetivos comunes. Cada miembro de nuestra red contribuye a fortalecer esta unidad, permitiendo que nuestras acciones tengan un impacto significativo y duradero. Únase a nosotros en nuestra misión de marcar la diferencia." , 
-            joinbtn : "Únase a nosotros" , 
-            a1 : "Descubre las últimas novedades de la asociación Nkul Ekang..." ,
-            a2 : "Descubre las últimas novedades de la asociación Elat Beti USA..." ,
-            a3 : "Descubre las últimas novedades de la asociación Nkul Beti Columbus..." ,
-            a4 : "Descubre las últimas novedades de la asociación Cesca..." ,
-            a5 : "Descubre las últimas novedades de la asociación Oyili Beti..." ,
-            a6 : "Descubre las últimas novedades de la asociación Nkul Beti Chicago..." ,
-            a7 : "Descubre las últimas novedades de la asociación Nkul Beti Minnesota..." , 
-            a8 : "Descubre las últimas novedades de la asociación Sunuca..." , 
-            lp : "Leer más" ,
-            lp1 : "Leer más" ,
-            lp2 : "Leer más" ,
-            lp3 : "Leer más" ,
-            lp4 : "Leer más" ,
-            lp5 : "Leer más" ,
-            lp6 : "Leer más" ,
-            lp7 : "Leer más" ,
-            h1t : "Asociaciones comunitarias EBYA"
-        }
-    };
-
-    function changeLanguage() {
-        const selectedLanguage = document.getElementById("language-select").value;
-        localStorage.setItem('selectedLanguage', selectedLanguage); // Enregistrer la langue
-        const elementsToTranslate = {
-            navHome: "nav-home",
-            navAssociations: "nav-associations",
-            navEvents: "nav-events",
-            navDiscover: "nav-discover",
-            navPublications: "nav-publications",
-            navMissions: "nav-missions",
-            navOrgchart: "nav-orgchart",
-            navCommissions: "nav-commissions",
-            navPartners: "nav-partners",
-            navGallery: "nav-gallery",
-            navAbout: "nav-about",
-            navDonate: "nav-donate",
-            navlink1: "navlink1",
-            donationTitle: "donation-title",
-            donationInfo: "donation-info",
-            donateBtn: "donate-btn",
-            footerText: "footer-text" , 
-            f1: "f1",
-            f2: "f2",
-            f3: "f3",
-            footerText: "footer-text",
-            accueilLink:"accueilLink",
-            aboutLink:"aboutLink",
-            eventsLink:"eventsLink",
-            donationLink:"donationLink",
-            communaute:"communaute",
-            communauteText:"communauteText",
-            sEngager:"sEngager" , 
-            sEngagerText:"sEngagerText" ,
-            contactLink : "contactLink" , 
-            t1: "t1" , 
-            t2 :"t2" , 
-            presentation1 : "presentation1" , 
-            joinbtn : "joinbtn" , 
-            a1 : "a1" ,
-            a2 : "a2" ,
-            a3 : "a3" ,
-            a4 : "a4" ,
-            a5 : "a5" ,
-            a6 : "a6" ,
-            a7 : "a7" , 
-            a8 : "a8" , 
-            lp : "lp" ,
-            lp1 : "lp1" ,
-            lp2 : "lp2" ,
-            lp3 : "lp3" ,
-            lp4 : "lp4" ,
-            lp5 : "lp5" ,
-            lp6 : "lp6" ,
-            lp7 : "lp7" ,
-            h1t : "h1t"
-            
-        };
-        for (const [key, elementId] of Object.entries(elementsToTranslate)) {
-            document.getElementById(elementId).innerHTML = translations[selectedLanguage][key];
-        }
-    }
-
-    window.onload = function() {
-        const savedLanguage = localStorage.getItem('selectedLanguage') || 'fr'; // Langue par défaut
-        document.getElementById('language-select').value = savedLanguage;
-        changeLanguage(); // Appliquer la langue enregistrée
-    };
     
-</script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="2e3cf2f0-b3ff-499e-b2ab-a11311879d35";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+
+    <!-- Footer avec menu -->
+    <footer class="bg-dark text-white text-center py-4">
+        <img src="images/logos/ebya-removebg.png" alt="Logo Ekang" class="mb-3" width="100">
+        <nav>
+            <a href="index.html" class="text-white mx-3">Home</a>
+            <a href="Nda_Ekang.html" class="text-white mx-3">Nda Ekang Y'Amerka</a>
+            <a href="Ceka.html" class="text-white mx-3">CEKA</a>
+            <a href="News.html" class="text-white mx-3">News</a>
+            <a href="#" class="text-white mx-3">Store</a>
+            <a href="donate.html" class="text-white mx-3">Donate</a>
+        </nav>
+        <p class="mt-3">© 2024 Ekang Bese Y'Amerka - Tous droits réservés</p>
+    </footer>
+
+    <!-- Bootstrap & AOS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Change header properties on scroll
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('header');
-            const navLinks = document.querySelectorAll('.nav-link');
-        
-            if (window.scrollY > 25) {
-                header.style.top = '0'; // Fix the header at the top
-                header.style.transition = 'top 1s';
-                navLinks.forEach(link => link.style.color = '#000'); // Black text color
+        AOS.init({
+            once: true  // Les animations se produiront une seule fois
+          });
+      
+            // Fonction de recherche
+    document.getElementById('searchInput').addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            const title = card.querySelector('.card-title').textContent.toLowerCase();
+            if (title.includes(searchTerm)) {
+                card.parentElement.style.display = 'block';
             } else {
-                header.style.top = 'auto'; // Reset top to auto
-                navLinks.forEach(link => link.style.color = '#fff'); // White text color
+                card.parentElement.style.display = 'none';
             }
         });
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            const elements = document.querySelectorAll('.info-section1');
-        
-            function checkVisibility() {
-                elements.forEach(element => {
-                    const rect = element.getBoundingClientRect();
-                    if (rect.top < window.innerHeight && rect.bottom > 0) {
-                        element.classList.add('visible');
-                    } else {
-                        element.classList.remove('visible');
-                    }
-                });
-            }
-        
-            window.addEventListener('scroll', checkVisibility);
-            checkVisibility(); // Trigger the check on load
-        });
+    });
 
-        
     </script>
-    
 </body>
-
 </html>

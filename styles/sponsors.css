@@ -75,12 +75,11 @@ body {
 
 
 
-
 /* Hero Section */
 .hero {
     position: relative;
     height: 800px;
-    background: url('../images/Associations.jpg') no-repeat center center/cover;
+    background: url('../images/sponsors.jpg') no-repeat center center/cover;
 }
 
 .overlay {
@@ -121,92 +120,68 @@ body {
     background: #FFFFFF;
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 50px;
-    position: relative;
-    padding-bottom: 20px;
-}
-.section-title h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #28a745; /* Vert */
-    display: inline-block;
-    position: relative;
-    animation: fadeIn 1.5s ease-in-out;
-}
-.section-title h2::after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background-color: #343a40; /* Noir */
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: underline 1s ease-in-out;
-}
-.section-description {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #6c757d; /* Gris */
-    max-width: 800px;
-    margin: 0 auto;
-    animation: fadeIn 2s ease-in-out;
-}
 
-.card {
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #ffffff; /* Fond blanc */
+
+
+
+
+
+
+
+
+
+
+
+
+.sponsor-container {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
 }
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-.card-img-top {
-    height: 150px;
+.sponsor-image {
+    width: 100px;
+    height: 100px;
     object-fit: contain;
-    padding: 20px;
-    background-color: #28a745; /* Vert */
+    margin-right: 20px;
+    border-radius: 10px;
 }
-.card-body {
-    padding: 20px;
-    text-align: center;
+.sponsor-details {
+    flex: 1;
 }
-.card-title {
+.sponsor-name {
     font-size: 1.5rem;
     font-weight: bold;
     color: #343a40; /* Noir */
 }
-.card-text {
+.sponsor-description {
     font-size: 1rem;
     color: #6c757d; /* Gris */
+    margin: 10px 0;
 }
-.btn-primary {
-    background-color: #28a745; /* Vert */
-    border: none;
-    margin: 5px;
+.sponsor-links a {
+    margin-right: 10px;
+    color: #28a745; /* Vert */
+    text-decoration: none;
+    font-weight: bold;
 }
-.btn-primary:hover {
-    background-color: #218838; /* Vert plus foncé */
+.sponsor-links a:hover {
+    text-decoration: underline;
 }
-.search-bar {
-    margin-bottom: 30px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+hr {
+    border-top: 2px solid #28a745; /* Vert */
+    margin: 20px 0;
 }
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-@keyframes underline {
-    0% { width: 0; }
-    100% { width: 60px; }
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Footer */

@@ -76,7 +76,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 500px;
+    height: 350px;
     background: url('../images/fond1.jpg') no-repeat center center/cover;
 }
 
@@ -117,6 +117,8 @@ body {
     padding: 50px 0;
     background: #FFFFFF;
 }
+
+
 
 .btn-dark {
     background-color: #4E4B31;

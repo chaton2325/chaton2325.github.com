@@ -2,687 +2,582 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEKA-2024</title>
-    <link rel="stylesheet" href="styles/ceka2024.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ekang Bese Y'Amerka</title>
 
-            <!-- Lien vers le favicon -->
-            <link rel="icon" href="images/logos/ebya-removebg.ico" type="image/x-icon">
-            <link rel="shortcut icon" href="images/logos/ebya-removebg.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- AOS (Animation On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" href="styles/ceka2024.css">
+
+    <!-- Optionnel: pour WhatsApp -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    
+    <!-- Lien vers le favicon -->
+    <link rel="icon" href="images/logos/ebya-removebg.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logos/ebya-removebg.ico" type="image/x-icon">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <meta property="og:image" content="https://chaton2325.github.io/images/logos/ebya-removebg.png">
 </head>
 <body>
-    <div class="divselect">
-        <select id="language-select" onchange="changeLanguage()">
-            <option value="fr">🇫🇷 Français</option>
-            <option value="en">🇬🇧 English</option>
-            <option value="es">🇪🇸 Español</option>
-        </select>
-    </div>
-    <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <a class="navbar-brand" href="#">
-                <img src="images/logos/ebya-removebg.png" alt="Logo EBYA" class="logo" style="width: 50px;">
-                EBYA
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="/" id="nav-home">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="associations.html" id="nav-associations">Nos associations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ceka2024.html" id="nav-events">CEKA 2024</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span id="nav-discover">Découvrir EBYA</span>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <a class="dropdown-item" href="ebya-publications.html" id="nav-publications">Publications</a>
-                            <a class="dropdown-item" href="missions.html" id="nav-missions">Missions/Valeurs</a>
-                            <a class="dropdown-item" href="orgchart.html" id="nav-orgchart">Orgchart</a>
-                            <a class="dropdown-item" href="commisions.html" id="nav-commissions">Commissions</a>
-                            <a class="dropdown-item" href="partenaires.html" id="nav-partners">Partenaires</a>
-                            <a class="dropdown-item" href="galerie.html" id="nav-gallery">Galerie</a>
-                            <a class="dropdown-item" href="information.html" id="nav-about">A propos de nous</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="donation.html" id="nav-donate">Donate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" id="navlink1" href="contacts.html">Nous contacter ☎</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="images/logos/ebya-removebg.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+              EBYA
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Nda_Ekang.html">NDA Ekang Y'Amerka</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="Ceka.html" id="navbarDropdown" role="button">
+                          CEKA
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="ceka2023.html">CEKA 2023</a></li>
+                        <li><a class="dropdown-item" href="#">CEKA 2024</a></li>
+                        <li><a class="dropdown-item" href="ceka2025.html">CEKA 2025</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="News.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Store</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="donate.html">Donate</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button">
+                      About <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="associations.html">Our Associations</a></li>
+                      <li><a class="dropdown-item" href="#">About</a></li>
+                      <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                      <li><a class="dropdown-item" href="sponsors.html">Official sponsors</a></li>
+                      <li><a class="dropdown-item" href="sponsorship.html">Become sponsors</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+  
     
 
-    <main class="info-section1">
+    <!-- Image avec texte superposé -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-text text-center">
+            <h1 class="display-2 fw-bold">CEKA 2024</h1>
+            <p class="fs-4">North American Ekang Federation</p>
 
-        <div class="ceka-section">
-            <div class="banner">
-                
-                <!--p>Catalyser l'unité de la diaspora Ceka en Amérique du Nord</p-->
-            </div>
-            <h1 id="t1">CEKA GRAND CONGRES 2024</h1>
-            <div class="date-banner">
-                <span id="t2">DU 05/12/2024 AU 08/12/2024</span>
-            </div>
-            <hr>
-
-
-            <div class="containermotsm">
-                
-                <div class="top-sectionm">
-                    <img src="images/Mekinda.jpg" alt="President EBYA">
-                    <div class="vidmotm">
-                        <video controls>
-                            <source src="videos/speech mekinda.mp4" type="video/mp4">
-                            Votre navigateur ne supporte pas la balise vidéo.
-                        </video>
-                        <p class="AN">Andre Ledoux Junior Mekinda Mekinda président EBYA
-                    </div>
-                    <hr>
-                </div>
-            </div>
-            <hr>
-
-            <div class="containermots">
-                <div class="top-section">
-                    <img src="images/Alfred Nomo.jpg" alt="Image de présentation">
-
-                    <div class="vidmot">
-                        <video controls>
-                            <source src="videos/speech alfred.mp4" type="video/mp4">
-                            Votre navigateur ne supporte pas la balise vidéo.
-                        </video>
-                        <p class="AN">Alfred Nomo PCO CEKA
-                    </div>
-                    <hr>
-                </div>
-            </div>
-
-
-
-            <div class="top-sectionp">
-                <img src="images/ebya.jpg" alt="Logo Ebya">
-                <p id="prepar">
-                    <strong>Bienvenue au CEKA 2024 !,</strong><br><br>
-
-                Chers invités, participants et membres de la communauté,
-
-                C'est avec une immense joie et un profond sentiment de fierté que nous vous accueillons à l'événement <strong>CEKA 2024.</strong> Cet événement, fruit de nos efforts collectifs et de notre engagement envers la culture et l'unité, est une occasion exceptionnelle de célébrer notre riche patrimoine, de renforcer nos liens et de tracer ensemble la voie vers un avenir prometteur. <br><br>
-
-                Nous avons travaillé sans relâche pour que <strong>CEKA 2024</strong> soit plus qu'une simple rencontre : une expérience inoubliable, empreinte de partage, de découvertes et d'enrichissement mutuel. Cette année, notre programme regorge d'activités interculturelles passionnantes, de moments de convivialité, et de surprises qui sauront ravir chacun d'entre vous. <br><br>
-
-                Votre présence ici témoigne de l'importance de cet événement pour nous tous, et nous espérons que ces jours passés ensemble seront à la hauteur de vos attentes. <strong>CEKA 2024</strong> est l'occasion de célébrer nos traditions, d'échanger des idées, et de construire des ponts entre nos différentes communautés. <br> <br><strong>Email : Ebya2024@gmail.com</strong><br>
-                <a href="contacts.html" class="Bouton-contacts">
-                    Nous contacter
-                </a>
-                </p>
-                
-            </div>
-            <hr>
-
-            <div class="convention-navigator">
-                <h2 id="prog">PROGRAMME DE L'EVENEMENT</h2>
-                <a href="images/programme-CEKA2024.jpg" class="download-button" download id="dprog">
-                    Téléchargez le programme
-                </a>
-                <div class="event-grid">
-                    <!-- Event: Arrival and Installation -->
-                    <div class="event-card" style="border-color: #00C853;">
-                        <h3 id="p1">Arrivée et installation des participants (HOTEL DOUBLE TREE Washington DC)</h3>
-                        <p id="j1">Jeudi 05/12/2024</p>
-                        <p>07:00AM – 2:00PM</p>
-                    </div>
-                    <!-- Event: Petit Déjeuner & City Tour -->
-                    <div class="event-card" style="border-color: #00C853;">
-                        <h3 id="p2">Petit déjeuner & Départ pour le tour de ville</h3>
-                        <p id="j2">Jeudi 05/12/2024</p>
-                        <p>07:00AM – 10:00AM</p>
-                    </div>
-                    <!-- Event: Visite guidée -->
-                    <div class="event-card" style="border-color: #00C853;">
-                        <h3 id="p3">Visite guidée du Capitole et de la Maison Blanche</h3>
-                        <p id="j3">Jeudi 05/12/2024</p>
-                        <p>10:00AM – 3:00PM</p>
-                    </div>
-                    <!-- Event: Soirée Culturelle -->
-                    <div class="event-card" style="border-color: #00C853;">
-                        <h3 id="p4">Soirée Culturelle (Conférence, Danses traditionnelles, Dîner, Défilé de mode)</h3>
-                        <p id="j4">Jeudi 05/12/2024</p>
-                        <p>6:00PM – Minuit</p>
-                    </div>
-                    <!-- Event: Petit Déjeuner & Foire Exposition -->
-                    <div class="event-card" style="border-color: #00C853;">
-                        <h3 id="p5">Petit déjeuner & Ouverture Officielle de la Foire Exposition</h3>
-                        <p id="j5">Samedi 07/12/2024</p>
-                        <p>07:00AM – 1:00PM</p>
-                    </div>
-                    <!-- Event: Présentation EBYA -->
-                    <div class="event-card" style="border-color: #00C853;">
-                        <h3 id="p6">Travaux de Présentation du parcours et de la vision de EBYA</h3>
-                        <p id="j6">Samedi 07/12/2024</p>
-                        <p>2:00PM – 5:00PM</p>
-                    </div>
-                    <!-- Event: Soirée de Gala -->
-                    <div class="event-card" style="border-color: #00C853;">
-                        <h3 id="p7">Soirée de Gala et Fundraising</h3>
-                        <p id="j7">Samedi 07/12/2024</p>
-                        <p>8:00PM</p>
-                    </div>
-                    <!-- Event: Petit Déjeuner & Débriefing -->
-                    <div class="event-card" style="border-color: #00C853;">
-                        <h3 id="p8">Petit Déjeuner & Débriefing</h3>
-                        <p id="j8">Dimanche 08/12/2024</p>
-                        <p>09:00AM – 12:00PM</p>
-                    </div>
-                    <!-- Event: Départ des participants -->
-                    <div class="event-card" style="border-color: #00C853;">
-                        <h3 id="p9">Départ des participants</h3>
-                        <p id="j9">Dimanche 08/12/2024</p>
-                        <p>1:00PM</p>
-                    </div>
-                </div>
-            </div>
-            
-        
-            <div class="vip-section">
-                <h2 id="secre">Réservez maintenant votre place pour l'évènement</h2>
-                <div class="vip-options">
-                    <div class="option">
-                        <a href="reservez-un-stand.html">
-                            <img src="images/package-expo.jpg" alt="Eventbrite">
-                            <p id="pre1">RÉSERVEZ UN STAND</p>
-                        </a>
-                    </div>
-                    <div class="option">
-                        <a href="checkout.html">
-                            <img src="images/packages.jpg" alt="Paypal">
-                            <p id="pre2">RÉSERVEZ UNE PLACE</p>
-                        </a>
-                    </div>
-                    <div class="option">
-                        <a href="donation.html">
-                            <img src="images/donate.png" alt="Donation">
-                            <p id="pre3">SOUTENEZ LA CONVENTION AVEC VOTRE DONATION</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
-
-        
-        
-    </main>
-
-<!-- HTML -->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <!-- Section d'abonnement -->
-            <div class="col-md-3">
-                <h4 id="f1">Abonnez-vous à notre lettre d'informations</h4>
-                <form>
-                    <input type="email" placeholder="Email*" class="form-control mb-2">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="policyCheck">
-                        <label class="form-check-label" for="policyCheck" id="f2">
-                            J'accepte la politique de confidentialité et les conditions d'utilisation.
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-green mt-2">ABONNEZ-VOUS</button>
-                </form>
-                <div class="social-icons mt-3">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-
-            <!-- Liens rapides -->
-            <div class="col-md-3">
-                <h4 id="f3">Liens rapides</h4>
-                <ul class="quick-links">
-                    <li><a id="accueilLink" href="/">Accueil</a></li>
-                    <li><a id="aboutLink" href="information.html">À Propos de nous</a></li>
-                    <li><a id="eventsLink" href="ceka2024.html">Événements</a></li>
-                    <li><a id="donationLink" href="donation.html">Faire un don</a></li>
-                </ul>
-            </div>
-
-            <!-- Communauté -->
-            <div class="col-md-3">
-                <h4 id="communaute">Communauté EBYA</h4>
-                <p id="communauteText">Nous nous efforçons d'encourager la collaboration et la solidarité entre les membres de notre communauté.</p>
-                <img src="images/logos/ebya.jpg" alt="EBYA Logo" class="footer-logo">
-            </div>
-
-            <!-- S'engager -->
-            <div class="col-md-3">
-                <h4 id="sEngager">S'engager</h4>
-                <p id="sEngagerText">Rejoignez notre communauté dès aujourd'hui et découvrez les nombreuses opportunités que nous offrons pour faire une différence significative.</p>
-                <a id="contactLink" href="contacts.html" class="btn btn-red">CONTACTEZ-NOUS</a>
+            <!-- Sélecteur de langue sur l'image -->
+            <!-- Traduction des titres et descriptions -->
+            <div class="language-selector">
+                <button class="btn btn-outline-success" onclick="changeLanguage('fr')">Français</button>
+                <button class="btn btn-outline-success" onclick="changeLanguage('en')">English</button>
+                <button class="btn btn-outline-success" onclick="changeLanguage('es')">Español</button>
             </div>
         </div>
-        <div class="footer-bottom ">
-            <p id="footer-text">Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à  EBYA</p>
-        </div>
-    </div>
-        
+    </header> 
 
-            
-</footer>
-
-
-
-<script>
-    const translations = {
-        fr: {
-            navHome: "Accueil",
-            navAssociations: "Nos associations",
-            navEvents: "CEKA 2024",
-            navDiscover: "Découvrir EBYA",
-            navPublications: "Publications",
-            navMissions: "Missions/Valeurs",
-            navOrgchart: "Orgchart",
-            navCommissions: "Commissions",
-            navPartners: "Partenaires",
-            navGallery: "Galerie",
-            navAbout: "A propos de nous",
-            navDonate: "Faire un don",
-            navlink1: "Nous contacter ☎",
-            footerText: "Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à EBYA",
-            f1: "Abonnez-vous à notre lettre d'informations",
-            f2: "J'accepte la politique de confidentialité et les conditions d'utilisation.",
-            f3: "Liens rapides",
-            footerText: "Règles de confidentialité et conditions d'utilisation. - Copyright © 2024. Tout droit réservé à EBYA",
-            accueilLink:"Accueil",
-            aboutLink:"À Propos de nous",
-            eventsLink:"Événements",
-            donationLink:"Faire un don",
-            communaute:"Communauté EBYA",
-            communauteText:"Nous nous efforçons d'encourager la collaboration et la solidarité entre les membres de notre communauté." ,
-            sEngager:"S'engager",
-            sEngagerText:"Rejoignez notre communauté dès aujourd'hui et découvrez les nombreuses opportunités que nous offrons pour faire une différence significative.",
-            contactLink: "CONTACTEZ-NOUS" , 
-            t1 : "CEKA GRAND CONGRES 2024" , 
-            t2 : "DU 05/12/2024 AU 08/12/2024" , 
-            prepar : "<p><strong>Bienvenue au CEKA 2024 !,</strong><br><br>Chers invités, participants et membres de la communauté,C'est avec une immense joie et un profond sentiment de fierté que nous vous accueillons à l'événement <strong>CEKA 2024.</strong> Cet événement, fruit de nos efforts collectifs et de notre engagement envers la culture et l'unité, est une occasion exceptionnelle de célébrer notre riche patrimoine, de renforcer nos liens et de tracer ensemble la voie vers un avenir prometteur. <br><br>Nous avons travaillé sans relâche pour que <strong>CEKA 2024</strong> soit plus qu'une simple rencontre : une expérience inoubliable, empreinte de partage, de découvertes et d'enrichissement mutuel. Cette année, notre programme regorge d'activités interculturelles passionnantes, de moments de convivialité, et de surprises qui sauront ravir chacun d'entre vous. <br><br>Votre présence ici témoigne de l'importance de cet événement pour nous tous, et nous espérons que ces jours passés ensemble seront à la hauteur de vos attentes. <strong>CEKA 2024</strong> est l'occasion de célébrer nos traditions, d'échanger des idées, et de construire des ponts entre nos différentes communautés. <br> <br><strong>Email : Ebya2024@gmail.com</strong><br><a href='contacts.html' class='Bouton-contacts'>Nous contacter</a></p>" , 
-            prog : "PROGRAMME DE L'EVENEMENT" , 
-            dprog : "Téléchargez le programme" ,
-            p1 : "Arrivée et installation des participants (HOTEL DOUBLE TREE Washington DC)" , 
-            p2 : "Petit déjeuner & Départ pour le tour de ville" , 
-            p3 : "Visite guidée du Capitole et de la Maison Blanche" , 
-            p4 : "Soirée Culturelle (Conférence, Danses traditionnelles, Dîner, Défilé de mode)" , 
-            p5 : "Petit déjeuner & Ouverture Officielle de la Foire Exposition" , 
-            p6 : "Travaux de Présentation du parcours et de la vision de EBYA" , 
-            p7 : "Soirée de Gala et Fundraising" , 
-            p8 : "Petit Déjeuner & Débriefing" , 
-            p9 : "Départ des participants" , 
-            j1 : "Jeudi 05/12/2024" , 
-            j2 : "Jeudi 05/12/2024" , 
-            j3 : "Jeudi 05/12/2024" , 
-            j4 : "Jeudi 05/12/2024" , 
-            j5 : "Samedi 07/12/2024" , 
-            j6 : "Samedi 07/12/2024" , 
-            j7 : "Samedi 07/12/2024" , 
-            j8 : "Dimanche 08/12/2024" , 
-            j9 : "Dimanche 08/12/2024" , 
-            secre : "Réservez maintenant votre place pour l'évènement" , 
-            pre1 : "RÉSERVEZ UN STAND" , 
-            pre2 : "RÉSERVEZ UNE PLACE" , 
-            pre3 : "SOUTENEZ LA CONVENTION AVEC VOTRE DONATION"
-        },
-        en: {
-            navHome: "Home",
-            navAssociations: "Our associations",
-            navEvents: "CEKA 2024",
-            navDiscover: "Discover EBYA",
-            navPublications: "Publications",
-            navMissions: "Missions/Values",
-            navOrgchart: "Orgchart",
-            navCommissions: "Commissions",
-            navPartners: "Partners",
-            navGallery: "Gallery",
-            navAbout: "About us",
-            navDonate: "Donate",
-            navlink1: "Contact us ☎",
-            footerText: "Privacy Policy and Terms of Use. - Copyright © 2024. All rights reserved to EBYA",
-            f1: "Subscribe to our newsletter",
-            f2: "I accept the privacy policy and terms of use.",
-            f3: "Quick links",
-            footerText: "Privacy Policy and Terms of Use. - Copyright © 2024. All rights reserved to EBYA",
-            accueilLink:"Home",
-            aboutLink:"About Us",
-            eventsLink:"Events",
-            donationLink:"Make a donation",
-            communaute:"EBYA community" , 
-            communauteText :"We strive to encourage collaboration and solidarity among members of our community.",
-            sEngager:"Get involved" ,
-            sEngagerText:"Join our community today and discover the many opportunities we offer to make a meaningful difference.",
-            contactLink: "CONTACT US" , 
-            t1 : "CEKA GREAT CONGRESS 2024" , 
-            t2 : "FROM 05/12/2024 TO 08/12/2024" , 
-            prepar : "<p><strong>Welcome to CEKA 2024!,</strong><br><br>Dear guests, participants and members of the community, It is with immense joy and a deep sense of pride that we welcome you welcome to the <strong>CEKA 2024.</strong> event, the fruit of our collective efforts and our commitment to culture and unity, is an exceptional opportunity to celebrate our rich heritage, strengthen our bonds and to chart the path together towards a promising future. <br><br>We have worked tirelessly to ensure that <strong>CEKA 2024</strong> is more than just a meeting: an unforgettable experience, marked by sharing, discoveries and mutual enrichment. This year, our program is full of exciting intercultural activities, moments of conviviality, and surprises that will delight each of you. <br><br>Your presence here testifies to the importance of this event for all of us, and we hope that these days spent together will live up to your expectations. <strong>CEKA 2024</strong> is an opportunity to celebrate our traditions, exchange ideas, and build bridges between our different communities. <br> <br><strong>Email: Ebya2024@gmail.com</strong><br><a href='contacts.html' class='Bouton-contacts'>Contact us</a></p>" , 
-            prog : "EVENT PROGRAM" , 
-            dprog : "Download the program" , 
-            p1 : "Arrival and installation of participants (HOTEL DOUBLE TREE Washington DC)" , 
-            p2 : "Breakfast & Departure for the city tour" , 
-            p3 : "Guided tour of the Capitol and the White House" , 
-            p4 : "Cultural Evening (Conference, Traditional Dances, Dinner, Fashion Show)" , 
-            p5 : "Breakfast & Official Opening of the Exhibition Fair" , 
-            p6 : "Presentation work on the journey and vision of EBYA" , 
-            p7 : "Gala Evening and Fundraising" , 
-            p8 : "Breakfast & Debriefing" , 
-            p9 : "Departure of participants" ,
-            j1 : "Thursday 05/12/2024" , 
-            j2 : "Thursday 05/12/2024" , 
-            j3 : "Thursday 05/12/2024" , 
-            j4 : "Thursday 05/12/2024" , 
-            j5 : "Saturday 07/12/2024" , 
-            j6 : "Saturday 07/12/2024" , 
-            j7 : "Saturday 07/12/2024" , 
-            j8 : "Sunday 08/12/2024" , 
-            j9 : "Sunday 08/12/2024" , 
-            secre : "Reserve your place now for the event" , 
-            pre1 : "RESERVE A STAND" , 
-            pre2 : "RESERVE A PLACE" , 
-            pre3 : "SUPPORT THE CONVENTION WITH YOUR DONATION"
-            
-        },
-        es: {
-            navHome: "Inicio",
-            navAssociations: "Nuestras asociaciones",
-            navEvents: "CEKA 2024",
-            navDiscover: "Descubre EBYA",
-            navPublications: "Publicaciones",
-            navMissions: "Misiones/Valores",
-            navOrgchart: "Organigrama",
-            navCommissions: "Comisiones",
-            navPartners: "Socios",
-            navGallery: "Galería",
-            navAbout: "Sobre nosotros",
-            navDonate: "Donar",
-            navlink1: "Contáctanos ☎",
-            footerText: "Política de privacidad y condiciones de uso. - Copyright © 2024. Todos los derechos reservados a EBYA" , 
-            f1: "Suscríbete a nuestro boletín",
-            f2 : "Acepto la política de privacidad y condiciones de uso." ,
-            f3: "Enlaces rápidos" ,
-            footerText: "Política de privacidad y condiciones de uso. - Copyright © 2024. Todos los derechos reservados a EBYA",
-            accueilLink:"Inicio",
-            aboutLink:"Sobre nosotros",
-            eventsLink:"Eventos",
-            donationLink:"Haz una donación",
-            communaute:"Comunidad EBYA",
-            communauteText:"Nos esforzamos por fomentar la colaboración y la solidaridad entre los miembros de nuestra comunidad.",
-            sEngager:"Complicarse" , 
-            sEngagerText:"Únase a nuestra comunidad hoy y descubra las muchas oportunidades que ofrecemos para marcar una diferencia significativa.",
-            contactLink:"CONTÁCTENOS" , 
-            t1 : "GRAN CONGRESO CEKA 2024" , 
-            t2 : "DEL 12/05/2024 AL 12/08/2024" , 
-            prepar : "<p><strong>¡Bienvenidos a CEKA 2024!,</strong><br><br>Estimados invitados, participantes y miembros de la comunidad: Es con inmensa alegría y un profundo sentido de orgullo que les damos la bienvenida. al evento <strong>CEKA 2024.</strong>, fruto de nuestros esfuerzos colectivos y nuestro compromiso con la cultura y la unidad, es una oportunidad excepcional para celebrar nuestro rico patrimonio, fortalecer nuestros vínculos y trazar juntos el camino hacia una perspectiva prometedora. futuro. <br><br>Hemos trabajado incansablemente para que <strong>CEKA 2024</strong> sea más que un simple encuentro: una experiencia inolvidable, marcada por el intercambio, los descubrimientos y el enriquecimiento mutuo. Este año, nuestro programa está lleno de emocionantes actividades interculturales, momentos de convivencia y sorpresas que deleitarán a cada uno de ustedes. <br><br>Su presencia aquí demuestra la importancia de este evento para todos nosotros, y esperamos que estos días que pasamos juntos estén a la altura de sus expectativas. <strong>CEKA 2024</strong> es una oportunidad para celebrar nuestras tradiciones, intercambiar ideas y construir puentes entre nuestras diferentes comunidades. <br> <br><strong>Correo electrónico: Ebya2024@gmail.com</strong><br><a href='contacts.html' class='Bouton-contacts'>Contáctenos</a></p>" , 
-            prog : "PROGRAMA DEL EVENTO" , 
-            dprog : "Descarga el programa" , 
-            p1 : "Llegada e instalación de los participantes (HOTEL DOUBLE TREE Washington DC)" , 
-            p2 : "Desayuno y salida para el city tour." , 
-            p3 : "Visita guiada al Capitolio y la Casa Blanca." , 
-            p4 : "Velada Cultural (Conferencia, Danzas Tradicionales, Cena, Desfile de Moda)" , 
-            p5 : "Desayuno & Inauguración Oficial de la Feria de Exposiciones" , 
-            p6 : "Trabajo de presentación sobre el recorrido y visión de EBYA." , 
-            p7 : "Noche de gala y recaudación de fondos" , 
-            p8 : "Desayuno y sesión informativa" , 
-            p9 : "Salida de los participantes",
-            j1 : "Jueves 05/12/2024" , 
-            j2 : "Jueves 05/12/2024" , 
-            j3 : "Jueves 05/12/2024" , 
-            j4 : "Jueves 05/12/2024" , 
-            j5 : "Sabado 07/12/2024" , 
-            j6 : "Sabado 07/12/2024" ,
-            j7 : "Sabado 07/12/2024" , 
-            j8 : "Domingo 08/12/2024" , 
-            j9 : "Domingo 08/12/2024" , 
-            secre : "Reserva ya tu plaza para el evento" , 
-            pre1 : "RESERVAR STAND" , 
-            pre2 : "RESERVAR LUGAR" , 
-            pre3 : "APOYA LA CONVENCIÓN CON TU DONACIÓN"
-
-
-        }
-    };
-
-    function changeLanguage() {
-        const selectedLanguage = document.getElementById("language-select").value;
-        localStorage.setItem('selectedLanguage', selectedLanguage); // Enregistrer la langue
-        const elementsToTranslate = {
-            navHome: "nav-home",
-            navAssociations: "nav-associations",
-            navEvents: "nav-events",
-            navDiscover: "nav-discover",
-            navPublications: "nav-publications",
-            navMissions: "nav-missions",
-            navOrgchart: "nav-orgchart",
-            navCommissions: "nav-commissions",
-            navPartners: "nav-partners",
-            navGallery: "nav-gallery",
-            navAbout: "nav-about",
-            navDonate: "nav-donate",
-            navlink1: "navlink1",
-            footerText: "footer-text" , 
-            f1: "f1",
-            f2: "f2",
-            f3: "f3",
-            footerText: "footer-text",
-            accueilLink:"accueilLink",
-            aboutLink:"aboutLink",
-            eventsLink:"eventsLink",
-            donationLink:"donationLink",
-            communaute:"communaute",
-            communauteText:"communauteText",
-            sEngager:"sEngager" , 
-            sEngagerText:"sEngagerText" ,
-            contactLink : "contactLink" , 
-            t1 : "t1" , 
-            t2 : "t2" , 
-            prepar : "prepar" , 
-            prog : "prog" , 
-            dprog : "dprog" , 
-            p1 : "p1" , 
-            p2 : "p2" , 
-            p3 : "p3" , 
-            p4 : "p4" , 
-            p5 : "p5" , 
-            p6 : "p6" , 
-            p7 : "p7" ,
-            p8 : "p8" ,
-            p9 : "p9" , 
-            j1 : "j1" ,
-            j2 : "j2" , 
-            j3 : "j3" , 
-            j4 : "j4" , 
-            j5 : "j5" , 
-            j6 : "j6" , 
-            j7 : "j7" , 
-            j8 : "j8" , 
-            j9 : "j9" ,
-            secre : "secre" , 
-            pre1 : "pre1" , 
-            pre2 : "pre2" , 
-            pre3 : "pre3"
-        };
-        for (const [key, elementId] of Object.entries(elementsToTranslate)) {
-            document.getElementById(elementId).innerHTML = translations[selectedLanguage][key];
-        }
-    }
-
-    window.onload = function() {
-        const savedLanguage = localStorage.getItem('selectedLanguage') || 'fr'; // Langue par défaut
-        document.getElementById('language-select').value = savedLanguage;
-        changeLanguage(); // Appliquer la langue enregistrée
-    };
     
-</script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="2e3cf2f0-b3ff-499e-b2ab-a11311879d35";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-    <script>
-        // Change header properties on scroll
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('header');
-            const navLinks = document.querySelectorAll('.nav-link');
-        
-            if (window.scrollY > 25) {
-                header.style.top = '0'; // Fix the header at the top
-                header.style.transition = 'top 1s';
-                navLinks.forEach(link => link.style.color = '#000'); // Black text color
-            } else {
-                header.style.top = 'auto'; // Reset top to auto
-                navLinks.forEach(link => link.style.color = '#fff'); // White text color
-            }
-        });
+    <h1 class="text-center mb-4" id="t1">Album CEKA 2024</h1>
+        <div class="container mt-5 containimg">
+            <div class="row g-3"> <!-- Espacement entre les items -->
+              <!-- Exemple d'image -->
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (14).jpg" alt="Photo 1" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (15).jpg" alt="Photo 2" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (16).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (17).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (18).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (19).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (20).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (21).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (22).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (23).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (24).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (25).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (26).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (27).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (28).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (29).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (30).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (31).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (32).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (33).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (35).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (36).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (37).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (38).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (39).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (40).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (41).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/1 (42).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (1).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (2).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (3).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (4).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (5).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (6).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (7).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (8).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (9).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (10).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (11).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (12).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (13).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (15).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (16).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (17).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (18).jpg" alt="Photo 3" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (19).jpg" alt="Photo 19" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (20).jpg" alt="Photo 20" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (21).jpg" alt="Photo 21" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (22).jpg" alt="Photo 22" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (23).jpg" alt="Photo 23" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (24).jpg" alt="Photo 24" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (25).jpg" alt="Photo 25" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (26).jpg" alt="Photo 26" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (27).jpg" alt="Photo 27" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (28).jpg" alt="Photo 28" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (29).jpg" alt="Photo 29" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (30).jpg" alt="Photo 30" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (31).jpg" alt="Photo 31" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (32).jpg" alt="Photo 32" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (33).jpg" alt="Photo 33" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (34).jpg" alt="Photo 34" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (35).jpg" alt="Photo 35" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (36).jpg" alt="Photo 36" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (37).jpg" alt="Photo 37" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (38).jpg" alt="Photo 38" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (39).jpg" alt="Photo 39" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (40).jpg" alt="Photo 40" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (41).jpg" alt="Photo 41" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (42).jpg" alt="Photo 42" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (43).jpg" alt="Photo 43" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (44).jpg" alt="Photo 44" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (45).jpg" alt="Photo 45" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (46).jpg" alt="Photo 46" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (47).jpg" alt="Photo 47" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (48).jpg" alt="Photo 48" class="gallery-img">
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="photo-item">
+                  <img src="images/Ceka2024gallery/2 (49).jpg" alt="Photo 49" class="gallery-img">
+                </div>
+              </div>
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const elements = document.querySelectorAll('.containermotsm');
-        
-            function checkVisibility() {
-                elements.forEach(element => {
-                    const rect = element.getBoundingClientRect();
-                    if (rect.top < window.innerHeight && rect.bottom > 0) {
-                        element.classList.add('visible');
-                    } else {
-                        element.classList.remove('visible');
-                    }
-                });
-            }
-        
-            window.addEventListener('scroll', checkVisibility);
-            checkVisibility(); // Trigger the check on load
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const elements = document.querySelectorAll('.containermots');
-        
-            function checkVisibility() {
-                elements.forEach(element => {
-                    const rect = element.getBoundingClientRect();
-                    if (rect.top < window.innerHeight && rect.bottom > 0) {
-                        element.classList.add('visible');
-                    } else {
-                        element.classList.remove('visible');
-                    }
-                });
-            }
-        
-            window.addEventListener('scroll', checkVisibility);
-            checkVisibility(); // Trigger the check on load
-        });
-        
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const elements = document.querySelectorAll('.top-sectionp');
-        
-            function checkVisibility() {
-                elements.forEach(element => {
-                    const rect = element.getBoundingClientRect();
-                    if (rect.top < window.innerHeight && rect.bottom > 0) {
-                        element.classList.add('visible');
-                    } else {
-                        element.classList.remove('visible');
-                    }
-                });
-            }
-        
-            window.addEventListener('scroll', checkVisibility);
-            checkVisibility(); // Trigger the check on load
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const elements = document.querySelectorAll('.convention-navigator');
-        
-            function checkVisibility() {
-                elements.forEach(element => {
-                    const rect = element.getBoundingClientRect();
-                    if (rect.top < window.innerHeight && rect.bottom > 0) {
-                        element.classList.add('visible');
-                    } else {
-                        element.classList.remove('visible');
-                    }
-                });
-            }
-        
-            window.addEventListener('scroll', checkVisibility);
-            checkVisibility(); // Trigger the check on load
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const elements = document.querySelectorAll('.convention-navigator h2');
-        
-            function checkVisibility() {
-                elements.forEach(element => {
-                    const rect = element.getBoundingClientRect();
-                    if (rect.top < window.innerHeight && rect.bottom > 0) {
-                        element.classList.add('visible');
-                    } else {
-                        element.classList.remove('visible');
-                    }
-                });
-            }
-        
-            window.addEventListener('scroll', checkVisibility);
-            checkVisibility(); // Trigger the check on load
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const elements = document.querySelectorAll('.vip-section');
-        
-            function checkVisibility() {
-                elements.forEach(element => {
-                    const rect = element.getBoundingClientRect();
-                    if (rect.top < window.innerHeight && rect.bottom > 0) {
-                        element.classList.add('visible');
-                    } else {
-                        element.classList.remove('visible');
-                    }
-                });
-            }
-        
-            window.addEventListener('scroll', checkVisibility);
-            checkVisibility(); // Trigger the check on load
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const elements = document.querySelectorAll('.vip-options');
-        
-            function checkVisibility() {
-                elements.forEach(element => {
-                    const rect = element.getBoundingClientRect();
-                    if (rect.top < window.innerHeight && rect.bottom > 0) {
-                        element.classList.add('visible');
-                    } else {
-                        element.classList.remove('visible');
-                    }
-                });
-            }
-        
-            window.addEventListener('scroll', checkVisibility);
-            checkVisibility(); // Trigger the check on load
-        });
+            
+              
+              
+              
+              <!-- Répétez pour toutes les images -->
+            </div>
+          </div>
 
 
-    </script>
+           <h1 class="text-center mb-4" id="t1v">Galerie vidéo du CEKA 2023</h1>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xcebj5UkOiA?si=hgyRICZGYpmVl-dB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <hr>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4X9wVom7xdA?si=ODKQV8veEthY_Put" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <hr>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/U2-1mnEzW4s?si=gL68NGxz3fHEKY-f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          
+          <hr>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fs7MdaZaFBQ?si=GxHwhiC3lg80qJCR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          <hr>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Gmnk4uB4wog?si=ywv4PY4gWyQ6coFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <hr>
+
+        <!-- Footer avec menu -->
+        <footer class="bg-dark text-white text-center py-4">
+            <img src="images/logos/ebya-removebg.png" alt="Logo Ekang" class="mb-3" width="100">
+            <nav>
+                <a href="/index.html" class="text-white mx-3">Home</a>
+                <a href="Nda_Ekang.html" class="text-white mx-3">Nda Ekang Y'Amerka</a>
+                <a href="Ceka.html" class="text-white mx-3">CEKA</a>
+                <a href="News.html" class="text-white mx-3">News</a>
+                <a href="#" class="text-white mx-3">Store</a>
+                <a href="donate.html" class="text-white mx-3">Donate</a>
+            </nav>
+            <p class="mt-3">© 2024 Ekang Bese Y'Amerka - Tous droits réservés</p>
+        </footer>
     
-</body>
-
-</html>
+        <!-- Bootstrap & AOS Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true  // Les animations se produiront une seule fois
+              });
+          
+    
+            // Traduction manuelle des textes
+            function changeLanguage(language) {
+                const titles = {
+                    'fr': "Echo Ceka 2024",
+                    'en': "Echo Ceka 2024",
+                    'es': "Echo Ceka 2024"
+                };
+        
+                const descriptions = {
+                    'fr': "Découvrez notre vidéo exclusive \"Echo Ceka 2024\", une expérience visuelle captivante qui vous plonge dans l'événement.",
+                    'en': "Discover our exclusive video \"Echo Ceka 2024\", a captivating visual experience that takes you into the event.",
+                    'es': "Descubre nuestro video exclusivo \"Echo Ceka 2024\", una experiencia visual cautivadora que te sumerge en el evento."
+                };
+        
+                // Changer le titre
+                document.querySelector('.section-title').textContent = titles[language];
+        
+                // Changer la description
+                document.querySelector('.section-description').textContent = descriptions[language];
+            }
+        </script>
+    </body>
+    </html>

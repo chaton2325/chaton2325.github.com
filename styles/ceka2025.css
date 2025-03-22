@@ -73,11 +73,13 @@ body {
 
 
 
+
+
 /* Hero Section */
 .hero {
     position: relative;
     height: 500px;
-    background: url('../images/contacts.jpg') no-repeat center center/cover;
+    background: url('../images/CEKA.jpg') no-repeat center center/cover;
 }
 
 .overlay {
@@ -113,40 +115,41 @@ body {
 }
 
 
-.contact-item {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
+#ceka-event {
+    background: linear-gradient(to right, #f4f4f4, #e0c8a3);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .event-details {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .video-wrapper iframe {
     border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  }
-  .contact-item h4 {
-    color: #333;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  .contact-item p {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-  .contact-item i {
-    color: #56c798;
-    margin-right: 10px;
-  }
-  .whatsapp-btn {
-    display: inline-block;
-    background-color: #25d366;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    text-decoration: none;
-    margin-top: 10px;
-  }
-  .whatsapp-btn:hover {
-    background-color: #128c7e;
   }
 
+  h2.display-4 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #3e3e3e;
+  }
+  
+  p.lead {
+    font-family: 'Arial', sans-serif;
+    color: #666;
+  }
+  
+  .btn-primary {
+    background-color: #4E4B31;
+    border-color: #4E4B31;
+  }
+
+  .btn-primary:hover {
+    background-color: #3d3a28;
+    border-color: #3d3a28;
+  }
 
 /* Footer */
 footer {

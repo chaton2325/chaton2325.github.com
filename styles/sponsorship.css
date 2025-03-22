@@ -77,7 +77,7 @@ body {
 .hero {
     position: relative;
     height: 500px;
-    background: url('../images/contacts.jpg') no-repeat center center/cover;
+    background: url('../images/sponsor.jpg') no-repeat center center/cover;
 }
 
 .overlay {
@@ -111,41 +111,6 @@ body {
 .language-selector .btn {
     font-size: 1rem;
 }
-
-
-.contact-item {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  }
-  .contact-item h4 {
-    color: #333;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  .contact-item p {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-  .contact-item i {
-    color: #56c798;
-    margin-right: 10px;
-  }
-  .whatsapp-btn {
-    display: inline-block;
-    background-color: #25d366;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    text-decoration: none;
-    margin-top: 10px;
-  }
-  .whatsapp-btn:hover {
-    background-color: #128c7e;
-  }
 
 
 /* Footer */

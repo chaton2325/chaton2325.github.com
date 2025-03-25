@@ -76,7 +76,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 350px;
+    height: 278px;
     background: url('../images/fond1.jpg') no-repeat center center/cover;
 }
 
@@ -133,6 +133,34 @@ body {
     background-color: #3d3a28;
     border-color: #3d3a28;
   }
+
+  .whatsapp-section {
+    background: linear-gradient(135deg, #28a745, #ffffff);
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.whatsapp-section h2 {
+    color: #fff;
+    font-weight: bold;
+}
+.whatsapp-section p {
+    color: #333;
+}
+.whatsapp-btn {
+    background-color: #25d366;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+.whatsapp-btn:hover {
+    background-color: #1ebe57;
+}
 
 /* Section Vidéo */
 #video-section {

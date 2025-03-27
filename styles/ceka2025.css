@@ -78,8 +78,18 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 278px;
+    height: 120px;
     background: url('../images/CEKA.jpg') no-repeat center center/cover;
+}
+
+/* Boutons de traduction */
+.language-selector {
+    text-align: center;
+}
+
+.language-selector button {
+    padding: 5px 10px;
+    font-size: 1.2rem;
 }
 
 .overlay {
@@ -101,18 +111,14 @@ body {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .hero p {
-    font-size: 1.8rem;
-}
-
-/* Sélecteur de langue */
-.language-selector .btn {
     font-size: 1rem;
 }
+
 
 
 #ceka-event {

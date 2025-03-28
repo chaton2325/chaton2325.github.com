@@ -215,4 +215,18 @@ footer nav a:hover {
     .photo-item img {
         margin-bottom: 10px;
       }
+
+      .hero h1 {
+        font-size: 1.6rem;
+        font-weight: bold;
+       margin-top: 70px;
+    }
+
+    
+    /* Hero Section */
+    /* Hero Section */
+    .hero {
+      height: 195px;
+      
+  }
 }

@@ -224,4 +224,18 @@ footer nav a:hover {
     .section-description {
         font-size: 0.9rem;
     }
+
+    .hero h1 {
+        font-size: 1.6rem;
+        font-weight: bold;
+       margin-top: 70px;
+    }
+
+    
+    /* Hero Section */
+    /* Hero Section */
+    .hero {
+        height: 195px;
+        
+    }
 }

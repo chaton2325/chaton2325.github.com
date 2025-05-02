@@ -123,6 +123,7 @@ body {
 .language-selector button {
     padding: 5px 10px;
     font-size: 1.2rem;
+    background-color: white;
 }
 
 /* Section À propos */

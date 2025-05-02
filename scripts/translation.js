@@ -13,6 +13,7 @@ const translations = {
         "Contacts": "Contacts",
         "Official sponsors": "Sponsors officiels",
         "Become sponsors": "Devenir sponsor",
+        "about-text" : "Ekang Bese Y'Amerka (EBYA) est une organisation à but non lucratif constituée dans l'État de New York, et notre statut d'exonération fiscale 501(c)(3) est actuellement en attente auprès de l'IRS.",
         
         // Common sections
         "Welcome": "Bienvenue",
@@ -114,6 +115,73 @@ const translations = {
         "The Association of EKANG in the United States organizes an annual cultural event called CEKA with the aim of gathering and promoting the EKANG culture.": "L'Association des EKANG aux États-Unis organise un événement culturel annuel appelé CEKA dans le but de rassembler et de promouvoir la culture EKANG.",
         "Cultural Experience Kamerun & America": "Expérience Culturelle Kamerun & Amérique",
 
+        //Donate
+        "Support the EKANGS": "Soutenir les EKANGS",
+        "Your generous contributions will help us continue our cultural events and programs. Choose a donation method below to make a difference.": "Vos généreuses contributions nous aideront à poursuivre nos événements et programmes culturels. Choisissez votre mode de don ci-dessous pour faire la différence.",
+        "Donate via PayPal": "Donner via PayPal",
+        "Donate via Square": "Donner via Square",
+        "Donation in kind": "Don en nature",
+        "Zelle donation (donate to zelle via email : ebya2024@gmail.com)": "Don via Zelle (envoyez à l'email : ebya2024@gmail.com)",
+        "Your Donations Make a Difference": "Vos Dons Font la Différence",
+        "Every donation you make helps to fund our EKANG projects, ensuring the continuation of cultural events, educational programs, and community growth. Your support is vital in creating a lasting impact for our people.": "Chaque don que vous faites aide à financer nos projets EKANG, assurant la continuité des événements culturels, des programmes éducatifs et de la croissance communautaire. Votre soutien est vital pour créer un impact durable pour notre peuple.",
+        "Cultural Events": "Événements Culturels",
+        "Your donations help fund annual cultural events like CEKA, promoting the richness of EKANG culture and unity among our people.": "Vos dons aident à financer des événements culturels annuels comme CEKA, promouvant la richesse de la culture EKANG et l'unité parmi notre peuple.",
+        "Community Projects": "Projets Communautaires",
+        "Donations help fund community-building projects that strengthen the bonds among EKANGs, promoting well-being and progress.": "Les dons aident à financer des projets communautaires qui renforcent les liens entre les EKANGs, promouvant le bien-être et le progrès.",
+        "Empowering Communities": "Renforcer les Communautés",
+        "Your contributions support initiatives that build stronger communities, fostering unity, and ensuring long-term development for EKANGs.": "Vos contributions soutiennent des initiatives qui construisent des communautés plus fortes, favorisant l'unité et assurant un développement à long terme pour les EKANGs.",
+        "Donation Disclaimer": "Avertissement sur les dons",
+        "<strong>Ekang Bese Y'Amerka (EBYA)</strong> is a nonprofit corporation incorporated in the State of New York. We have filed an application for recognition of tax-exempt status under Section 501(c)(3) of the Internal Revenue Code.": 
+        "Ekang Bese Y'Amerka (EBYA) est une organisation à but non lucratif enregistrée dans l'État de New York. Nous avons déposé une demande de reconnaissance d'exonération fiscale en vertu de l'article 501(c)(3) du Code des impôts américain.",
+        
+        "While our application is pending, donations are not yet officially tax-deductible. If the IRS approves our application — and we filed within the required timeframe — the tax-exempt status will be retroactive to our incorporation date, and your contribution may become tax-deductible at that time.":
+        "Pendant que notre demande est en cours d'examen, les dons ne sont pas encore officiellement déductibles des impôts. Si l'IRS approuve notre demande - et que nous avons déposé dans les délais requis - le statut d'exonération fiscale sera rétroactif à la date de notre incorporation, et votre contribution pourra alors devenir déductible des impôts.",
+        
+        "We appreciate your support as we work toward achieving full federal tax-exempt status.":
+        "Nous apprécions votre soutien alors que nous travaillons à l'obtention du statut complet d'exonération fiscale fédérale.",
+
+        "Sponsorships": "Sponsors",
+        "Sponsorship Packages": "Packages de Sponsoring",
+        "Choose the sponsorship package that best suits your goals and join us in making CEKA 2025 an unforgettable event!": 
+        "Choisissez le package de sponsoring qui correspond le mieux à vos objectifs et rejoignez-nous pour faire de CEKA 2025 un événement inoubliable !",
+        
+        // Sponsorship Tiers
+        "Official Sponsor": "Sponsor Officiel",
+        "(Only one available)": "(Un seul disponible)",
+        "Platinum Sponsor": "Sponsor Platine",
+        "Gold Sponsor": "Sponsor Or",
+        "Silver Sponsor": "Sponsor Argent",
+        "Bronze Sponsor": "Sponsor Bronze",
+        "Hearth Felt Sponsor": "Sponsor de Cœur",
+        
+        // Sponsorship Benefits
+        "Exclusive sponsorship of the event": "Sponsoring exclusif de l'événement",
+        "Logo on all event materials": "Logo sur tous les supports de l'événement",
+        "Recognition on stage": "Reconnaissance sur scène",
+        "VIP seating and more": "Sièges VIP et plus",
+        "Brand placement on event banners": "Placement de marque sur les bannières de l'événement",
+        "Booth space for direct engagement": "Espace de stand pour engagement direct",
+        "6 months recognition on EBYA website": "6 mois de reconnaissance sur le site EBYA",
+        "10 social media recognitions": "10 reconnaissances sur les réseaux sociaux",
+        "10 VIP seats at concert & gala": "10 places VIP au concert & gala",
+        "3 months recognition on EBYA website": "3 mois de reconnaissance sur le site EBYA",
+        "5 social media recognitions": "5 reconnaissances sur les réseaux sociaux",
+        "1 month recognition on EBYA website": "1 mois de reconnaissance sur le site EBYA",
+        "1 social media recognition": "1 reconnaissance sur les réseaux sociaux",
+        "1/2 page ad in CEKA program": "1/2 page de pub dans le programme CEKA",
+        "3 VIP seats at concert & gala": "3 places VIP au concert & gala",
+        "Acknowledgment on materials & website": "Reconnaissance sur les supports & site web",
+        "2 VIP seats at concert & gala": "2 places VIP au concert & gala",
+        
+        // Download Section
+        "Download the Official Document": "Télécharger le Document Officiel",
+        "Access the official document of CEKA 2025 to learn more about the event details, sponsorship opportunities, and more!": 
+        "Accédez au document officiel de CEKA 2025 pour en savoir plus sur les détails de l'événement, les opportunités de sponsoring et plus encore !",
+        "Download PDF": "Télécharger PDF",
+        
+        // Common
+        "Become a Sponsor": "Devenir Sponsor",
+
         sponsorship: {
             title: "NOS OFFRES DE SPONSORING",
             subtitle: "Soutenez l'Association Ekang",
@@ -183,6 +251,7 @@ const translations = {
         "Contacts": "Contacts",
         "Official sponsors": "Official sponsors",
         "Become sponsors": "Become sponsors",
+        "about-text" : "Ekang Bese Y'Amerka (EBYA) is a nonprofit organization incorporated in the state of New York, and our 501(c)(3) tax-exempt status is currently pending with the IRS.",
         
         // Common sections
         "Welcome": "Welcome",
@@ -283,6 +352,8 @@ const translations = {
         "CEKA provides a platform for members to network, collaborate, and build lasting professional and personal connections.": "CEKA provides a platform for members to network, collaborate, and build lasting professional and personal connections.",
         "The Association of EKANG in the United States organizes an annual cultural event called CEKA with the aim of gathering and promoting the EKANG culture.": "The Association of EKANG in the United States organizes an annual cultural event called CEKA with the aim of gathering and promoting the EKANG culture.",
         "Cultural Experience Kamerun & America": "Cultural Experience Kamerun & America",
+
+
         sponsorship: {
             title: "OUR SPONSORSHIP OFFERS",
             subtitle: "Support the Ekang Association",
@@ -352,6 +423,7 @@ const translations = {
         "Contacts": "Contactos",
         "Official sponsors": "Patrocinadores oficiales",
         "Become sponsors": "Conviértase en patrocinador",
+        "about-text" : "Ekang Bese Y'Amerka (EBYA) es una organización sin fines de lucro incorporada en el estado de Nueva York, y nuestro estado de exención de impuestos 501(c)(3) está actualmente pendiente con el IRS.",
         
         // Common sections
         "Welcome": "Bienvenido",
@@ -452,6 +524,76 @@ const translations = {
         "CEKA provides a platform for members to network, collaborate, and build lasting professional and personal connections.": "CEKA ofrece una plataforma para que los miembros establezcan contactos, colaboren y construyan conexiones profesionales y personales duraderas.",
         "The Association of EKANG in the United States organizes an annual cultural event called CEKA with the aim of gathering and promoting the EKANG culture.": "La Asociación de EKANG en los Estados Unidos organiza un evento cultural anual llamado CEKA con el objetivo de reunir y promover la cultura EKANG.",
         "Cultural Experience Kamerun & America": "Experiencia Cultural Kamerun & América",
+
+        //Donate
+        "Your generous contributions will help us continue our cultural events and programs. Choose a donation method below to make a difference." : "Sus generosas contribuciones nos ayudarán a continuar con nuestros eventos y programas culturales. Elija un método de donación a continuación para marcar la diferencia.",
+        // Donate page
+        "Support the EKANGS": "Apoyar a los EKANGS",
+        "Your generous contributions will help us continue our cultural events and programs. Choose a donation method below to make a difference.": "Sus generosas contribuciones nos ayudarán a continuar con nuestros eventos y programas culturales. Elija un método de donación a continuación para marcar la diferencia.",
+        "Donate via PayPal": "Donar via PayPal",
+        "Donate via Square": "Donar via Square",
+        "Donation in kind": "Donación en especie",
+        "Zelle donation (donate to zelle via email : ebya2024@gmail.com)": "Donación Zelle (enviar al email: ebya2024@gmail.com)",
+        "Your Donations Make a Difference": "Sus Donaciones Marcan la Diferencia",
+        "Every donation you make helps to fund our EKANG projects, ensuring the continuation of cultural events, educational programs, and community growth. Your support is vital in creating a lasting impact for our people.": "Cada donación que realiza ayuda a financiar nuestros proyectos EKANG, asegurando la continuación de eventos culturales, programas educativos y el crecimiento comunitario. Su apoyo es vital para crear un impacto duradero para nuestra gente.",
+        "Cultural Events": "Eventos Culturales",
+        "Your donations help fund annual cultural events like CEKA, promoting the richness of EKANG culture and unity among our people.": "Sus donaciones ayudan a financiar eventos culturales anuales como CEKA, promoviendo la riqueza de la cultura EKANG y la unidad entre nuestra gente.",
+        "Community Projects": "Proyectos Comunitarios",
+        "Donations help fund community-building projects that strengthen the bonds among EKANGs, promoting well-being and progress.": "Las donaciones ayudan a financiar proyectos comunitarios que fortalecen los lazos entre los EKANGs, promoviendo el bienestar y el progreso.",
+        "Empowering Communities": "Fortalecimiento de Comunidades",
+        "Your contributions support initiatives that build stronger communities, fostering unity, and ensuring long-term development for EKANGs.": "Sus contribuciones apoyan iniciativas que construyen comunidades más fuertes, fomentando la unidad y asegurando el desarrollo a largo plazo para los EKANGs.",
+        "Donation Disclaimer": "Aviso sobre donaciones",
+        "<strong>Ekang Bese Y'Amerka (EBYA)</strong> is a nonprofit corporation incorporated in the State of New York. We have filed an application for recognition of tax-exempt status under Section 501(c)(3) of the Internal Revenue Code.": 
+        "Ekang Bese Y'Amerka (EBYA) es una organización sin fines de lucro registrada en el estado de Nueva York. Hemos presentado una solicitud de reconocimiento de exención de impuestos bajo la Sección 501(c)(3) del Código de Rentas Internas.",
+        
+        "While our application is pending, donations are not yet officially tax-deductible. If the IRS approves our application — and we filed within the required timeframe — the tax-exempt status will be retroactive to our incorporation date, and your contribution may become tax-deductible at that time.":
+        "Mientras nuestra solicitud está pendiente, las donaciones no son oficialmente deducibles de impuestos. Si el IRS aprueba nuestra solicitud - y la presentamos dentro del plazo requerido - el estado de exención de impuestos será retroactivo a la fecha de nuestra incorporación, y su contribución puede volverse deducible de impuestos en ese momento.",
+        
+        "We appreciate your support as we work toward achieving full federal tax-exempt status.":
+        "Agradecemos su apoyo mientras trabajamos para lograr el estatus completo de exención de impuestos federales.",
+        "Sponsorships": "Patrocinios",
+        "Sponsorship Packages": "Paquetes de Patrocinio",
+        "Choose the sponsorship package that best suits your goals and join us in making CEKA 2025 an unforgettable event!": 
+        "¡Elija el paquete de patrocinio que mejor se adapte a sus objetivos y únase a nosotros para hacer de CEKA 2025 un evento inolvidable!",
+        
+        // Sponsorship Tiers
+        "Official Sponsor": "Patrocinador Oficial",
+        "(Only one available)": "(Solo uno disponible)",
+        "Platinum Sponsor": "Patrocinador Platino",
+        "Gold Sponsor": "Patrocinador Oro",
+        "Silver Sponsor": "Patrocinador Plata",
+        "Bronze Sponsor": "Patrocinador Bronce",
+        "Hearth Felt Sponsor": "Patrocinador Corazón",
+        
+        // Sponsorship Benefits
+        "Exclusive sponsorship of the event": "Patrocinio exclusivo del evento",
+        "Logo on all event materials": "Logo en todos los materiales del evento",
+        "Recognition on stage": "Reconocimiento en el escenario",
+        "VIP seating and more": "Asientos VIP y más",
+        "Brand placement on event banners": "Colocación de marca en pancartas del evento",
+        "Booth space for direct engagement": "Espacio de stand para interacción directa",
+        "6 months recognition on EBYA website": "6 meses de reconocimiento en el sitio web EBYA",
+        "10 social media recognitions": "10 reconocimientos en redes sociales",
+        "10 VIP seats at concert & gala": "10 asientos VIP en concierto y gala",
+        "3 months recognition on EBYA website": "3 meses de reconocimiento en el sitio web EBYA",
+        "5 social media recognitions": "5 reconocimientos en redes sociales",
+        "1 month recognition on EBYA website": "1 mes de reconocimiento en el sitio web EBYA",
+        "1 social media recognition": "1 reconocimiento en redes sociales",
+        "1/2 page ad in CEKA program": "1/2 página de publicidad en el programa CEKA",
+        "3 VIP seats at concert & gala": "3 asientos VIP en concierto y gala",
+        "Acknowledgment on materials & website": "Reconocimiento en materiales y sitio web",
+        "2 VIP seats at concert & gala": "2 asientos VIP en concierto y gala",
+        
+        // Download Section
+        "Download the Official Document": "Descargar el Documento Oficial",
+        "Access the official document of CEKA 2025 to learn more about the event details, sponsorship opportunities, and more!": 
+        "¡Acceda al documento oficial de CEKA 2025 para conocer más detalles sobre el evento, oportunidades de patrocinio y más!",
+        "Download PDF": "Descargar PDF",
+        
+        // Common
+        "Become a Sponsor": "Convertirse en Patrocinador",
+        
+
         sponsorship: {
             title: "NUESTRAS OFERTAS DE PATROCINIO",
             subtitle: "Apoya a la Asociación Ekang",
@@ -512,7 +654,7 @@ const translations = {
 };
 
 // Current language
-let currentLang = 'fr'; // Default language is French
+let currentLang = 'en'; // Default language is French
 
 // Function to change the language
 function changeLanguage(lang) {

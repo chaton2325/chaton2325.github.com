@@ -67,16 +67,16 @@ const translations = {
         "Click the button below to download the full PDF.": "Cliquez sur le bouton ci-dessous pour télécharger le PDF complet.",
 
         // Contacts
-        "📞 Contacts EBYA 2025": "📞 Contacts EBYA 2025",
-        "📧 Email Contacts": "📧 Contacts Email",
-        "📱 Phone Contacts": "📱 Contacts Téléphoniques",
-        "💬 WhatsApp Chatbot": "💬 Chatbot WhatsApp",
+        "Contacts EBYA 2025": "Contacts EBYA 2025",
+        "Email Contacts": "Contacts Email",
+        "Phone Contacts": "Contacts Téléphoniques",
+        "WhatsApp Chatbot": "Chatbot WhatsApp",
         "Our WhatsApp chatbot quickly answers all your questions about EBYA and the CEKA 2025 festival. Ask your questions and get instant replies!": "Notre chatbot WhatsApp répond rapidement à toutes vos questions sur EBYA et le festival CEKA 2025. Posez vos questions et obtenez des réponses instantanées !",
         "Chat with us on WhatsApp": "Discutez avec nous sur WhatsApp",
 
         // CEKA 2025
         "Buy Your CEKA 2025 Ticket Now": "Achetez Votre Billet CEKA 2025 Maintenant",
-        "🎉 CEKA 2025 Festival": "🎉 Festival CEKA 2025",
+        "CEKA 2025 Festival": "Festival CEKA 2025",
         "Join us from August 8th to 10th, 2025 in Chicago for a celebration of Ekang culture with performances, exhibitions, and more!": "Rejoignez-nous du 8 au 10 août 2025 à Chicago pour une célébration de la culture Ekang avec des performances, des expositions et plus encore !",
         "Event Highlights:": "Points forts de l'événement :",
         "Date:": "Date :",
@@ -118,9 +118,8 @@ const translations = {
         //Donate
         "Support the EKANGS": "Soutenir les EKANGS",
         "Your generous contributions will help us continue our cultural events and programs. Choose a donation method below to make a difference.": "Vos généreuses contributions nous aideront à poursuivre nos événements et programmes culturels. Choisissez votre mode de don ci-dessous pour faire la différence.",
-        "Donate via PayPal": "Donner via PayPal",
+        "Donate via PayPal / card": "Donner via PayPal / carte",
         "Donate via Square": "Donner via Square",
-        "Donation in kind": "Don en nature",
         "Zelle donation (donate to zelle via email : ebya2024@gmail.com)": "Don via Zelle (envoyez à l'email : ebya2024@gmail.com)",
         "Your Donations Make a Difference": "Vos Dons Font la Différence",
         "Every donation you make helps to fund our EKANG projects, ensuring the continuation of cultural events, educational programs, and community growth. Your support is vital in creating a lasting impact for our people.": "Chaque don que vous faites aide à financer nos projets EKANG, assurant la continuité des événements culturels, des programmes éducatifs et de la croissance communautaire. Votre soutien est vital pour créer un impact durable pour notre peuple.",
@@ -144,6 +143,7 @@ const translations = {
         "Sponsorship Packages": "Packages de Sponsoring",
         "Choose the sponsorship package that best suits your goals and join us in making CEKA 2025 an unforgettable event!": 
         "Choisissez le package de sponsoring qui correspond le mieux à vos objectifs et rejoignez-nous pour faire de CEKA 2025 un événement inoubliable !",
+        "Bank transfer" : "Virement bancaire",
         
         // Sponsorship Tiers
         "Official Sponsor": "Sponsor Officiel",
@@ -305,16 +305,16 @@ const translations = {
         "Click the button below to download the full PDF.": "Click the button below to download the full PDF.",
 
         // Contacts
-        "📞 Contacts EBYA 2025": "📞 Contacts EBYA 2025",
-        "📧 Email Contacts": "📧 Email Contacts",
-        "📱 Phone Contacts": "📱 Phone Contacts",
-        "💬 WhatsApp Chatbot": "💬 WhatsApp Chatbot",
+        "Contacts EBYA 2025": "Contacts EBYA 2025",
+        "Email Contacts": "Email Contacts",
+        "Phone Contacts": "Phone Contacts",
+        "WhatsApp Chatbot": "WhatsApp Chatbot",
         "Our WhatsApp chatbot quickly answers all your questions about EBYA and the CEKA 2025 festival. Ask your questions and get instant replies!": "Our WhatsApp chatbot quickly answers all your questions about EBYA and the CEKA 2025 festival. Ask your questions and get instant replies!",
         "Chat with us on WhatsApp": "Chat with us on WhatsApp",
 
         // CEKA 2025
         "Buy Your CEKA 2025 Ticket Now": "Buy Your CEKA 2025 Ticket Now",
-        "🎉 CEKA 2025 Festival": "🎉 CEKA 2025 Festival",
+        "CEKA 2025 Festival": "CEKA 2025 Festival",
         "Join us from August 8th to 10th, 2025 in Chicago for a celebration of Ekang culture with performances, exhibitions, and more!": "Join us from August 8th to 10th, 2025 in Chicago for a celebration of Ekang culture with performances, exhibitions, and more!",
         "Event Highlights:": "Event Highlights:",
         "Date:": "Date:",
@@ -477,16 +477,16 @@ const translations = {
         "Click the button below to download the full PDF.": "Haga clic en el botón de abajo para descargar el PDF completo.",
 
         // Contacts
-        "📞 Contacts EBYA 2025": "📞 Contactos EBYA 2025",
-        "📧 Email Contacts": "📧 Contactos de Correo Electrónico",
-        "📱 Phone Contacts": "📱 Contactos Telefónicos",
-        "💬 WhatsApp Chatbot": "💬 Chatbot de WhatsApp",
+        "Contacts EBYA 2025": "Contactos EBYA 2025",
+        "Email Contacts": "Contactos de Correo Electrónico",
+        "Phone Contacts": "Contactos Telefónicos",
+        "WhatsApp Chatbot": "Chatbot de WhatsApp",
         "Our WhatsApp chatbot quickly answers all your questions about EBYA and the CEKA 2025 festival. Ask your questions and get instant replies!": "Nuestro chatbot de WhatsApp responde rápidamente a todas sus preguntas sobre EBYA y el festival CEKA 2025. ¡Haga sus preguntas y obtenga respuestas instantáneas!",
         "Chat with us on WhatsApp": "Chatea con nosotros en WhatsApp",
 
         // CEKA 2025
         "Buy Your CEKA 2025 Ticket Now": "Compre Su Entrada para CEKA 2025 Ahora",
-        "🎉 CEKA 2025 Festival": "🎉 Festival CEKA 2025",
+        "CEKA 2025 Festival": "Festival CEKA 2025",
         "Join us from August 8th to 10th, 2025 in Chicago for a celebration of Ekang culture with performances, exhibitions, and more!": "Únase a nosotros del 8 al 10 de agosto de 2025 en Chicago para una celebración de la cultura Ekang con actuaciones, exposiciones y más!",
         "Event Highlights:": "Aspectos destacados del evento:",
         "Date:": "Fecha:",
@@ -530,9 +530,8 @@ const translations = {
         // Donate page
         "Support the EKANGS": "Apoyar a los EKANGS",
         "Your generous contributions will help us continue our cultural events and programs. Choose a donation method below to make a difference.": "Sus generosas contribuciones nos ayudarán a continuar con nuestros eventos y programas culturales. Elija un método de donación a continuación para marcar la diferencia.",
-        "Donate via PayPal": "Donar via PayPal",
+        "Donate via PayPal / card": "Donar via PayPal / card",
         "Donate via Square": "Donar via Square",
-        "Donation in kind": "Donación en especie",
         "Zelle donation (donate to zelle via email : ebya2024@gmail.com)": "Donación Zelle (enviar al email: ebya2024@gmail.com)",
         "Your Donations Make a Difference": "Sus Donaciones Marcan la Diferencia",
         "Every donation you make helps to fund our EKANG projects, ensuring the continuation of cultural events, educational programs, and community growth. Your support is vital in creating a lasting impact for our people.": "Cada donación que realiza ayuda a financiar nuestros proyectos EKANG, asegurando la continuación de eventos culturales, programas educativos y el crecimiento comunitario. Su apoyo es vital para crear un impacto duradero para nuestra gente.",
@@ -555,6 +554,7 @@ const translations = {
         "Sponsorship Packages": "Paquetes de Patrocinio",
         "Choose the sponsorship package that best suits your goals and join us in making CEKA 2025 an unforgettable event!": 
         "¡Elija el paquete de patrocinio que mejor se adapte a sus objetivos y únase a nosotros para hacer de CEKA 2025 un evento inolvidable!",
+        "Bank transfer" : "transferencia bancaria" ,
         
         // Sponsorship Tiers
         "Official Sponsor": "Patrocinador Oficial",

@@ -153,6 +153,8 @@ const translations = {
         "Silver Sponsor": "Sponsor Argent",
         "Bronze Sponsor": "Sponsor Bronze",
         "Hearth Felt Sponsor": "Sponsor de Cœur",
+        "Wax Sponsor" : "Sponsor de cire",
+        "Cotton Sponsor" : "Sponsor de coton",
         
         // Sponsorship Benefits
         "Exclusive sponsorship of the event": "Sponsoring exclusif de l'événement",
@@ -564,7 +566,10 @@ const translations = {
         "Silver Sponsor": "Patrocinador Plata",
         "Bronze Sponsor": "Patrocinador Bronce",
         "Hearth Felt Sponsor": "Patrocinador Corazón",
-        
+        "Wax Sponsor" : "Patrocinador de cera",
+        "Cotton Sponsor" : "Patrocinador de algodón",
+
+
         // Sponsorship Benefits
         "Exclusive sponsorship of the event": "Patrocinio exclusivo del evento",
         "Logo on all event materials": "Logo en todos los materiales del evento",

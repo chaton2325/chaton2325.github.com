@@ -415,6 +415,8 @@ footer nav a:hover {
     text-decoration: underline;
 }
 
+
+
 /* Réactivité */
 @media (max-width: 768px) {
     .section-title {

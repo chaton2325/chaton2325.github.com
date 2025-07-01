@@ -184,6 +184,29 @@ const translations = {
         // Common
         "Become a Sponsor": "Devenir Sponsor",
 
+        //CEKA 2025 PAGE
+        "CEKA 2025 Schedule": "Programme CEKA 2025",
+        "THURSDAY, AUGUST 7th - Opening Night Dinner": "JEUDI 7 AOÛT - Dîner d'ouverture",
+        "Location:": "Lieu :",
+        "Official Welcome Dinner to all Participants, Offered by Nkul Beti Chicago": "Dîner officiel de bienvenue offert à tous les participants par Nkul Beti Chicago",
+        "Only open to participants who bought the Full Experience Package": "Uniquement pour les participants ayant acheté le Pack Expérience Complète",
+        "FRIDAY, AUGUST 8th": "VENDREDI 8 AOÛT",
+        "Cultural Fair – Expo – Exhibit - Festival": "Foire Culturelle – Expo – Exposition - Festival",
+        "Ekang Traditional Opening Ceremonies - Artist Exhibits - Stands, Discussions Panels, Storytelling, Food, Kids Zone – Fashion show for all – Miss and Mister Ekang contest": "Cérémonies d'ouverture traditionnelles Ekang - Expositions d'artistes - Stands, panels de discussion, contes, nourriture, espace enfants – Défilé de mode – Concours Miss et Mister Ekang",
+        "Free entry during the day": "Entrée gratuite pendant la journée",
+        "Bikutsi Concert": "Concert Bikutsi",
+        "Top Bikutsi Artists | Stand up-Comedy - Dancefloor": "Meilleurs artistes Bikutsi | Stand-up comédie - Piste de danse",
+        "$100 – General | $150 – VIP": "100 $ – Général | 150 $ – VIP",
+        "SATURDAY, AUGUST 9": "SAMEDI 9 AOÛT",
+        "Artist Exhibits - Stands, General Assembly, CEKA Themes Discussion, Food, Kids Zone": "Expositions d'artistes - Stands, Assemblée Générale, Discussions sur les thèmes CEKA, Nourriture, Espace enfants",
+        "Fundraising Gala for Nda Ekang": "Gala de levée de fonds pour Nda Ekang",
+        "Music (Sally Nyolo – Blacky Star – Edoudoua – Arnaud Eyagha), Poetry, Fundraising, Tribute, Dance, Ekang Food": "Musique (Sally Nyolo – Blacky Star – Edoudoua – Arnaud Eyagha), Poésie, Levée de fonds, Hommages, Danse, Cuisine Ekang",
+        "SUNDAY, AUGUST 10 – Community & Family Day & Spiritual Closing": "DIMANCHE 10 AOÛT – Journée Communautaire & Familiale & Clôture Spirituelle",
+        "3K Walk & Run – Tennis Tournament - Soccer Game – Family games – Barbecue Ekang Traditional Closing Ceremonies": "Marche & course de 3 km – Tournoi de tennis – Match de football – Jeux en famille – Barbecue – Cérémonies de clôture traditionnelles Ekang",
+        "Tickets:": "Billets :",
+        "Info:": "Infos :",
+        "Email:": "E-mail :",
+
         sponsorship: {
             title: "NOS OFFRES DE SPONSORING",
             subtitle: "Soutenez l'Association Ekang",
@@ -597,6 +620,29 @@ const translations = {
         
         // Common
         "Become a Sponsor": "Convertirse en Patrocinador",
+
+        //CEKA 2025 PAGE
+        "CEKA 2025 Schedule": "Programa CEKA 2025",
+        "THURSDAY, AUGUST 7th - Opening Night Dinner": "JUEVES 7 DE AGOSTO - Cena de apertura",
+        "Location:": "Ubicación:",
+        "Official Welcome Dinner to all Participants, Offered by Nkul Beti Chicago": "Cena oficial de bienvenida ofrecida a todos los participantes por Nkul Beti Chicago",
+        "Only open to participants who bought the Full Experience Package": "Solo para los participantes que compraron el paquete Experiencia Completa",
+        "FRIDAY, AUGUST 8th": "VIERNES 8 DE AGOSTO",
+        "Cultural Fair – Expo – Exhibit - Festival": "Feria Cultural – Expo – Exhibición - Festival",
+        "Ekang Traditional Opening Ceremonies - Artist Exhibits - Stands, Discussions Panels, Storytelling, Food, Kids Zone – Fashion show for all – Miss and Mister Ekang contest": "Ceremonias de apertura tradicionales Ekang - Exposiciones de artistas - Stands, paneles de discusión, cuentos, comida, zona infantil – Desfile de moda – Concurso de Miss y Mister Ekang",
+        "Free entry during the day": "Entrada gratuita durante el día",
+        "Bikutsi Concert": "Concierto de Bikutsi",
+        "Top Bikutsi Artists | Stand up-Comedy - Dancefloor": "Principales artistas de Bikutsi | Comedia en vivo - Pista de baile",
+        "$100 – General | $150 – VIP": "100 $ – General | 150 $ – VIP",
+        "SATURDAY, AUGUST 9": "SÁBADO 9 DE AGOSTO",
+        "Artist Exhibits - Stands, General Assembly, CEKA Themes Discussion, Food, Kids Zone": "Exposiciones de artistas - Stands, Asamblea General, Discusión de temas CEKA, Comida, Zona infantil",
+        "Fundraising Gala for Nda Ekang": "Gala benéfica para Nda Ekang",
+        "Music (Sally Nyolo – Blacky Star – Edoudoua – Arnaud Eyagha), Poetry, Fundraising, Tribute, Dance, Ekang Food": "Música (Sally Nyolo – Blacky Star – Edoudoua – Arnaud Eyagha), Poesía, Recaudación de fondos, Tributo, Baile, Comida Ekang",
+        "SUNDAY, AUGUST 10 – Community & Family Day & Spiritual Closing": "DOMINGO 10 DE AGOSTO – Día de Comunidad y Familia & Cierre Espiritual",
+        "3K Walk & Run – Tennis Tournament - Soccer Game – Family games – Barbecue Ekang Traditional Closing Ceremonies": "Caminata & Carrera de 3K – Torneo de tenis – Partido de fútbol – Juegos familiares – Barbacoa – Ceremonias de cierre tradicionales Ekang",
+        "Tickets:": "Entradas:",
+        "Info:": "Información:",
+        "Email:": "Correo electrónico:",
         
 
         sponsorship: {

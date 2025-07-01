@@ -141,6 +141,14 @@ footer nav a:hover {
     text-decoration: underline;
 }
 
+  .staff-img {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+  .staff-img:hover {
+    transform: scale(1.05);
+  }
+
 /* Réactivité */
 @media (max-width: 768px) {
     .section-title {

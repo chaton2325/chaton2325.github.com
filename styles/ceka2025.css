@@ -278,6 +278,21 @@ footer nav a:hover {
     transition: opacity 1s ease, transform 1s ease;
   }
 
+  #ceka-schedule .card {
+  border-left: 4px solid #0d6efd;
+  border-radius: 12px;
+}
+
+#ceka-schedule .card-title {
+  color: #0d6efd;
+}
+
+#ceka-schedule p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
   /* Animation de flottement douce */
   @keyframes flyerMove {
     0% {

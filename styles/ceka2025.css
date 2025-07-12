@@ -78,8 +78,10 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 120px;
+    height: 140px;
     background: url('../images/CEKA.jpg') no-repeat center center/cover;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
 }
 
 /* Boutons de traduction */
@@ -124,12 +126,10 @@ body {
 
 #ceka-event {
     background: linear-gradient(to right, #f4f4f4, #e0c8a3);
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
   
   .event-details {
-    padding-left: 20px;
+    padding-left: 50px;
     padding-right: 20px;
   }
   

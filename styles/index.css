@@ -416,6 +416,43 @@ footer nav a:hover {
 }
 
 
+.ebya-section {
+    background: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.ebya-section:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.ebya-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.ebya-btn {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.ebya-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(37, 117, 252, 0.2);
+}
+
+
 
 /* Réactivité */
 @media (max-width: 768px) {

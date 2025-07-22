@@ -29,6 +29,11 @@ const translations = {
         "Your generosity allows the Ekang Association to continue to support its projects and strengthen solidarity within our community.": "Votre générosité permet à l'Association Ekang de continuer à soutenir ses projets et à renforcer la solidarité au sein de notre communauté.",
         "Donate now": "Faire un don maintenant",
         "Support our cause directly online via PayPal or credit card.": "Soutenez notre cause directement en ligne via PayPal ou carte de crédit.",
+        "Discover the sellers": "Découvrez les vendeurs",
+        "Discover Official Sponsors": "Découvrez les Sponsors Officiels",
+        "Ekang Bese Y'Amerka (EBYA) is a New York-based non-profit organization dedicated to promoting and preserving Ekang culture in America. It is governed by an executive board, headed by President André Junior Mekinda Mekinda, and is supported by 11 Ekang associations across North America. Each association has a dedicated Facebook page for communication and community engagement." :"Ekang Bese Y'Amerka (EBYA) est une organisation à but non lucratif basée à New York qui se consacre à la promotion et à la préservation de la culture Ekang en Amérique. Elle est dirigée par un conseil d'administration, présidé par André Junior Mekinda Mekinda, et bénéficie du soutien de 11 associations Ekang réparties en Amérique du Nord. Chaque association dispose d'une page Facebook dédiée à la communication et à l'engagement communautaire.",
+        "Upcoming Event:" : "Prochain Evénement:",
+        
         
         // CEKA related
         "Ceka 2025 EVENT": "ÉVÉNEMENT Ceka 2025",
@@ -464,6 +469,10 @@ const translations = {
         "Your generosity allows the Ekang Association to continue to support its projects and strengthen solidarity within our community.": "Su generosidad permite a la Asociación Ekang seguir apoyando sus proyectos y fortalecer la solidaridad dentro de nuestra comunidad.",
         "Donate now": "Donar ahora",
         "Support our cause directly online via PayPal or credit card.": "Apoye nuestra causa directamente en línea a través de PayPal o tarjeta de crédito.",
+        "Discover the sellers": "Descubra los vendedores",
+        "Discover Official Sponsors": "Descubra los patrocinadores oficiales",
+        "Ekang Bese Y'Amerka (EBYA) is a New York-based non-profit organization dedicated to promoting and preserving Ekang culture in America. It is governed by an executive board, headed by President André Junior Mekinda Mekinda, and is supported by 11 Ekang associations across North America. Each association has a dedicated Facebook page for communication and community engagement.": "Ekang Bese Y'Amerka (EBYA) es una organización sin fines de lucro incorporada en el estado de Nueva York, dedicada a promover y preservar la cultura Ekang en America" ,
+        "Upcoming Event:": "Proximo Evento:",
         
         // CEKA related
         "Ceka 2025 EVENT": "EVENTO Ceka 2025",

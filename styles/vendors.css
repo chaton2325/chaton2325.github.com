@@ -73,13 +73,11 @@ body {
 
 
 
-
-
 /* Hero Section */
 .hero {
     position: relative;
     height: 120px;
-    background: url('../images/sponsors.jpg') no-repeat center center/cover;
+    background: url('../images/store1.jpg') no-repeat center center/cover;
 }
 
 .overlay {
@@ -119,135 +117,6 @@ body {
 .hero p {
     font-size: 1rem;
 }
-
-/* Sélecteur de langue */
-.language-selector .btn {
-    font-size: 1rem;
-}
-
-/* Section À propos */
-#about {
-    padding: 50px 0;
-    background: #FFFFFF;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.sponsor-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0 40px 0;
-    gap: 40px;
-}
-.sponsor-container.flex-row {
-    flex-direction: row;
-}
-.sponsor-container.flex-row-reverse {
-    flex-direction: row-reverse;
-}
-.sponsor-image {
-    width: 220px;
-    height: 220px;
-    object-fit: contain;
-    margin: 0 32px;
-    border-radius: 18px;
-    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
-    background: #fff;
-    transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
-}
-.sponsor-container:hover .sponsor-image {
-    transform: scale(1.05) rotate(-2deg);
-    box-shadow: 0 8px 40px rgba(40,167,69,0.15);
-}
-.sponsor-details {
-    flex: 1;
-    min-width: 0;
-}
-.sponsor-name {
-    font-size: 2.1rem;
-    font-weight: bold;
-    color: #343a40;
-    margin-bottom: 10px;
-}
-.sponsor-description {
-    font-size: 1.15rem;
-    color: #6c757d;
-    margin: 10px 0 18px 0;
-}
-.sponsor-links a {
-    margin-right: 18px;
-    color: #28a745;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.08rem;
-}
-.sponsor-links a:hover {
-    text-decoration: underline;
-    color: #145c2c;
-}
-.sponsor-links span {
-    display: block;
-    margin-bottom: 4px;
-    color: #444;
-}
-hr {
-    border-top: 2px solid #28a745;
-    margin: 20px 0;
-}
-@media (max-width: 992px) {
-    .sponsor-image {
-        width: 140px;
-        height: 140px;
-        margin: 0 16px;
-    }
-    .sponsor-name {
-        font-size: 1.3rem;
-    }
-    .sponsor-description {
-        font-size: 1rem;
-    }
-}
-@media (max-width: 768px) {
-    .sponsor-container,
-    .sponsor-container.flex-row,
-    .sponsor-container.flex-row-reverse {
-        flex-direction: column !important;
-        align-items: center;
-        gap: 18px;
-        padding: 24px 0;
-    }
-    .sponsor-image {
-        width: 90vw;
-        max-width: 260px;
-        height: auto;
-        margin: 0 0 12px 0;
-    }
-    .sponsor-details {
-        text-align: center;
-    }
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -294,5 +163,96 @@ footer nav a:hover {
     .hero {
         height: 195px;
         
+    }
+}
+
+.vendor-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 40px 0;
+    gap: 40px;
+}
+.vendor-container.flex-row {
+    flex-direction: row;
+}
+.vendor-container.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+.vendor-image {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    margin: 0 32px;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+    background: #fff;
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+.vendor-container:hover .vendor-image {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 8px 40px rgba(40,167,69,0.15);
+}
+.vendor-details {
+    flex: 1;
+    min-width: 0;
+}
+.vendor-name {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+.vendor-description {
+    font-size: 1.15rem;
+    color: #6c757d;
+    margin: 10px 0 18px 0;
+}
+.vendor-links a {
+    margin-right: 18px;
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.08rem;
+}
+.vendor-links a:hover {
+    text-decoration: underline;
+    color: #145c2c;
+}
+.vendor-links span {
+    display: block;
+    margin-bottom: 4px;
+    color: #444;
+}
+@media (max-width: 992px) {
+    .vendor-image {
+        width: 140px;
+        height: 140px;
+        margin: 0 16px;
+    }
+    .vendor-name {
+        font-size: 1.3rem;
+    }
+    .vendor-description {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .vendor-container,
+    .vendor-container.flex-row,
+    .vendor-container.flex-row-reverse {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 18px;
+        padding: 24px 0;
+    }
+    .vendor-image {
+        width: 90vw;
+        max-width: 260px;
+        height: auto;
+        margin: 0 0 12px 0;
+    }
+    .vendor-details {
+        text-align: center;
     }
 }

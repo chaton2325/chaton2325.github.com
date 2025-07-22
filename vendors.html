@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
     <!-- Styles personnalisés -->
-    <link rel="stylesheet" href="styles/store.css">
+    <link rel="stylesheet" href="styles/vendors.css">
 
     <!-- Optionnel: pour WhatsApp -->
     <meta property="og:image:width" content="1200">
@@ -100,7 +100,7 @@
     <header class="hero">
         <div class="overlay"></div>
         <div class="hero-text text-center">
-            <h1 class="display-2 fw-bold">EBYA Store</h1>
+            <h1 class="display-2 fw-bold">CEKA 2025 vendors</h1>
 
             <!-- Sélecteur de langue sur l'image -->
             <!-- Traduction des titres et descriptions -->
@@ -112,37 +112,81 @@
         </div>
     </header> 
 
-    <section id="store" class="py-5" data-aos="fade-up">
-        <div class="container text-center">
-          <h2 data-aos="fade-down" class="display-4" data-translate-init>Our store</h2>
-          <p class="lead" data-aos="fade-left" data-translate-init>Discover our unique items and support the Ekang association by purchasing products that celebrate our culture and solidarity.</p>
-      
-          <div class="row">
-            <div class="col-md-4 mb-4" data-aos="flip-left">
-              <div class="card">
-                <img src="images/store/1.jpg" class="card-img-top" alt="Article 1">
-                <div class="card-body">
-                  <h5 class="card-title" data-translate-init>T-shirt CEKA (child)</h5>
-                  <p class="card-text" data-translate-init>A stylish t-shirt to celebrate our Ekang culture. Available in different sizes and colors.</p>
-                  <a href="http://wa.me//+16469668748" class="btn btn-warning" data-translate-init target="_blank">Purchase</a>
-                </div>
-              </div>
-            </div>      
-          </div>
-        </div>
 
+    <section class="container my-5">
+  <h2 class="text-center mb-4" data-translate-init>Our Vendors</h2>
 
-      </section>
+  <!-- SCI Les Maisons De Demain -->
+  <div class="vendor-container flex-row" data-aos="fade-right" data-aos-once="true">
+    <img src="images/logos/sci.jpg" alt="SCI Les Maisons De Demain" class="vendor-image">
+    <div class="vendor-details">
+      <div class="vendor-name">SCI Les Maisons De Demain</div>
+      <div class="vendor-description" data-translate-init>Construction</div>
+      <!-- Ajoutez plus d'infos si besoin -->
+    </div>
+  </div>
+  <hr>
 
-        <!-- Donation Section -->
-<section class="donation-section d-flex align-items-center justify-content-center" style="min-height: 400px; background: url('images/foret.jpg') center/cover no-repeat; position: relative; margin-top: 60px;">
-  <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(120, 72, 36, 0.7); z-index:1; border-radius: 12px;"></div>
-  <div class="container position-relative text-center" style="z-index:2;">
-    <h2 style="color: #fff; font-size: 3rem; font-weight: bold;">Make a Donation</h2>
-    <p style="color: #fff; font-size: 1.4rem; margin-bottom: 2rem;">Support our mission to help those in need</p>
-    <a href="donate.html" class="btn btn-light btn-lg px-5 py-3" style="border-radius: 2.5rem; font-size: 1.3rem; font-weight: bold; color: #8B1C32; letter-spacing: 2px;">DONATE NOW</a>
+  <!-- Fini Hôtel -->
+  <div class="vendor-container flex-row-reverse" data-aos="fade-left" data-aos-once="true">
+    <img src="images/logos/fini-hotel-removebg.png" alt="Fini Hôtel" class="vendor-image">
+    <div class="vendor-details">
+      <div class="vendor-name">Fini Hôtel</div>
+      <div class="vendor-description" data-translate-init>Hotel</div>
+      <div class="vendor-links">
+        <a href="https://www.finihotel.com/" target="_blank"><i class="fas fa-globe"></i> Website</a><br>
+        <a href="mailto: fini@finihotel.com"><i class="fas fa-envelope"></i> Email :  fini@finihotel.com</a><br>
+        <span><i class="fas fa-phone"></i> Téléphone : (+237) 690 402 417 / 670 057 006</span><br>
+        <span><i class="fas fa-map-marker-alt"></i> Adress : Cameroon / Limbe</span>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Nomo's Style -->
+  <div class="vendor-container flex-row" data-aos="fade-right" data-aos-once="true">
+    <img src="images/logos/nomo-style.jpg" alt="Nomo's Style" class="vendor-image">
+    <div class="vendor-details">
+      <div class="vendor-name">Nomo's Style</div>
+      <div class="vendor-description" data-translate-init>Vente de kabas</div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Braidpreneur -->
+  <div class="vendor-container flex-row-reverse" data-aos="fade-left" data-aos-once="true">
+    <img src="images/logos/braidpreneur.jpg" alt="Braidpreneur" class="vendor-image">
+    <div class="vendor-details">
+      <div class="vendor-name">Braidpreneur</div>
+      <div class="vendor-description" data-translate-init>Coiffure, tresses et accessoires</div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Shiri Achu Art -->
+  <div class="vendor-container flex-row" data-aos="fade-right" data-aos-once="true">
+    <img src="images/logos/shiriachu.jpg" alt="Shiri Achu Art" class="vendor-image">
+    <div class="vendor-details">
+      <div class="vendor-name">Shiri Achu Art</div>
+      <div class="vendor-description" data-translate-init>Art africain contemporain</div>
+      <div class="vendor-links">
+        <a href="https://www.shiriachuart.com" target="_blank"><i class="fas fa-globe"></i> www.shiriachuart.com</a>
+      </div>
+    </div>
+  </div>
+  <hr>
+</section>
+
+<hr>
+<section class="container my-5 text-center" data-aos="fade-up">
+  <div class="card mx-auto shadow-sm" style="max-width: 500px; border-radius: 18px; background: linear-gradient(120deg, #f8f9fa 80%, #e6ffe6 100%);">
+    <div class="card-body py-4">
+      <h3 class="mb-3" data-translate-init>Want to see our official sponsors?</h3>
+      <a href="sponsors.html" class="btn btn-success btn-lg" id="go-to-sponsors" data-translate-init>Discover Official Sponsors</a>
+    </div>
   </div>
 </section>
+
 
         <!-- Footer avec menu -->
         <footer class="bg-dark text-white text-center py-4">
@@ -194,3 +238,4 @@
         <script src="scripts/translation.js"></script>
     </body>
     </html>
+

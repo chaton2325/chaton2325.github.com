@@ -1,448 +1,406 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Donate</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Ebya</title>
+    
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- AOS (Animation On Scroll) -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
-    <!-- Styles personnalisés -->
-    <link rel="stylesheet" href="styles/donate.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- AOS (Animation on Scroll) -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-
-
-    <!-- Optionnel: pour WhatsApp -->
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Lien vers le favicon -->
-    <link rel="icon" href="images/logos/ebya-removebg.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/logos/ebya-removebg.ico" type="image/x-icon">
-
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-
-    <!-- AOS JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
-
-
-    <meta property="og:image" content="https://chaton2325.github.io/images/logos/ebya-removebg.png">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logos/ebya-removebg.png" alt="EBYA Logo" class="logo-img me-2">
+                <span class="brand-text notranslate">EBYA</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ceka-2026.html">CEKA 2026</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link donate-highlight active" href="donate.html">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-associations.html">Our Associations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nda-ekang.html">Nda Ekang Y'Amerka</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-          <a class="navbar-brand" href="#">
-              <img src="images/logos/ebya-removebg.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
-              EBYA
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html" data-translate-init>Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="Nda_Ekang.html">NDA Ekang Y'Amerka</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="Ceka.html" id="navbarDropdown" role="button">
-                          CEKA
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="ceka2023.html">CEKA 2023</a></li>
-                        <li><a class="dropdown-item" href="ceka2024.html">CEKA 2024</a></li>
-                        <li><a class="dropdown-item" href="ceka2025.html">CEKA 2025</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="News.html" data-translate-init>News</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="store.html" data-translate-init>Store</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#" data-translate-init style="background-color: gold;font-weight:bold;">Donate</a>
-                  </li>
-                
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-translate-init>
-                        About <i class="bi bi-chevron-down"></i>
-                    </a>
+    <!-- Page Header -->
+    <section class="page-header py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title" data-aos="fade-up">Support Our Mission</h1>
+                    <p class="page-subtitle" data-aos="fade-up" data-aos-delay="200">Your donation helps us empower communities</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="associations.html" data-translate-init>Our Associations</a></li>
-                        <li><a class="dropdown-item" href="about.html">About</a></li>
-                        <li><a class="dropdown-item" href="contacts.html" data-translate-init>Contacts</a></li>
-                        <li><a class="dropdown-item" href="sponsors.html" data-translate-init>Official sponsors</a></li>
-                        <li><a class="dropdown-item" href="sponsorship.html" data-translate-init>Become sponsors</a></li>
+    <!-- Introduction Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="introduction-content">
+                        <h2 class="section-title mb-4">Make a Difference Today</h2>
+                        <p class="lead mb-4">
+                            Your support enables Ebya to continue our vital work in community empowerment, education, and social change. Every donation, no matter the size, directly impacts lives and helps build stronger, more resilient communities.
+                        </p>
+                        <p class="mb-4">
+                            Through your generosity, we can provide educational resources, organize community events, support our partner associations, and create opportunities for meaningful change. Your contribution is an investment in a better future for all.
+                        </p>
+                        <p class="mb-4">
+                            We believe in transparency and accountability. Your donations are used efficiently and effectively to maximize impact, with regular reporting on how your contributions are making a difference in communities across the United States and Canada.
+                        </p>
+                        <div class="introduction-stats">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="stat-item">
+                                        <h3 class="stat-number">95%</h3>
+                                        <p class="stat-label">Direct Impact</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="stat-item">
+                                        <h3 class="stat-number">100%</h3>
+                                        <p class="stat-label">Transparency</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="introduction-image-container">
+                        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Community Support" class="introduction-image img-fluid rounded shadow-lg">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-heart overlay-icon"></i>
+                                <h4 class="overlay-title">Your Impact</h4>
+                                <p class="overlay-text">Every donation makes a difference</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Link Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Ready to Make a Difference?</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Your contribution helps us continue our mission</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="donation-link-container">
+                        <div class="donation-link-icon mb-4">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="donation-link-title mb-3">Support Our Mission</h3>
+                        <p class="donation-link-description mb-4">
+                            Every donation, no matter the size, makes a real difference in the lives of community members. Join us in creating positive change.
+                        </p>
+                        <a href="https://checkout.square.site/merchant/ML5VDKEH57XD2/checkout/6P54L3D4NFSDNSMULHETAD5H" class="btn btn-success btn-lg donation-link-btn" id="donation-link">
+                            <i class="fas fa-donate me-2"></i>Make Your Donation
+                        </a>
+                        <p class="donation-note mt-3">
+                            <small class="text-muted">Click the button above to access our secure donation platform</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Action Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Your Impact in Action</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">See how donations are making a difference</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="impact-action-card">
+                        <div class="impact-icon mb-4">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <h3 class="impact-title mb-3">Nda Ekang Y'Amerka</h3>
+                        <p class="impact-description mb-4">
+                            Discover our community impact through our comprehensive gallery showcasing the positive changes we're making across America. See the faces, stories, and transformations that your donations help create.
+                        </p>
+                        <a href="nda-ekang.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-eye me-2"></i>View Our Impact Gallery
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="images/logos/ebya-removebg.png" alt="Ebya Logo" class="footer-logo mb-3">
+                        <h5>Ebya</h5>
+                        <p>Empowering communities through action, education, and support. Together, we can build a better future for everyone.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#events">Events</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="donate.html">Donate</a></li>
                     </ul>
-                </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-  
-  
-    
-
-    <!-- Image avec texte superposé -->
-    <header class="hero">
-        <div class="overlay"></div>
-        <div class="hero-text text-center">
-            <h1 class="display-2 fw-bold">DONATE</h1>
-            
-
-            <!-- Sélecteur de langue sur l'image -->
-            <!-- Traduction des titres et descriptions -->
-            <div class="language-selector">
-                <button class="btn btn-outline-success" onclick="changeLanguage('fr')">Français</button>
-                <button class="btn btn-outline-success" onclick="changeLanguage('en')">English</button>
-                <button class="btn btn-outline-success" onclick="changeLanguage('es')">Español</button>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="our-associations.html">Associations</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="footer-title">Stay Connected</h6>
+                    <p>Follow us on social media for updates and news.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/profile.php?id=61558766649742" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ekang-bese-y-amerka-ebya-670686352" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="newsletter mt-3">
+                        <h6>Newsletter</h6>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="footer-copyright">&copy; 2024 Ebya. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="footer-copyright">Made with <i class="fas fa-heart text-danger"></i> for the community</p>
+                </div>
             </div>
         </div>
-    </header>
+    </footer>
 
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="scripts/main.js"></script>
+    
+    <!-- Google Translate Buttons -->
+    <div class="translation-buttons">
+        <button class="translation-btn" data-lang="en" title="English">EN</button>
+        <button class="translation-btn" data-lang="fr" title="Français">FR</button>
+        <button class="translation-btn" data-lang="es" title="Español">ES</button>
+    </div>
+    
+    <!-- Google Translate Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Configuration du traducteur
+      const googleTranslateConfig = {
+        defaultLanguage: 'en',
+        languages: ['fr', 'en', 'es']
+      };
       
-
-
- <!-- Enhanced Donation Section -->
-<section class="donation-section py-5" style="background: linear-gradient(135deg, #f8fff8 0%, #e6f7e6 100%);" data-aos="fade-up">
-  <div class="container">
-    <!-- Decorative elements -->
-    <div class="position-absolute top-0 start-0" style="width: 200px; height: 200px; background: radial-gradient(circle, rgba(40,167,69,0.1) 0%, rgba(255,255,255,0) 70%); z-index: 0;"></div>
-    
-    <div class="text-center position-relative">
-      <h2 class="display-4 fw-bold mb-4" style="color: #145c2c;" data-aos="fade-down" data-translate-init>Support the EKANGS</h2>
-      <div class="mx-auto" style="width: 80px; height: 4px; background: linear-gradient(90deg, #28a745, #ffd700); margin-bottom: 30px;"></div>
-      <p class="lead mb-5 px-3" style="font-size: 1.25rem; color: #333;" data-aos="fade-up" data-aos-delay="200" data-translate-init>
-        Your generous contributions will help us continue our cultural events and programs. Choose a donation method below to make a difference.
-      </p>
-    </div>
-
-    <!-- Donation Options Grid -->
-    <div class="row justify-content-center g-4 mb-5">
-      <!-- PayPal Option -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-        <div class="donation-card h-100" style="
-          background: white;
-          border-radius: 16px;
-          padding: 30px;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-          border-top: 5px solid #003087;
-          transition: transform 0.3s ease;
-          height: 100%;
-        ">
-          <div class="icon-wrapper mb-4" style="
-            width: 80px;
-            height: 80px;
-            background: #f8f9fa;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-          ">
-            <i class="fab fa-paypal fa-3x" style="color: #003087;"></i>
-          </div>
-          <a href="https://checkout.square.site/merchant/ML5VDKEH57XD2/checkout/6P54L3D4NFSDNSMULHETAD5H" class="btn btn-dark w-100 py-3" style="
-            border-radius: 50px;
-            font-weight: 600;
-          " data-translate-init>
-            Donate via PayPal
-          </a>
-        </div>
-      </div>
-
-      <!-- Square Option -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
-        <div class="donation-card h-100" style="
-          background: white;
-          border-radius: 16px;
-          padding: 30px;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-          border-top: 5px solid #28a745;
-          transition: transform 0.3s ease;
-          height: 100%;
-        ">
-          <div class="icon-wrapper mb-4" style="
-            width: 80px;
-            height: 80px;
-            background: #f8f9fa;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-          ">
-            <i class="fab fa-square fa-3x" style="color: #28a745;"></i>
-          </div>
-          <a href="https://checkout.square.site/merchant/ML5VDKEH57XD2/checkout/6P54L3D4NFSDNSMULHETAD5H" class="btn btn-success w-100 py-3" style="
-            border-radius: 50px;
-            font-weight: 600;
-          " target="_blank" data-translate-init>
-            Donate via Square
-          </a>
-        </div>
-      </div>
-
-      <!-- Bank Transfer -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
-        <div class="donation-card h-100" style="
-          background: white;
-          border-radius: 16px;
-          padding: 30px;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-          border-top: 5px solid #6c757d;
-          transition: transform 0.3s ease;
-          height: 100%;
-        ">
-          <div class="icon-wrapper mb-4" style="
-            width: 80px;
-            height: 80px;
-            background: #f8f9fa;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-          ">
-            <i class="fas fa-university fa-3x" style="color: #6c757d;"></i>
-          </div>
-          <a href="#" class="btn btn-secondary w-100 py-3" style="
-            border-radius: 50px;
-            font-weight: 600;
-          " data-translate-init>
-            Bank Transfer
-          </a>
-          <p class="small mt-2 mb-0" style="color: #6c757d;">Details available upon request</p>
-        </div>
-      </div>
-
-      <!-- Zelle Option -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
-        <div class="donation-card h-100" style="
-          background: white;
-          border-radius: 16px;
-          padding: 30px;
-          box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-          border-top: 5px solid #6d1ed4;
-          transition: transform 0.3s ease;
-          height: 100%;
-        ">
-          <div class="icon-wrapper mb-4" style="
-            width: 80px;
-            height: 80px;
-            background: #f8f9fa;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-          ">
-            <i class="fas fa-money-bill-wave fa-3x" style="color: #6d1ed4;"></i>
-          </div>
-          <a href="#" class="btn btn-primary w-100 py-3" style="
-            background: #6d1ed4;
-            border-radius: 50px;
-            font-weight: 600;
-            border: none;
-          " data-translate-init>
-            Donate via Zelle
-          </a>
-          <p class="small mt-2 mb-0" style="color: #6c757d;">Send to: ebya2024@gmail.com</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Impact Section -->
-    <div class="impact-section py-5" data-aos="fade-up">
-      <div class="text-center">
-        <h2 class="display-5 fw-bold mb-5" style="color: #145c2c;" data-aos="fade-down" data-translate-init>Your Donations Make a Difference</h2>
+      // Fonction pour corriger l'espace Google Translate
+      function fixGoogleTranslateSpace() {
+        // Forcer le body à rester en haut
+        document.body.style.top = '0px';
+        document.body.style.position = 'relative';
+        document.body.classList.remove('top', 'translated');
         
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <p class="lead mb-5" style="color: #333;" data-aos="fade-up" data-aos-delay="200" data-translate-init>
-              Every donation you make helps to fund our EKANG projects, ensuring the continuation of cultural events, educational programs, and community growth. Your support is vital in creating a lasting impact for our people.
-            </p>
-          </div>
-        </div>
-
-        <div class="row g-4">
-          <!-- Cultural Events -->
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="impact-card h-100 p-4" style="
-              background: white;
-              border-radius: 16px;
-              box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-              height: 100%;
-              border-bottom: 4px solid #28a745;
-            ">
-              <div class="icon-wrapper mb-4" style="
-                width: 70px;
-                height: 70px;
-                background: rgba(40,167,69,0.1);
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0 auto;
-              ">
-                <i class="fas fa-users fa-2x" style="color: #28a745;"></i>
-              </div>
-              <h4 class="fw-bold mb-3" style="color: #145c2c;" data-translate-init>Cultural Events</h4>
-              <p data-translate-init>
-                Your donations help fund annual cultural events like CEKA, promoting the richness of EKANG culture and unity among our people.
-              </p>
-            </div>
-          </div>
-
-          <!-- Community Projects -->
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="impact-card h-100 p-4" style="
-              background: white;
-              border-radius: 16px;
-              box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-              height: 100%;
-              border-bottom: 4px solid #ffc107;
-            ">
-              <div class="icon-wrapper mb-4" style="
-                width: 70px;
-                height: 70px;
-                background: rgba(255,193,7,0.1);
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0 auto;
-              ">
-                <i class="fas fa-hands-helping fa-2x" style="color: #ffc107;"></i>
-              </div>
-              <h4 class="fw-bold mb-3" style="color: #145c2c;" data-translate-init>Community Projects</h4>
-              <p data-translate-init>
-                Donations help fund community-building projects that strengthen the bonds among EKANGs, promoting well-being and progress.
-              </p>
-            </div>
-          </div>
-
-          <!-- Empowering Communities -->
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="800">
-            <div class="impact-card h-100 p-4" style="
-              background: white;
-              border-radius: 16px;
-              box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-              height: 100%;
-              border-bottom: 4px solid #17a2b8;
-            ">
-              <div class="icon-wrapper mb-4" style="
-                width: 70px;
-                height: 70px;
-                background: rgba(23,162,184,0.1);
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0 auto;
-              ">
-                <i class="fas fa-users-cog fa-2x" style="color: #17a2b8;"></i>
-              </div>
-              <h4 class="fw-bold mb-3" style="color: #145c2c;" data-translate-init>Empowering Communities</h4>
-              <p data-translate-init>
-                Your contributions support initiatives that build stronger communities, fostering unity, and ensuring long-term development for EKANGs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Disclaimer Section -->
-<section class="py-5" style="background: #f8f9fa;">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="card shadow-sm rounded-3 border-0" data-aos="fade-up" style="
-          background: white;
-          border-left: 5px solid #145c2c !important;
-        ">
-          <div class="card-body p-4 p-md-5">
-            <h3 class="text-center mb-4 fw-bold" style="color: #145c2c;" data-translate-init>Donation Disclaimer</h3>
-            <div class="disclaimer-content" style="color: #495057; line-height: 1.7;">
-              <p class="mb-4" data-translate-init>
-                <strong>Ekang Bese Y'Amerka (EBYA)</strong> is a nonprofit corporation incorporated in the State of New York. We have filed an application for recognition of tax-exempt status under Section 501(c)(3) of the Internal Revenue Code.
-              </p>
-              <p class="mb-4" data-translate-init>
-                While our application is pending, donations are not yet officially tax-deductible. If the IRS approves our application — and we filed within the required timeframe — the tax-exempt status will be retroactive to our incorporation date, and your contribution may become tax-deductible at that time.
-              </p>
-              <p class="mb-0" data-translate-init>
-                We appreciate your support as we work toward achieving full federal tax-exempt status.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-    
-
-
-
-                <!-- Footer avec menu -->
-                <footer class="bg-dark text-white text-center py-4">
-                    <img src="images/logos/ebya-removebg.png" alt="Logo Ekang" class="mb-3" width="100">
-                    <nav>
-                        <a href="/index.html" class="text-white mx-3" data-translate-init>Home</a>
-                        <a href="Nda_Ekang.html" class="text-white mx-3">Nda Ekang Y'Amerka</a>
-                        <a href="Ceka.html" class="text-white mx-3">CEKA</a>
-                        <a href="News.html" class="text-white mx-3" data-translate-init>News</a>
-                        <a href="store.html" class="text-white mx-3" data-translate-init>Store</a>
-                        <a href="#" class="text-white mx-3" data-translate-init>Donate</a>
-                    </nav>
-                    <p class="mt-3">© 2024 Ekang Bese Y'Amerka - <span data-translate-init>All rights reserved</span></p>
-                </footer>
-
-                <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
-                <script src="https://files.bpcontent.cloud/2025/03/25/01/20250325010507-WESKOWPB.js"></script>
-            
-                <!-- Bootstrap & AOS Scripts -->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                <!-- AOS Script -->
-                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-                <script>
-                    AOS.init({
-                        duration: 1000, // Durée de l'animation
-                        once: true, // L'animation ne se joue qu'une fois
-                    });
-                </script>
-    
-            </body>
-            </html>
-
-<script src="scripts/translation.js"></script>
+        // Masquer la barre de traduction
+        const bannerFrame = document.querySelector('.goog-te-banner-frame');
+        if (bannerFrame) {
+          bannerFrame.style.display = 'none';
+          bannerFrame.style.height = '0px';
+          bannerFrame.style.overflow = 'hidden';
+        }
+        
+        // Masquer les iframes de traduction
+        const translateIframes = document.querySelectorAll('.skiptranslate iframe');
+        translateIframes.forEach(iframe => {
+          iframe.style.display = 'none';
+        });
+        
+        // Masquer tous les éléments Google Translate
+        const googleElements = document.querySelectorAll('.goog-te-gadget, .goog-te-combo, .goog-te-banner-frame');
+        googleElements.forEach(element => {
+          element.style.display = 'none';
+          element.style.height = '0px';
+          element.style.overflow = 'hidden';
+        });
+        
+        // S'assurer que la navbar reste en haut
+        const navbar = document.querySelector('.navbar.fixed-top');
+        if (navbar) {
+          navbar.style.top = '0px';
+        }
+        
+        // Fix pour éviter le scroll horizontal
+        document.documentElement.style.overflowX = 'hidden';
+        document.body.style.overflowX = 'hidden';
+        document.body.style.maxWidth = '100vw';
+      }
+      
+      // Appliquer la correction immédiatement
+      fixGoogleTranslateSpace();
+      
+      // Observer les changements dans le DOM pour corriger l'espace
+      const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.type === 'childList') {
+            fixGoogleTranslateSpace();
+          }
+        });
+      });
+      
+      // Démarrer l'observation
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      
+      // Initialisation
+      if(typeof google !== 'undefined' && google.translate) {
+        initGoogleTranslate();
+      } else {
+        loadGoogleTranslateScript();
+      }
+      
+      function loadGoogleTranslateScript() {
+        const script = document.createElement('script');
+        script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        document.head.appendChild(script);
+      }
+      
+      window.googleTranslateElementInit = function() {
+        initGoogleTranslate();
+      };
+      
+      function initGoogleTranslate() {
+        if (!document.getElementById('google_translate_element')) {
+          const div = document.createElement('div');
+          div.id = 'google_translate_element';
+          div.style.display = 'none';
+          document.body.appendChild(div);
+          
+          new google.translate.TranslateElement({
+            pageLanguage: googleTranslateConfig.defaultLanguage,
+            includedLanguages: googleTranslateConfig.languages.join(','),
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+          }, 'google_translate_element');
+        }
+        
+        // Gestion des clics sur les boutons
+        document.querySelectorAll('.translation-btn').forEach(btn => {
+          btn.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            changeLanguage(lang);
+          });
+        });
+      }
+      
+      function changeLanguage(lang) {
+        if (typeof google !== 'undefined' && google.translate) {
+          const select = document.querySelector('.goog-te-combo');
+          if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event('change'));
+          }
+          
+          // Mise à jour de l'état actif des boutons
+          document.querySelectorAll('.translation-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+          });
+          
+          // Stockage de la préférence
+          localStorage.setItem('preferred_lang', lang);
+          
+          // Corriger l'espace après le changement de langue
+          setTimeout(fixGoogleTranslateSpace, 100);
+        }
+      }
+      
+      // Restaurer la langue sélectionnée
+      const preferredLang = localStorage.getItem('preferred_lang');
+      if (preferredLang) {
+        setTimeout(() => {
+          changeLanguage(preferredLang);
+          fixGoogleTranslateSpace();
+        }, 500);
+      }
+      
+      // Corriger l'espace périodiquement
+      setInterval(fixGoogleTranslateSpace, 1000);
+    });
+    </script>
 </body>
 </html>

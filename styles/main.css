@@ -398,6 +398,27 @@ html {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
+/* Intro Videos - styles to display vertical videos nicely */
+.intro-videos .video-item{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.intro-videos video.intro-video{
+    width:100%;
+    height:auto;
+    aspect-ratio: 9 / 16;
+    max-height: 70vh;
+    object-fit: cover;
+    display:block;
+}
+
+@media (max-width: 576px) {
+    .intro-videos video.intro-video{
+        max-height: 60vh;
+    }
+}
+
 .association-logo {
     width: 80px;
     height: 80px;

@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Smooth scrolling for navigation links
-    const navLinks = document.querySelectorAll('a[href^="#"]');
+    const navLinks = document.querySelectorAll('a[href^="#"]:not(.dropdown-toggle)');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();

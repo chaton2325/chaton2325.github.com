@@ -454,6 +454,33 @@
         }, 300);
     });
     </script>
+
+    <!-- Background Music -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var audio = new Audio('audio/music.mp3');
+        audio.loop = true;
+        audio.volume = 0.1; // Low volume
+        
+        // Try to play automatically
+        var playPromise = audio.play();
+        
+        if (playPromise !== undefined) {
+            playPromise.then(_ => {
+                // Autoplay started
+            }).catch(error => {
+                // Autoplay prevented, wait for interaction
+                var startAudio = function() {
+                    audio.play();
+                    document.removeEventListener('click', startAudio);
+                    document.removeEventListener('scroll', startAudio);
+                };
+                document.addEventListener('click', startAudio);
+                document.addEventListener('scroll', startAudio);
+            });
+        }
+    });
+    </script>
     <!-- Google Translate Buttons -->
     <div class="translation-buttons">
         <button class="translation-btn" data-lang="en" title="English">EN</button>

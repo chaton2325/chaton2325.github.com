@@ -91,8 +91,8 @@ html {
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
-    background: linear-gradient(135deg, rgba(33, 37, 41, 0.8) 0%, rgba(40, 167, 69, 0.8) 100%), 
-                url('images/hero-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(180deg, rgba(40, 167, 69, 0.95) 0%, rgba(40, 167, 69, 0.6) 100%), 
+                url('../images/CEKA DEK23/6.jpg') center/cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;
@@ -2498,3 +2498,40 @@ introduction-image
 .bg-secondary { background-color: var(--secondary-color) !important; }
 .bg-dark { background-color: var(--dark-color) !important; }
 .bg-light { background-color: var(--light-color) !important; }
+
+/* CEKA 2026 Banner */
+.ceka-banner {
+    background: linear-gradient(180deg, rgba(40, 167, 69, 0.95) 0%, rgba(40, 167, 69, 0.6) 100%), 
+                url('../images/CEKA DEK23/8.jpg') center/cover no-repeat !important;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Store Banner */
+.store-banner {
+    background: linear-gradient(180deg, rgba(40, 167, 69, 0.95) 0%, rgba(40, 167, 69, 0.6) 100%), 
+                url('../images/CEKA DEK23/3.jpg') center/cover no-repeat !important;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Product Images */
+.product-image {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .product-image {
+        height: 180px; /* Reduced height for mobile to look like normal product */
+    }
+}
+
+/* Store Card Title */
+.card-title {
+    font-size: 1rem;
+}

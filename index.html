@@ -69,7 +69,6 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <div class="hero-overlay"></div>
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center">
                 <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000">
@@ -77,8 +76,9 @@
                         <h1 class="hero-title"><span class="notranslate">Ekang Bese Y'Amerka - EBYA</span></h1>
                         <p class="hero-subtitle">Join us in making a difference. Together, we can build a better future for everyone.</p>
                         <div class="hero-buttons">
-                            <a href="about.html" class="btn btn-primary btn-lg me-3">Learn More</a>
-                            <a href="donate.html" class="btn btn-outline-light btn-lg">Donate Now</a>
+                            <a href="ceka-2026.html" class="btn btn-warning btn-lg me-3 mb-2"><i class="fas fa-star me-2"></i>CEKA 2026</a>
+                            <a href="about.html" class="btn btn-primary btn-lg me-3 mb-2">Learn More</a>
+                            <a href="donate.html" class="btn btn-outline-light btn-lg mb-2">Donate Now</a>
                         </div>
                     </div>
                 </div>
@@ -428,6 +428,32 @@
     <!-- Custom JS -->
     <script src="scripts/main.js"></script>
     
+    <!-- Confetti JS -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Festive confetti explosion on load
+        // A little delay to let the page render
+        setTimeout(function() {
+            var count = 200;
+            var defaults = {
+                origin: { y: 0.6 }
+            };
+
+            function fire(particleRatio, opts) {
+                confetti(Object.assign({}, defaults, opts, {
+                    particleCount: Math.floor(count * particleRatio)
+                }));
+            }
+
+            fire(0.25, { spread: 26, startVelocity: 55 });
+            fire(0.2, { spread: 60 });
+            fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 });
+            fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 });
+            fire(0.1, { spread: 120, startVelocity: 45 });
+        }, 300);
+    });
+    </script>
     <!-- Google Translate Buttons -->
     <div class="translation-buttons">
         <button class="translation-btn" data-lang="en" title="English">EN</button>

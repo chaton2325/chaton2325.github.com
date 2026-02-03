@@ -297,3 +297,15 @@ notificationStyles.textContent = `
     }
 `;
 document.head.appendChild(notificationStyles);
+
+// Function to open product image modal
+function openProductModal(src) {
+    const modalImage = document.getElementById('productModalImage');
+    const modalElement = document.getElementById('productImageModal');
+    
+    if (modalImage && modalElement) {
+        modalImage.src = src;
+        const modal = new bootstrap.Modal(modalElement);
+        modal.show();
+    }
+}

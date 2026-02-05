@@ -30,7 +30,7 @@ html {
 /* Navigation Styles */
 .custom-navbar {
     /* African Leopard Skin Pattern */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/banner.jpg');
+    background-image: linear-gradient(rgba(255, 191, 0, 0.3), rgba(255, 191, 0, 0.3)), url('../images/banner.jpg');
     background-repeat: repeat;
     background-size: 300px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);

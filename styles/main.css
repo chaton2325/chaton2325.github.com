@@ -848,7 +848,7 @@ html {
 
 /* Page Header Styles */
 .page-header {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #20c997 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, #85b5a7 100%);
     color: var(--light-color);
     margin-top: 80px;
 }
@@ -2510,7 +2510,7 @@ introduction-image
 
 /* Store Banner */
 .store-banner {
-    background: linear-gradient(180deg, rgba(40, 167, 69, 0.95) 0%, rgba(40, 167, 69, 0.6) 100%), 
+    background: linear-gradient(180deg, rgba(40, 167, 69, 0.6) 0%, rgba(40, 167, 69, 0.3) 100%), 
                 url('../images/CEKA DEK23/3.jpg') center/cover no-repeat !important;
     min-height: 60vh;
     display: flex;

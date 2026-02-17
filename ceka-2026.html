@@ -81,7 +81,29 @@
                         </span>
                     </div>
                     <h1 class="page-title" data-aos="fade-up"><span class="notranslate">CEKA 2026</span></h1>
-                    <p class="page-subtitle" data-aos="fade-up" data-aos-delay="200">Fourth Congress of Ekang of America at New York City</p><br>Promoting Ekang culture: A driver of Cameroon's international economic development
+                    <p class="page-subtitle" data-aos="fade-up" data-aos-delay="200">Fourth Congress of Ekang of America at New York City</p>
+                    <p class="text-white" data-aos="fade-up" data-aos-delay="250">Promoting Ekang culture: A driver of Cameroon's international economic development</p>
+
+                    <!-- Countdown Timer -->
+                    <p class="countdown-title" data-aos="fade-up" data-aos-delay="280">Countdown to CEKA 2026</p>
+                    <div id="countdown" class="countdown mt-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="countdown-item">
+                            <span id="days" class="countdown-number">00</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours" class="countdown-number">00</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes" class="countdown-number">00</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds" class="countdown-number">00</span>
+                            <span class="countdown-label">Seconds</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -602,6 +624,46 @@
         }
     });
 
+    </script>
+
+    <!-- Countdown Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const countdownElement = document.getElementById('countdown');
+        if (countdownElement) {
+            const daysEl = document.getElementById('days');
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+            
+            const targetDate = "Aug 5, 2026 00:00:00";
+            const countDownDate = new Date(targetDate).getTime();
+
+            const updateCountdown = () => {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+
+                if (distance < 0) {
+                    clearInterval(interval);
+                    countdownElement.innerHTML = "<div class='countdown-ended'>L'événement a commencé !</div>";
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                if(daysEl) daysEl.innerText = String(days).padStart(2, '0');
+                if(hoursEl) hoursEl.innerText = String(hours).padStart(2, '0');
+                if(minutesEl) minutesEl.innerText = String(minutes).padStart(2, '0');
+                if(secondsEl) secondsEl.innerText = String(seconds).padStart(2, '0');
+            };
+
+            const interval = setInterval(updateCountdown, 1000);
+            updateCountdown();
+        }
+    });
     </script>
     <!-- Google Translate Buttons -->
     <div class="translation-buttons">

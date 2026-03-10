@@ -17,6 +17,113 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
+<style>
+    /* Style pour la date en fond rouge */
+    .activity-date-modern {
+        background-color: #dc3545;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        display: inline-block;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    
+    .activity-date-modern .day {
+        font-size: 1.5rem;
+        line-height: 1;
+        display: block;
+    }
+    
+    .activity-date-modern .month {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    
+    .activity-date-modern .year {
+        font-size: 0.9rem;
+        opacity: 0.9;
+    }
+    
+    /* Style pour les conteneurs alternés */
+    .activity-row {
+        margin-bottom: 40px;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .activity-row:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .activity-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .activity-content {
+        padding: 20px;
+    }
+    
+    .activity-title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #333;
+    }
+    
+    .activity-description {
+        color: #666;
+        margin-bottom: 15px;
+    }
+    
+    .activity-meta {
+        margin: 15px 0;
+    }
+    
+    .btn-zoom {
+        background-color: #2D8CFF;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn-zoom:hover {
+        background-color: #1a5bbf;
+        color: white;
+        text-decoration: none;
+    }
+    
+    /* Masquer la vue alternative sur mobile */
+    @media (max-width: 991px) {
+        .desktop-alternate-view {
+            display: none;
+        }
+        
+        .mobile-card-view {
+            display: block;
+        }
+    }
+    
+    /* Masquer la vue carte sur desktop */
+    @media (min-width: 992px) {
+        .desktop-alternate-view {
+            display: block;
+        }
+        
+        .mobile-card-view {
+            display: none;
+        }
+    }
+</style>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
@@ -108,23 +215,105 @@
 
 
 
-    <!-- Activities Section -->
+        <!-- Activities Section -->
     <section id="activities" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Nos activités</h2>
-                    <p class="section-subtitle">Restez à jour avec nos derniers événements et activités.</p>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">Nos activités</h2>
+                <p class="section-subtitle">Restez à jour avec nos derniers événements et activités.</p>
             </div>
+        </div>
+        
+        <!-- VUE MOBILE : Cartes (affichées uniquement sur mobile) -->
+        <div class="mobile-card-view">
             <div class="row">
+                <!-- Événement 1: Séance De Sport -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="activity-card">
-                        <img src="images/webinaires/cancer-du-sein.jpeg" class="card-img-top" alt="Webinaire Poster">
+                        <img src="images/webinaires/seance-de-sport1.jpeg" class="card-img-top" alt="Séance de sport Poster">
                         <div class="card-body">
-                            <div class="activity-date">
+                            <div class="activity-date-modern">
+                                <span class="day">21</span>
+                                <span class="month">FÉV.</span>
+                                <span class="year">2026</span>
+                            </div>
+                            <h5 class="card-title">Séance De Sport Avec Thierry Edoa</h5>
+                            <p class="card-text">
+                                EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                            </p>
+                            <p class="card-text">
+                                <strong>Heure:</strong> 21 Fév. 2026 10:00 AM Heure de l'Est
+                            </p>
+                            <a href="https://us06web.zoom.us/j/84717181752?pwd=bbAxYD4AuJhWBsbvqQzKwObkvsyQJm.1" class="btn btn-primary" target="_blank">Rejoindre la réunion Zoom</a>
+                            <div class="mt-3">
+                                <p><strong>ID:</strong> 847 1718 1752</p>
+                                <p><strong>Code:</strong> 145811</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 2: Domestic Violence -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="activity-card">
+                        <img src="images/webinaires/domestic-violence.jpeg" class="card-img-top" alt="Domestic Violence Poster">
+                        <div class="card-body">
+                            <div class="activity-date-modern">
+                                <span class="day">14</span>
+                                <span class="month">DÉC.</span>
+                                <span class="year">2025</span>
+                            </div>
+                            <h5 class="card-title">Domestic Violence Issue: Awareness & Tips</h5>
+                            <p class="card-text">
+                                EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                            </p>
+                            <p class="card-text">
+                                <strong>Heure:</strong> 14 Déc. 2025 03:00 PM Heure de l'Est
+                            </p>
+                            <a href="https://us06web.zoom.us/j/83162615370?pwd=VOIWKkHTK6LxMtmsCyDrRanfGrUamt.1" class="btn btn-primary" target="_blank">Rejoindre la réunion Zoom</a>
+                            <div class="mt-3">
+                                <p><strong>ID:</strong> 831 6261 5370</p>
+                                <p><strong>Code:</strong> 615433</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 3: Immigration Americaine -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="activity-card">
+                        <img src="images/webinaires/immigration-americaine.jpeg" class="card-img-top" alt="Immigration Poster">
+                        <div class="card-body">
+                            <div class="activity-date-modern">
+                                <span class="day">13</span>
+                                <span class="month">DÉC.</span>
+                                <span class="year">2025</span>
+                            </div>
+                            <h5 class="card-title">Immigration Americaine: Est-ce La Fin Du Rêve?</h5>
+                            <p class="card-text">
+                                EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                            </p>
+                            <p class="card-text">
+                                <strong>Heure:</strong> 13 Déc. 2025 03:00 PM Heure de l'Est
+                            </p>
+                            <a href="https://us06web.zoom.us/j/7487666526?pwd=xvxkuDZkIqlPGQandflfshzWkFDrvr.1&omn=83403235052" class="btn btn-primary" target="_blank">Rejoindre la réunion Zoom</a>
+                            <div class="mt-3">
+                                <p><strong>ID:</strong> 748 766 6526</p>
+                                <p><strong>Code:</strong> 021741</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 4: Cancer du sein -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="activity-card">
+                        <img src="images/webinaires/cancer-du-sein.jpeg" class="card-img-top" alt="Cancer du sein Poster">
+                        <div class="card-body">
+                            <div class="activity-date-modern">
                                 <span class="day">08</span>
-                                <span class="month">Nov.</span>
+                                <span class="month">NOV.</span>
                                 <span class="year">2025</span>
                             </div>
                             <h5 class="card-title">Agir tôt pour mieux vivre : l'importance du dépistage précoce du cancer du sein</h5>
@@ -132,19 +321,335 @@
                                 EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
                             </p>
                             <p class="card-text">
-                                <strong>Heure:</strong> 8 Nov. 2025 15:30 H Heure de l'Est (États-Unis et Canada)
+                                <strong>Heure:</strong> 8 Nov. 2025 15:30 Heure de l'Est
                             </p>
                             <a href="https://us06web.zoom.us/j/86321069552?pwd=Mxua0dvkc1kti3BDmU2CbFBtrLVBwa.1" class="btn btn-primary" target="_blank">Rejoindre la réunion Zoom</a>
                             <div class="mt-3">
-                                <p><strong>ID de la réunion:</strong> 863 2106 9552</p>
-                                <p><strong>Code secret:</strong> 368070</p>
+                                <p><strong>ID:</strong> 863 2106 9552</p>
+                                <p><strong>Code:</strong> 368070</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 5: Carrière Cybersécurité -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="activity-card">
+                        <img src="images/webinaires/cybersecurite.jpeg" class="card-img-top" alt="Cybersécurité Poster">
+                        <div class="card-body">
+                            <div class="activity-date-modern">
+                                <span class="day">06</span>
+                                <span class="month">NOV.</span>
+                                <span class="year">2025</span>
+                            </div>
+                            <h5 class="card-title">Comment Débuter Une Carrière Dans La Cybersécurité</h5>
+                            <p class="card-text">
+                                EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                            </p>
+                            <p class="card-text">
+                                <strong>Heure:</strong> 6 Nov. 2025 07:30 PM Heure de l'Est
+                            </p>
+                            <a href="https://us06web.zoom.us/j/83830406112?pwd=2x4nF8fuGZUkTHSrWCrpwzcuT4z1Ty.1" class="btn btn-primary" target="_blank">Rejoindre la réunion Zoom</a>
+                            <div class="mt-3">
+                                <p><strong>ID:</strong> 838 3040 6112</p>
+                                <p><strong>Code:</strong> 946087</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 6: Session CCA Bank -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="activity-card">
+                        <img src="images/webinaires/compte-bancaire.jpeg" class="card-img-top" alt="CCA Bank Poster">
+                        <div class="card-body">
+                            <div class="activity-date-modern">
+                                <span class="day">25</span>
+                                <span class="month">OCT.</span>
+                                <span class="year">2025</span>
+                            </div>
+                            <h5 class="card-title">Session D'information Avec CCA Bank</h5>
+                            <p class="card-text">
+                                EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                            </p>
+                            <p class="card-text">
+                                <strong>Heure:</strong> 25 Oct. 2025 01:00 PM Heure de l'Est
+                            </p>
+                            <a href="https://us06web.zoom.us/j/87083855938?pwd=vIYHEpK7idquu9j0MwUa4QCDXreXlt.1" class="btn btn-primary" target="_blank">Rejoindre la réunion Zoom</a>
+                            <div class="mt-3">
+                                <p><strong>ID:</strong> 870 8385 5938</p>
+                                <p><strong>Code:</strong> 700589</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 7: Intégration Financière -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="activity-card">
+                        <img src="images/webinaires/integration-financiere.jpeg" class="card-img-top" alt="Intégration Financière Poster">
+                        <div class="card-body">
+                            <div class="activity-date-modern">
+                                <span class="day">13</span>
+                                <span class="month">AVR.</span>
+                                <span class="year">2025</span>
+                            </div>
+                            <h5 class="card-title">Comment Réussir Son Intégration Financière Aux USA</h5>
+                            <p class="card-text">
+                                EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                            </p>
+                            <p class="card-text">
+                                <strong>Heure:</strong> 13 Avr. 2025 03:00 PM Heure de l'Est
+                            </p>
+                            <a href="https://us06web.zoom.us/j/89158357909?pwd=5Ig80OhztYtP9L1Pz0E2sPULfAP0zA.1" class="btn btn-primary" target="_blank">Rejoindre la réunion Zoom</a>
+                            <div class="mt-3">
+                                <p><strong>ID:</strong> 891 5835 7909</p>
+                                <p><strong>Code:</strong> 119146</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Événement 8: Investissement Immobilier -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="activity-card">
+                        <img src="images/webinaires/investir-immobilier.jpeg" class="card-img-top" alt="Immobilier Poster">
+                        <div class="card-body">
+                            <div class="activity-date-modern">
+                                <span class="day">06</span>
+                                <span class="month">AVR.</span>
+                                <span class="year">2025</span>
+                            </div>
+                            <h5 class="card-title">Comment Investir Dans l'Immobilier Aux États-Unis</h5>
+                            <p class="card-text">
+                                EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                            </p>
+                            <p class="card-text">
+                                <strong>Heure:</strong> 6 Avr. 2025 04:00 PM Heure de l'Est
+                            </p>
+                            <a href="https://us06web.zoom.us/j/86398211466?pwd=uZbzzhupnJPqQSP7bLu8tado94KhCZ.1" class="btn btn-primary" target="_blank">Rejoindre la réunion Zoom</a>
+                            <div class="mt-3">
+                                <p><strong>ID:</strong> 863 9821 1466</p>
+                                <p><strong>Code:</strong> 904785</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        
+        <!-- VUE DESKTOP : Affichage alterné (visible uniquement sur desktop) -->
+        <div class="desktop-alternate-view">
+            <!-- Événement 1: Séance De Sport (Image à droite) -->
+            <div class="row activity-row align-items-center">
+                <div class="col-lg-6">
+                    <div class="activity-content">
+                        <div class="activity-date-modern">
+                            <span class="day">21</span>
+                            <span class="month">FÉV.</span>
+                            <span class="year">2026</span>
+                        </div>
+                        <h3 class="activity-title">Séance De Sport Avec Thierry Edoa</h3>
+                        <p class="activity-description">
+                            EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                        </p>
+                        <div class="activity-meta">
+                            <p><strong>Heure:</strong> 21 Fév. 2026 10:00 AM Heure de l'Est (États-Unis et Canada)</p>
+                            <p><strong>ID de réunion:</strong> 847 1718 1752</p>
+                            <p><strong>Code secret:</strong> 145811</p>
+                        </div>
+                        <a href="https://us06web.zoom.us/j/84717181752?pwd=bbAxYD4AuJhWBsbvqQzKwObkvsyQJm.1" class="btn-zoom" target="_blank">Rejoindre la réunion Zoom</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/webinaires/seance-de-sport1.jpeg" class="activity-image" alt="Séance de sport">
+                </div>
+            </div>
+
+            <!-- Événement 2: Domestic Violence (Image à gauche) -->
+            <div class="row activity-row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="activity-content">
+                        <div class="activity-date-modern">
+                            <span class="day">14</span>
+                            <span class="month">DÉC.</span>
+                            <span class="year">2025</span>
+                        </div>
+                        <h3 class="activity-title">Domestic Violence Issue: Awareness & Tips</h3>
+                        <p class="activity-description">
+                            EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                        </p>
+                        <div class="activity-meta">
+                            <p><strong>Heure:</strong> 14 Déc. 2025 03:00 PM Heure de l'Est (États-Unis et Canada)</p>
+                            <p><strong>ID de réunion:</strong> 831 6261 5370</p>
+                            <p><strong>Code secret:</strong> 615433</p>
+                        </div>
+                        <a href="https://us06web.zoom.us/j/83162615370?pwd=VOIWKkHTK6LxMtmsCyDrRanfGrUamt.1" class="btn-zoom" target="_blank">Rejoindre la réunion Zoom</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="images/webinaires/domestic-violence.jpeg" class="activity-image" alt="Domestic Violence">
+                </div>
+            </div>
+
+            <!-- Événement 3: Immigration Americaine (Image à droite) -->
+            <div class="row activity-row align-items-center">
+                <div class="col-lg-6">
+                    <div class="activity-content">
+                        <div class="activity-date-modern">
+                            <span class="day">13</span>
+                            <span class="month">DÉC.</span>
+                            <span class="year">2025</span>
+                        </div>
+                        <h3 class="activity-title">Immigration Americaine: Est-ce La Fin Du Rêve?</h3>
+                        <p class="activity-description">
+                            EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                        </p>
+                        <div class="activity-meta">
+                            <p><strong>Heure:</strong> 13 Déc. 2025 03:00 PM Heure de l'Est (États-Unis et Canada)</p>
+                            <p><strong>ID de réunion:</strong> 748 766 6526</p>
+                            <p><strong>Code secret:</strong> 021741</p>
+                        </div>
+                        <a href="https://us06web.zoom.us/j/7487666526?pwd=xvxkuDZkIqlPGQandflfshzWkFDrvr.1&omn=83403235052" class="btn-zoom" target="_blank">Rejoindre la réunion Zoom</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/webinaires/immigration-americaine.jpeg" class="activity-image" alt="Immigration Americaine">
+                </div>
+            </div>
+
+            <!-- Événement 4: Cancer du sein (Image à gauche) -->
+            <div class="row activity-row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="activity-content">
+                        <div class="activity-date-modern">
+                            <span class="day">08</span>
+                            <span class="month">NOV.</span>
+                            <span class="year">2025</span>
+                        </div>
+                        <h3 class="activity-title">Agir tôt pour mieux vivre : l'importance du dépistage précoce du cancer du sein</h3>
+                        <p class="activity-description">
+                            EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                        </p>
+                        <div class="activity-meta">
+                            <p><strong>Heure:</strong> 8 Nov. 2025 15:30 Heure de l'Est (États-Unis et Canada)</p>
+                            <p><strong>ID de réunion:</strong> 863 2106 9552</p>
+                            <p><strong>Code secret:</strong> 368070</p>
+                        </div>
+                        <a href="https://us06web.zoom.us/j/86321069552?pwd=Mxua0dvkc1kti3BDmU2CbFBtrLVBwa.1" class="btn-zoom" target="_blank">Rejoindre la réunion Zoom</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="images/webinaires/cancer-du-sein.jpeg" class="activity-image" alt="Cancer du sein">
+                </div>
+            </div>
+
+            <!-- Événement 5: Carrière Cybersécurité (Image à droite) -->
+            <div class="row activity-row align-items-center">
+                <div class="col-lg-6">
+                    <div class="activity-content">
+                        <div class="activity-date-modern">
+                            <span class="day">06</span>
+                            <span class="month">NOV.</span>
+                            <span class="year">2025</span>
+                        </div>
+                        <h3 class="activity-title">Comment Débuter Une Carrière Dans La Cybersécurité</h3>
+                        <p class="activity-description">
+                            EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                        </p>
+                        <div class="activity-meta">
+                            <p><strong>Heure:</strong> 6 Nov. 2025 07:30 PM Heure de l'Est (États-Unis et Canada)</p>
+                            <p><strong>ID de réunion:</strong> 838 3040 6112</p>
+                            <p><strong>Code secret:</strong> 946087</p>
+                        </div>
+                        <a href="https://us06web.zoom.us/j/83830406112?pwd=2x4nF8fuGZUkTHSrWCrpwzcuT4z1Ty.1" class="btn-zoom" target="_blank">Rejoindre la réunion Zoom</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/webinaires/cybersecurite.jpeg" class="activity-image" alt="Cybersécurité">
+                </div>
+            </div>
+
+            <!-- Événement 6: Session CCA Bank (Image à gauche) -->
+            <div class="row activity-row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="activity-content">
+                        <div class="activity-date-modern">
+                            <span class="day">25</span>
+                            <span class="month">OCT.</span>
+                            <span class="year">2025</span>
+                        </div>
+                        <h3 class="activity-title">Session D'information Avec CCA Bank</h3>
+                        <p class="activity-description">
+                            EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                        </p>
+                        <div class="activity-meta">
+                            <p><strong>Heure:</strong> 25 Oct. 2025 01:00 PM Heure de l'Est (États-Unis et Canada)</p>
+                            <p><strong>ID de réunion:</strong> 870 8385 5938</p>
+                            <p><strong>Code secret:</strong> 700589</p>
+                        </div>
+                        <a href="https://us06web.zoom.us/j/87083855938?pwd=vIYHEpK7idquu9j0MwUa4QCDXreXlt.1" class="btn-zoom" target="_blank">Rejoindre la réunion Zoom</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="images/webinaires/compte-bancaire.jpeg" class="activity-image" alt="CCA Bank">
+                </div>
+            </div>
+
+            <!-- Événement 7: Intégration Financière (Image à droite) -->
+            <div class="row activity-row align-items-center">
+                <div class="col-lg-6">
+                    <div class="activity-content">
+                        <div class="activity-date-modern">
+                            <span class="day">13</span>
+                            <span class="month">AVR.</span>
+                            <span class="year">2025</span>
+                        </div>
+                        <h3 class="activity-title">Comment Réussir Son Intégration Financière Aux USA</h3>
+                        <p class="activity-description">
+                            EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                        </p>
+                        <div class="activity-meta">
+                            <p><strong>Heure:</strong> 13 Avr. 2025 03:00 PM Heure de l'Est (États-Unis et Canada)</p>
+                            <p><strong>ID de réunion:</strong> 891 5835 7909</p>
+                            <p><strong>Code secret:</strong> 119146</p>
+                        </div>
+                        <a href="https://us06web.zoom.us/j/89158357909?pwd=5Ig80OhztYtP9L1Pz0E2sPULfAP0zA.1" class="btn-zoom" target="_blank">Rejoindre la réunion Zoom</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/webinaires/integration-financiere.jpeg" class="activity-image" alt="Intégration Financière">
+                </div>
+            </div>
+
+            <!-- Événement 8: Investissement Immobilier (Image à gauche) -->
+            <div class="row activity-row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="activity-content">
+                        <div class="activity-date-modern">
+                            <span class="day">06</span>
+                            <span class="month">AVR.</span>
+                            <span class="year">2025</span>
+                        </div>
+                        <h3 class="activity-title">Comment Investir Dans l'Immobilier Aux États-Unis</h3>
+                        <p class="activity-description">
+                            EBYA EKANG BESE Y'AMERKA vous invite à une réunion Zoom programmée.
+                        </p>
+                        <div class="activity-meta">
+                            <p><strong>Heure:</strong> 6 Avr. 2025 04:00 PM Heure de l'Est (États-Unis et Canada)</p>
+                            <p><strong>ID de réunion:</strong> 863 9821 1466</p>
+                            <p><strong>Code secret:</strong> 904785</p>
+                        </div>
+                        <a href="https://us06web.zoom.us/j/86398211466?pwd=uZbzzhupnJPqQSP7bLu8tado94KhCZ.1" class="btn-zoom" target="_blank">Rejoindre la réunion Zoom</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="images/webinaires/investir-immobilier.jpeg" class="activity-image" alt="Investissement Immobilier">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer bg-dark text-white py-5">
@@ -171,12 +676,12 @@
                     <ul class="footer-links">
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="our-associations.html">Associations</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Conditions d'utilisation</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">
-                    <h6 class="footer-title">Stay Connected</h6>
+                    <h6 class="footer-title">Restez connecté</h6>
                     <p>Follow us on social media for updates and news.</p>
                     <div class="social-links">
                         <a href="https://facebook.com/profile.php?id=61558766649742" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
@@ -321,7 +826,7 @@
           }, 'google_translate_element');
         }
         
-        // Gestion des clics sur les boutons
+        // Gestion dses clics sur les boutons
         document.querySelectorAll('.translation-btn').forEach(btn => {
           btn.addEventListener('click', function() {
             const lang = this.getAttribute('data-lang');

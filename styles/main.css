@@ -2776,3 +2776,62 @@ introduction-image
     margin-top: 1rem;
     font-weight: bold;
 }
+
+/* Sponsorship Cards Custom Styles */
+.sponsorship-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sponsorship-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+.sponsorship-card .card-header {
+    border: none;
+    position: relative;
+}
+
+.sponsorship-card .price {
+    display: block;
+    line-height: 1.2;
+}
+
+.sponsorship-card.official {
+    border: 2px solid #dc3545 !important;
+}
+
+.sponsorship-card.platinum {
+    border: 2px solid #e5e4e2 !important;
+}
+
+.sponsorship-card.gold {
+    border: 2px solid #ffc107 !important;
+}
+
+.sponsorship-card ul li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--dark-color);
+}
+
+.sponsorship-card.heartbeat {
+    border-radius: 25px;
+}
+
+.sponsorship-packages .section-title {
+    margin-bottom: 1rem;
+}
+
+.sponsorship-packages .section-subtitle {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+@media (max-width: 768px) {
+    .sponsorship-card {
+        margin-bottom: 1rem;
+    }
+}

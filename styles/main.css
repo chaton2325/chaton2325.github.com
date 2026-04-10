@@ -30,9 +30,7 @@ html {
 /* Navigation Styles */
 .custom-navbar {
     /* African Leopard Skin Pattern */
-    background-image: linear-gradient(rgba(255, 191, 0, 0.3), rgba(255, 191, 0, 0.3)), url('../images/banner.jpg');
-    background-repeat: repeat;
-    background-size: 300px;
+    background-color: white;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     padding: 1rem 0;
@@ -72,12 +70,12 @@ html {
 }
 
 .navbar-nav .nav-link {
-    color: #ffffff !important;
+    color: black !important;
     font-weight: 700;
     margin: 0 0.5rem;
     transition: all 0.3s ease;
     position: relative;
-    text-shadow: 3px 3px 4px #000000, 0 0 5px #000000;
+    
 }
 
 .navbar-nav .nav-link:hover {
@@ -2003,8 +2001,8 @@ html {
 }
 
 .translation-btn {
-    background: var(--primary-color);
-    color: white;
+    background: white;
+    color: black;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -2198,8 +2196,8 @@ body.translated {
 }
 
 .translation-btn {
-    background: var(--primary-color);
-    color: white;
+    background: white;
+    color: black;
     border: none;
     border-radius: 50%;
     width: 50px;

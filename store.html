@@ -89,14 +89,21 @@
 
     <!-- Store Products Section -->
 
-            <iframe src="https://adlprinting.com/iframe_products"
-            width="100%"
-            height="3300px"
-            frameborder="0"
-            style="border:1px solid gold; overflow:hidden;"
-            title="Boutique ADL Printing">
-            </iframe>
+    <iframe id="adlFrame"
+      src="https://adlprinting.com/iframe_products"
+      width="100%"
+      frameborder="0"
+      style="border:1px solid gold; overflow:hidden;"
+      scrolling="no">
+    </iframe>
 
+    <script>
+      window.addEventListener("message", function(event) {
+          if (event.data.type === "resize-iframe") {
+              document.getElementById("adlFrame").style.height = event.data.height + "px";
+          }
+      });
+    </script>
 
     <!-- Product Image Modal -->
     <div class="modal fade" id="productImageModal" tabindex="-1" aria-hidden="true">
@@ -185,6 +192,8 @@
         <button class="translation-btn" data-lang="fr" title="Français">FR</button>
         <button class="translation-btn" data-lang="es" title="Español">ES</button>
     </div>
+
+
     
     <!-- Google Translate Script -->
     <script>
